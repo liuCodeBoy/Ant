@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="hotCommandCell" rowHeight="214" id="KGk-i7-Jjw" customClass="NewsHotCommondCell" customModule="Ant" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="560" height="214"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="560" height="214"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_headportrait" translatesAutoresizingMaskIntoConstraints="NO" id="AqP-IR-ydp">
+                        <rect key="frame" x="18" y="18" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="O8w-H7-Mck"/>
+                            <constraint firstAttribute="width" constant="50" id="Ohb-HD-oCO"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jackson" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q2y-Tq-bwb">
+                        <rect key="frame" x="78" y="28" width="63.5" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_givethethumbsup" translatesAutoresizingMaskIntoConstraints="NO" id="kNJ-oF-XJQ">
+                        <rect key="frame" x="507" y="22" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="LU1-wg-FN2"/>
+                            <constraint firstAttribute="height" constant="25" id="cbQ-Bx-k2C"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BXE-cI-VUw">
+                        <rect key="frame" x="487" y="28" width="10" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Berala" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WNw-Tb-ySx">
+                        <rect key="frame" x="78" y="59" width="38.5" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.72151237729999995" green="0.72160023449999999" blue="0.72148257490000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iphone 6s" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aY1-e3-u3U">
+                        <rect key="frame" x="126.5" y="59" width="60" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.72151237729999995" green="0.72160023449999999" blue="0.72148257490000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="22小时前" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kmi-5S-Gv5">
+                        <rect key="frame" x="196.5" y="59" width="55.5" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.72151237729999995" green="0.72160023449999999" blue="0.72148257490000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="愉快吗 2017年自由市场尚未落幕，已经有球队将目光锁定在了明年夏天，比如湖人就将拉塞尔送至篮网，提前清理薪资空间。因为2018年自由市场可谓大牌云集，包括了詹姆斯、杜兰特和韦少等顶级巨星" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FRv-nJ-C4k" userLabel="comment">
+                        <rect key="frame" x="78" y="97" width="454" height="50.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dEG-Dk-ZSY">
+                        <rect key="frame" x="0.0" y="211.5" width="560" height="1"/>
+                        <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="O25-Kv-A61"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="FRv-nJ-C4k" firstAttribute="leading" secondItem="Q2y-Tq-bwb" secondAttribute="leading" id="06G-eu-uFM"/>
+                    <constraint firstItem="WNw-Tb-ySx" firstAttribute="top" secondItem="Q2y-Tq-bwb" secondAttribute="bottom" constant="10" id="1MO-Ug-NcL"/>
+                    <constraint firstItem="AqP-IR-ydp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="2dY-Zp-VkO"/>
+                    <constraint firstItem="kNJ-oF-XJQ" firstAttribute="leading" secondItem="BXE-cI-VUw" secondAttribute="trailing" constant="10" id="6j0-ns-1b5"/>
+                    <constraint firstItem="kmi-5S-Gv5" firstAttribute="leading" secondItem="aY1-e3-u3U" secondAttribute="trailing" constant="10" id="7XW-zS-9wg"/>
+                    <constraint firstItem="Q2y-Tq-bwb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="20" id="87L-ax-nnq"/>
+                    <constraint firstItem="FRv-nJ-C4k" firstAttribute="trailing" secondItem="kNJ-oF-XJQ" secondAttribute="trailing" id="934-9X-d25"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="kNJ-oF-XJQ" secondAttribute="trailing" constant="20" id="EmK-h3-iR2"/>
+                    <constraint firstItem="kmi-5S-Gv5" firstAttribute="top" secondItem="WNw-Tb-ySx" secondAttribute="top" id="OVo-6a-r9A"/>
+                    <constraint firstItem="AqP-IR-ydp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="Phr-6E-Gv4"/>
+                    <constraint firstItem="aY1-e3-u3U" firstAttribute="leading" secondItem="WNw-Tb-ySx" secondAttribute="trailing" constant="10" id="WU4-Fx-gGc"/>
+                    <constraint firstItem="Q2y-Tq-bwb" firstAttribute="leading" secondItem="AqP-IR-ydp" secondAttribute="trailing" constant="10" id="cnl-pl-cLJ"/>
+                    <constraint firstAttribute="bottom" secondItem="dEG-Dk-ZSY" secondAttribute="bottom" constant="1" id="fkO-IN-Dcw"/>
+                    <constraint firstItem="aY1-e3-u3U" firstAttribute="top" secondItem="WNw-Tb-ySx" secondAttribute="top" id="iyT-Yy-cTY"/>
+                    <constraint firstItem="WNw-Tb-ySx" firstAttribute="leading" secondItem="Q2y-Tq-bwb" secondAttribute="leading" id="mb2-Xl-DOt"/>
+                    <constraint firstAttribute="trailing" secondItem="dEG-Dk-ZSY" secondAttribute="trailing" id="mwk-5Z-Erl"/>
+                    <constraint firstItem="BXE-cI-VUw" firstAttribute="top" secondItem="Q2y-Tq-bwb" secondAttribute="top" id="oED-wN-JYF"/>
+                    <constraint firstItem="dEG-Dk-ZSY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="toT-OG-FGm"/>
+                    <constraint firstItem="kNJ-oF-XJQ" firstAttribute="centerY" secondItem="Q2y-Tq-bwb" secondAttribute="centerY" multiplier="0.9" id="wP7-oJ-oYv"/>
+                    <constraint firstItem="FRv-nJ-C4k" firstAttribute="top" secondItem="WNw-Tb-ySx" secondAttribute="bottom" constant="22" id="wkd-JW-Hn1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="areaLabel" destination="WNw-Tb-ySx" id="IAD-VG-PbE"/>
+                <outlet property="commentLabel" destination="FRv-nJ-C4k" id="ckL-nm-yjn"/>
+                <outlet property="nameLabel" destination="Q2y-Tq-bwb" id="M6h-Xp-opx"/>
+                <outlet property="timeLabel" destination="kmi-5S-Gv5" id="cKC-qX-Evu"/>
+                <outlet property="userPicImage" destination="AqP-IR-ydp" id="VM2-hk-l8q"/>
+                <outlet property="zanLabel" destination="BXE-cI-VUw" id="mg9-Ig-SlC"/>
+            </connections>
+            <point key="canvasLocation" x="249" y="-76"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_givethethumbsup" width="30" height="30"/>
+        <image name="img_headportrait" width="55" height="55"/>
+    </resources>
+</document>

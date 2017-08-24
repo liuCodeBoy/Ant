@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="101" id="KGk-i7-Jjw" customClass="CarServiceDetial" customModule="Ant" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="101"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="480" height="100.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="公司名称：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gkb-vF-6im">
+                        <rect key="frame" x="20" y="10" width="76.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="地址：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wdo-ZS-bqq">
+                        <rect key="frame" x="20" y="40" width="46" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="网址：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4vZ-dH-shw">
+                        <rect key="frame" x="20" y="70" width="46" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="远大汽车维修" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DMu-9n-aDQ">
+                        <rect key="frame" x="96.5" y="9.5" width="92" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Annandale 310 wattle Street South" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aSG-kR-f5E">
+                        <rect key="frame" x="66" y="40" width="237.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tzB-dB-AMc">
+                        <rect key="frame" x="66" y="65" width="38" height="28"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="http://"/>
+                        <connections>
+                            <action selector="website:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="l8a-Mv-46A"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="aSG-kR-f5E" firstAttribute="leading" secondItem="Wdo-ZS-bqq" secondAttribute="trailing" id="1zY-dA-oa2"/>
+                    <constraint firstItem="tzB-dB-AMc" firstAttribute="leading" secondItem="4vZ-dH-shw" secondAttribute="trailing" id="3Ip-k8-VPN"/>
+                    <constraint firstItem="Wdo-ZS-bqq" firstAttribute="top" secondItem="Gkb-vF-6im" secondAttribute="bottom" constant="12" id="7aQ-ZU-gIH"/>
+                    <constraint firstItem="DMu-9n-aDQ" firstAttribute="leading" secondItem="Gkb-vF-6im" secondAttribute="trailing" id="8AG-TJ-r84"/>
+                    <constraint firstItem="4vZ-dH-shw" firstAttribute="top" secondItem="Wdo-ZS-bqq" secondAttribute="bottom" constant="12" id="C2n-NO-egP"/>
+                    <constraint firstItem="tzB-dB-AMc" firstAttribute="centerY" secondItem="4vZ-dH-shw" secondAttribute="centerY" id="M6y-rL-Tfz"/>
+                    <constraint firstItem="aSG-kR-f5E" firstAttribute="centerY" secondItem="Wdo-ZS-bqq" secondAttribute="centerY" id="RlB-le-NHQ"/>
+                    <constraint firstItem="Gkb-vF-6im" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Ve3-O9-toR"/>
+                    <constraint firstItem="4vZ-dH-shw" firstAttribute="leading" secondItem="Gkb-vF-6im" secondAttribute="leading" id="ct9-ma-owg"/>
+                    <constraint firstItem="DMu-9n-aDQ" firstAttribute="centerY" secondItem="Gkb-vF-6im" secondAttribute="centerY" id="eh0-fi-a37"/>
+                    <constraint firstItem="Gkb-vF-6im" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="rDh-1b-f2V"/>
+                    <constraint firstItem="Wdo-ZS-bqq" firstAttribute="leading" secondItem="Gkb-vF-6im" secondAttribute="leading" id="vbZ-5p-8tM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="address" destination="aSG-kR-f5E" id="Ng0-Xm-JBw"/>
+                <outlet property="companyName" destination="DMu-9n-aDQ" id="Df0-Bz-QIo"/>
+                <outlet property="website" destination="tzB-dB-AMc" id="YL7-Tp-zIA"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="54.5"/>
+        </tableViewCell>
+    </objects>
+</document>

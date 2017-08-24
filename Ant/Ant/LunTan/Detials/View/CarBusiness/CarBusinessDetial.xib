@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="120" id="KGk-i7-Jjw" customClass="CarBusinessDetial" customModule="Ant" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="480" height="119.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="所在区域：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EAR-7Q-Yaf">
+                        <rect key="frame" x="10" y="8" width="87" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="车型：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8OD-Q3-yer">
+                        <rect key="frame" x="10" y="44" width="52" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="悉尼" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RV7-bK-k4A">
+                        <rect key="frame" x="97" y="8" width="35" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="品牌：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eUH-pv-iCp">
+                        <rect key="frame" x="278" y="8" width="52" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="变速箱：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h4D-fM-Ybr">
+                        <rect key="frame" x="278" y="44" width="70" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Honda" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pPm-RM-dA8">
+                        <rect key="frame" x="330" y="8" width="51" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="35分钟前更新" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CeH-Fk-41A">
+                        <rect key="frame" x="404.5" y="104" width="70.5" height="13.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="讴歌 SUV-X" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c91-nq-PvZ">
+                        <rect key="frame" x="62" y="44" width="90" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="年份：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rSI-Gh-MLg">
+                        <rect key="frame" x="10" y="80" width="52" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2011年" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X8x-zb-Aea">
+                        <rect key="frame" x="62" y="80" width="53" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="里程：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nbR-mL-rHA">
+                        <rect key="frame" x="278" y="80" width="52" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="22000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eGd-cX-lDP">
+                        <rect key="frame" x="330" y="80" width="51" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="自动" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AlL-5p-kYk">
+                        <rect key="frame" x="348" y="44" width="35" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="c91-nq-PvZ" firstAttribute="centerY" secondItem="8OD-Q3-yer" secondAttribute="centerY" id="11R-Ch-YJT"/>
+                    <constraint firstItem="nbR-mL-rHA" firstAttribute="leading" secondItem="h4D-fM-Ybr" secondAttribute="leading" id="1AF-jZ-CkK"/>
+                    <constraint firstItem="pPm-RM-dA8" firstAttribute="centerY" secondItem="EAR-7Q-Yaf" secondAttribute="centerY" id="1aF-30-HAV"/>
+                    <constraint firstItem="X8x-zb-Aea" firstAttribute="leading" secondItem="rSI-Gh-MLg" secondAttribute="trailing" id="2Ls-KY-9KD"/>
+                    <constraint firstAttribute="trailing" secondItem="eUH-pv-iCp" secondAttribute="trailing" constant="150" id="7jW-ya-oxd"/>
+                    <constraint firstItem="eGd-cX-lDP" firstAttribute="leading" secondItem="nbR-mL-rHA" secondAttribute="trailing" id="Dj6-2b-BYb"/>
+                    <constraint firstItem="eUH-pv-iCp" firstAttribute="centerY" secondItem="EAR-7Q-Yaf" secondAttribute="centerY" id="GKd-kY-bCK"/>
+                    <constraint firstItem="h4D-fM-Ybr" firstAttribute="leading" secondItem="eUH-pv-iCp" secondAttribute="leading" id="N8e-nc-ctn"/>
+                    <constraint firstAttribute="bottom" secondItem="CeH-Fk-41A" secondAttribute="bottom" constant="2" id="Nqd-DE-eRE"/>
+                    <constraint firstItem="c91-nq-PvZ" firstAttribute="leading" secondItem="8OD-Q3-yer" secondAttribute="trailing" id="PL3-gh-6OE"/>
+                    <constraint firstItem="eGd-cX-lDP" firstAttribute="centerY" secondItem="rSI-Gh-MLg" secondAttribute="centerY" id="QEW-dl-dfo"/>
+                    <constraint firstItem="EAR-7Q-Yaf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="X2U-Wf-Pzl"/>
+                    <constraint firstItem="8OD-Q3-yer" firstAttribute="top" secondItem="EAR-7Q-Yaf" secondAttribute="bottom" constant="15" id="YeB-lw-OHz"/>
+                    <constraint firstItem="pPm-RM-dA8" firstAttribute="leading" secondItem="eUH-pv-iCp" secondAttribute="trailing" id="bLT-YZ-UGp"/>
+                    <constraint firstItem="AlL-5p-kYk" firstAttribute="centerY" secondItem="8OD-Q3-yer" secondAttribute="centerY" id="bXW-JN-WW8"/>
+                    <constraint firstAttribute="trailing" secondItem="CeH-Fk-41A" secondAttribute="trailing" constant="5" id="cF2-gE-wBp"/>
+                    <constraint firstItem="EAR-7Q-Yaf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="eqx-ee-oOJ"/>
+                    <constraint firstItem="RV7-bK-k4A" firstAttribute="centerY" secondItem="EAR-7Q-Yaf" secondAttribute="centerY" id="fsk-bh-lAG"/>
+                    <constraint firstItem="RV7-bK-k4A" firstAttribute="leading" secondItem="EAR-7Q-Yaf" secondAttribute="trailing" id="h4C-T1-dfU"/>
+                    <constraint firstItem="AlL-5p-kYk" firstAttribute="leading" secondItem="h4D-fM-Ybr" secondAttribute="trailing" id="hhJ-m7-IT9"/>
+                    <constraint firstItem="h4D-fM-Ybr" firstAttribute="centerY" secondItem="8OD-Q3-yer" secondAttribute="centerY" id="jRB-eG-vsd"/>
+                    <constraint firstItem="rSI-Gh-MLg" firstAttribute="leading" secondItem="8OD-Q3-yer" secondAttribute="leading" id="jzG-Zr-mbk"/>
+                    <constraint firstItem="nbR-mL-rHA" firstAttribute="centerY" secondItem="rSI-Gh-MLg" secondAttribute="centerY" id="kA2-sl-8q3"/>
+                    <constraint firstItem="rSI-Gh-MLg" firstAttribute="top" secondItem="8OD-Q3-yer" secondAttribute="bottom" constant="15" id="rjz-cr-Xzl"/>
+                    <constraint firstItem="X8x-zb-Aea" firstAttribute="centerY" secondItem="rSI-Gh-MLg" secondAttribute="centerY" id="v8g-yo-gvk"/>
+                    <constraint firstItem="8OD-Q3-yer" firstAttribute="leading" secondItem="EAR-7Q-Yaf" secondAttribute="leading" id="zYj-6C-4Ye"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="brand" destination="pPm-RM-dA8" id="KyB-MW-s2m"/>
+                <outlet property="carType" destination="c91-nq-PvZ" id="SaB-Ya-BdU"/>
+                <outlet property="creatAt" destination="CeH-Fk-41A" id="c2Q-ea-oom"/>
+                <outlet property="location" destination="RV7-bK-k4A" id="gYg-Sk-xCq"/>
+                <outlet property="mileage" destination="eGd-cX-lDP" id="IFM-Vx-YNh"/>
+                <outlet property="transmission" destination="AlL-5p-kYk" id="tEH-C5-qAb"/>
+                <outlet property="year" destination="X8x-zb-Aea" id="hp2-n7-SdZ"/>
+            </connections>
+            <point key="canvasLocation" x="119" y="64"/>
+        </tableViewCell>
+    </objects>
+</document>

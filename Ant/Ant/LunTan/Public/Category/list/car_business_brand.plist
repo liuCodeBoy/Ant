@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>品牌</string>
+		<key>subcategories</key>
+		<array>
+			<string>不限</string>
+			<string>Alfa Romeo</string>
+			<string>Audi</string>
+			<string>BMW</string>
+			<string>Chrysler</string>
+			<string>Chverolet</string>
+			<string>Citroen</string>
+			<string>Dodge</string>
+			<string>Ford</string>
+			<string>Holden</string>
+			<string>Honda</string>
+			<string>Hyundai</string>
+			<string>Kia</string>
+			<string>Land Rover</string>
+			<string>Lexus</string>
+			<string>Mitsubishi</string>
+			<string>Mazda</string>
+			<string>Mercedes Benz</string>
+			<string>Nissan</string>
+			<string>Peugeot</string>
+			<string>Proshe</string>
+			<string>Renault</string>
+			<string>Subaru</string>
+			<string>Suzuki</string>
+			<string>Toyota</string>
+			<string>Volkswagen</string>
+			<string>Volvo</string>
+			<string>其他</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>车型</string>
+		<key>subcategories</key>
+		<array/>
+	</dict>
+</array>
+</plist>

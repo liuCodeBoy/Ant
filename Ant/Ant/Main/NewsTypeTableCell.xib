@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="129" id="RT6-EI-KKE" userLabel="NewsOne" customClass="NewsTypeTableCell" customModule="Ant" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="129"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RT6-EI-KKE" id="QLn-rs-zTR">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="128.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kcC-T1-IOs">
+                        <rect key="frame" x="10" y="19.5" width="110" height="90"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="110" id="17Y-1N-ULy"/>
+                            <constraint firstAttribute="height" constant="90" id="cor-WB-lmc"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="石家庄一家具厂不配合检查 将环保督察组反锁车间" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XfH-mc-a8y">
+                        <rect key="frame" x="130" y="19" width="235" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="新闻来自XXXX" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vqx-YJ-90M">
+                        <rect key="frame" x="130" y="93" width="88.5" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="XfH-mc-a8y" secondAttribute="trailing" constant="10" id="7L0-0v-Geu"/>
+                    <constraint firstItem="kcC-T1-IOs" firstAttribute="leading" secondItem="QLn-rs-zTR" secondAttribute="leading" constant="10" id="GlK-BB-KV3"/>
+                    <constraint firstItem="XfH-mc-a8y" firstAttribute="leading" secondItem="kcC-T1-IOs" secondAttribute="trailing" constant="10" id="Nhy-TX-Jwn"/>
+                    <constraint firstItem="Vqx-YJ-90M" firstAttribute="bottom" secondItem="kcC-T1-IOs" secondAttribute="bottom" id="WUh-EA-iQJ"/>
+                    <constraint firstItem="XfH-mc-a8y" firstAttribute="top" secondItem="kcC-T1-IOs" secondAttribute="top" id="jK6-OL-2W5"/>
+                    <constraint firstItem="Vqx-YJ-90M" firstAttribute="leading" secondItem="XfH-mc-a8y" secondAttribute="leading" id="xDR-lb-COf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstItem="kcC-T1-IOs" firstAttribute="centerY" secondItem="RT6-EI-KKE" secondAttribute="centerY" id="h7U-WJ-lVH"/>
+            </constraints>
+            <connections>
+                <outlet property="newsImage" destination="kcC-T1-IOs" id="Qpm-w3-Te6"/>
+                <outlet property="newsSource" destination="Vqx-YJ-90M" id="eua-QZ-8cA"/>
+                <outlet property="newsTitle" destination="XfH-mc-a8y" id="Rxy-vC-Q1l"/>
+            </connections>
+            <point key="canvasLocation" x="307" y="-511"/>
+        </tableViewCell>
+    </objects>
+</document>

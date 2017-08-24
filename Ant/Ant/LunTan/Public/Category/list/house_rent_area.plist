@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>不限</string>
+		<key>subcategories</key>
+		<array/>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>A</string>
+		<key>subcategories</key>
+		<array>
+			<string>Abbotsbury</string>
+			<string>Abbotsford</string>
+			<string>Acacia Gardens</string>
+			<string>Agnes Banks</string>
+			<string>Airds</string>
+			<string>Alexandria</string>
+			<string>Alfords Point</string>
+			<string>Allambie Heights</string>
+			<string>Allawah</string>
+			<string>Ambarvale</string>
+			<string>Annandale</string>
+			<string>Annangrove</string>
+			<string>Arcadia</string>
+			<string>Arncliffe</string>
+			<string>Arndell Park</string>
+			<string>Artarmon</string>
+			<string>Ashbury</string>
+			<string>Ashcroft</string>
+			<string>Ashfield</string>
+			<string>Ashquith</string>
+			<string>Austinmer</string>
+			<string>Austral</string>
+			<string>Avalon</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>B</string>
+		<key>subcategories</key>
+		<array>
+			<string>Badgery Creek</string>
+			<string>Balgowlah</string>
+			<string>Balgowlah Heights</string>
+			<string>Balmain</string>
+			<string>Balmain East</string>
+			<string>Bangor</string>
+			<string>Banksia</string>
+			<string>Banksmeadow</string>
+			<string>Bankstown</string>
+			<string>Bankstown Aerodrome</string>
+			<string>Barangaroo</string>
+			<string>Barden Ridge</string>
+			<string>Bardia</string>
+			<string>Bardwell Park</string>
+			<string>Bardwell Valley</string>
+			<string>Bass Hill</string>
+			<string>Baulkham Hills</string>
+			<string>Bayview</string>
+			<string>Beacon Hill</string>
+			<string>Beaconsfield</string>
+			<string>Beaumont Hills</string>
+			<string>Beecroft</string>
+			<string>Belfield</string>
+			<string>Bella Vista</string>
+			<string>Bellevue Hill</string>
+			<string>Belmore</string>
+			<string>Belrose</string>
+			<string>Berala</string>
+			<string>Berkshire Park</string>
+			<string>Berowra</string>
+			<string>Berowra Creek</string>
+			<string>Berowra Heights</string>
+			<string>Berowra Waters</string>
+			<string>Berrilee</string>
+			<string>Beverley Park</string>
+			<string>Bexley</string>
+			<string>Bexley North</string>
+			<string>Bidwill</string>
+			<string>Bilgola</string>
+			<string>Birchgrove</string>
+			<string>Birrong</string>
+			<string>Blackett</string>
+			<string>Blacktown</string>
+			<string>Blair Athol</string>
+			<string>Blackhurst</string>
+			<string>Bligh Park</string>
+			<string>Bondi</string>
+			<string>Bondi Beach</string>
+			<string>Bondi Junction</string>
+			<string>Bonnyrigg</string>
+			<string>Bonnyrigg Heights</string>
+			<string>Bossley Park</string>
+			<string>Botany</string>
+			<string>Bow Bowing</string>
+			<string>Box Hill</string>
+			<string>Bradbury</string>
+			<string>Breakfast Point</string>
+			<string>Brighton-Le-Sands</string>
+			<string>Bringelly</string>
+			<string>Bronte</string>
+			<string>Brooklyn</string>
+			<string>Brookvale</string>
+			<string>Bundeena</string>
+			<string>Burraneer</string>
+			<string>Burwood</string>
+			<string>Burwood Heights</string>
+			<string>Busby</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>C</string>
+		<key>subcategories</key>
+		<array>
+			<string>Cabarita</string>
+			<string>Cabramatta</string>
+			<string>Cabramatta West</string>
+			<string>Cambridge Gardens</string>
+			<string>Cambridge Park</string>
+			<string>Camellia</string>
+			<string>Cammeray</string>
+			<string>Campbelltown</string>
+			<string>Camperdown</string>
+			<string>Campsie</string>
+			<string>Canada Bay</string>
+			<string>Canley Vale</string>
+			<string>Canoelands</string>
+			<string>Canterbury</string>
+			<string>Caringbah</string>
+			<string>Caringbah South</string>
+			<string>Carlingford</string>
+			<string>Carlton</string>
+			<string>Carnes Hill</string>
+			<string>Carramar</string>
+			<string>Carss Park</string>
+			<string>Cartwright</string>
+			<string>Castle Cove</string>
+			<string>Castle Hill</string>
+			<string>Castlecrag</string>
+			<string>Castlereagh</string>
+			<string>Casula</string>
+			<string>Catherine Field</string>
+			<string>Cattai</string>
+			<string>Cecil Hills</string>
+			<string>Cecil Park</string>
+			<string>Centennial Park</string>
+			<string>Chastswood</string>
+			<string>Chastwood West</string>
+			<string>Cheltenham</string>
+			<string>Cherrybrook</string>
+			<string>Chester Hill</string>
+			<string>Chifley</string>
+			<string>Chippendale</string>
+			<string>Chipping Norton</string>
+			<string>Chiswick</string>
+			<string>Chullora</string>
+			<string>Church Point</string>
+			<string>Claremont Meadows</string>
+			<string>Clarendon</string>
+			<string>Clyamore</string>
+			<string>Clemton Park</string>
+			<string>Clifton</string>
+			<string>Clontarf</string>
+			<string>Clovelly</string>
+			<string>Clyde</string>
+			<string>Coalcliff</string>
+			<string>Cobbitty</string>
+			<string>Colebee</string>
+			<string>Coledale</string>
+			<string>Collaroy</string>
+			<string>Colyton</string>
+			<string>Como</string>
+			<string>Concord</string>
+			<string>Concord West</string>
+			<string>Condell Park </string>
+			<string>Connells Point</string>
+			<string>Constitution Hill</string>
+			<string>Coogee</string>
+			<string>Cottage Point</string>
+			<string>Cowan</string>
+			<string>Cranebrook</string>
+			<string>Cremorne</string>
+			<string>Cremorne Point </string>
+			<string>Cromer</string>
+			<string>Cronulla</string>
+			<string>Crows Nest</string>
+			<string>Croydon</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>D</string>
+		<key>subcategories</key>
+		<dict/>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>E</string>
+		<key>subcategories</key>
+		<dict/>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>F</string>
+		<key>subcategories</key>
+		<dict/>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>G</string>
+		<key>subcategories</key>
+		<dict/>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>H</string>
+		<key>subcategories</key>
+		<dict/>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>I</string>
+		<key>subcategories</key>
+		<dict/>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>J</string>
+		<key>subcategories</key>
+		<dict/>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>K</string>
+		<key>subcategories</key>
+		<dict/>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>L</string>
+		<key>subcategories</key>
+		<dict/>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>M</string>
+		<key>subcategories</key>
+		<dict/>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>N</string>
+		<key>subcategories</key>
+		<dict/>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>O</string>
+		<key>subcategories</key>
+		<dict/>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>P</string>
+		<key>subcategories</key>
+		<dict/>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Q</string>
+		<key>subcategories</key>
+		<dict/>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>R</string>
+		<key>subcategories</key>
+		<dict/>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>S</string>
+		<key>subcategories</key>
+		<dict/>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>T</string>
+		<key>subcategories</key>
+		<dict/>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>U</string>
+		<key>subcategories</key>
+		<dict/>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>V</string>
+		<key>subcategories</key>
+		<dict/>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>W</string>
+		<key>subcategories</key>
+		<dict/>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Y</string>
+		<key>subcategories</key>
+		<dict/>
+	</dict>
+</array>
+</plist>

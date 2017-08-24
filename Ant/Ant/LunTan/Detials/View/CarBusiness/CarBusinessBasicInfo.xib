@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="62" id="KGk-i7-Jjw" customClass="CarBusinessBasicInfo" customModule="Ant" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="62"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="480" height="61.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2011 Honda Civic VTi MY11" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AR5-jE-iRj">
+                        <rect key="frame" x="10" y="8" width="218" height="22"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 年份 2011 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="piZ-75-yTs">
+                        <rect key="frame" x="12" y="38" width="57" height="14"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Honda" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fn1-cD-6rk">
+                        <rect key="frame" x="74" y="38.5" width="35" height="14"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ogX-TC-u5x">
+                        <rect key="frame" x="416" y="30" width="49" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="piZ-75-yTs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="1OV-Fz-wWP"/>
+                    <constraint firstItem="Fn1-cD-6rk" firstAttribute="centerY" secondItem="piZ-75-yTs" secondAttribute="centerY" id="2IZ-2B-Pab"/>
+                    <constraint firstItem="Fn1-cD-6rk" firstAttribute="leading" secondItem="piZ-75-yTs" secondAttribute="trailing" constant="5" id="DQy-dP-3y0"/>
+                    <constraint firstItem="ogX-TC-u5x" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="30" id="LDX-og-rrl"/>
+                    <constraint firstAttribute="trailing" secondItem="ogX-TC-u5x" secondAttribute="trailing" constant="15" id="N7r-aX-4i7"/>
+                    <constraint firstItem="AR5-jE-iRj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="c6M-yW-j7b"/>
+                    <constraint firstItem="piZ-75-yTs" firstAttribute="top" secondItem="AR5-jE-iRj" secondAttribute="bottom" constant="8" id="fNH-IO-3NG"/>
+                    <constraint firstItem="AR5-jE-iRj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="fQH-Pf-XJo"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="brand" destination="Fn1-cD-6rk" id="qcW-UY-Mrh"/>
+                <outlet property="price" destination="ogX-TC-u5x" id="GOZ-hM-ghw"/>
+                <outlet property="title" destination="AR5-jE-iRj" id="Diu-ff-y9G"/>
+                <outlet property="year" destination="piZ-75-yTs" id="6eQ-jx-Bva"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="35"/>
+        </tableViewCell>
+    </objects>
+</document>

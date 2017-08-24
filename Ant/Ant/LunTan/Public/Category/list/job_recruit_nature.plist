@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string> 不限</string>
+		<key>subcategories</key>
+		<array/>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>全职</string>
+		<key>subcategories</key>
+		<array/>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>兼职</string>
+		<key>subcategories</key>
+		<array/>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>实习</string>
+		<key>subcategories</key>
+		<array/>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>合同工</string>
+		<key>subcategories</key>
+		<array/>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Casual</string>
+		<key>subcategories</key>
+		<array/>
+	</dict>
+</array>
+</plist>

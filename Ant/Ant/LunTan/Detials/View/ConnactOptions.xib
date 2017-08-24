@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="61" id="KGk-i7-Jjw" customClass="ConnactOptions" customModule="Ant" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="61"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="480" height="60.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="luntan_detial_icon_connact_profile" translatesAutoresizingMaskIntoConstraints="NO" id="95r-YN-W6i">
+                        <rect key="frame" x="10" y="5" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="Ad2-W0-Oav"/>
+                            <constraint firstAttribute="height" constant="40" id="ymH-YU-kF6"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jack" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SgA-H1-sPs">
+                        <rect key="frame" x="110" y="15" width="36" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="联系人" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="em1-xx-mAS">
+                        <rect key="frame" x="60" y="17" width="40" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="em1-xx-mAS" firstAttribute="centerY" secondItem="95r-YN-W6i" secondAttribute="centerY" id="7m8-7M-CaG"/>
+                    <constraint firstItem="SgA-H1-sPs" firstAttribute="leading" secondItem="em1-xx-mAS" secondAttribute="trailing" constant="10" id="S5o-eO-bUR"/>
+                    <constraint firstItem="95r-YN-W6i" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="S7N-DG-aBc"/>
+                    <constraint firstItem="95r-YN-W6i" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="TTp-WH-eys"/>
+                    <constraint firstItem="em1-xx-mAS" firstAttribute="leading" secondItem="95r-YN-W6i" secondAttribute="trailing" constant="10" id="WOs-Q8-T2K"/>
+                    <constraint firstItem="SgA-H1-sPs" firstAttribute="centerY" secondItem="95r-YN-W6i" secondAttribute="centerY" id="aqF-3f-5M8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="con_Detial" destination="SgA-H1-sPs" id="bI3-Ex-Zug"/>
+                <outlet property="con_Image" destination="95r-YN-W6i" id="X6N-IU-GlV"/>
+                <outlet property="con_Ways" destination="em1-xx-mAS" id="K3H-lp-YrX"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="62.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="luntan_detial_icon_connact_profile" width="42" height="40"/>
+    </resources>
+</document>

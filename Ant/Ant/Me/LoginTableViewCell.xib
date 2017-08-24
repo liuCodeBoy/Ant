@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="login" rowHeight="100" id="D88-ka-fUV" customClass="LoginTableViewCell" customModule="Ant" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="120"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="D88-ka-fUV" id="CEt-fJ-Hqu">
+                <rect key="frame" x="0.0" y="0.0" width="480" height="120"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile_icon_headportrait_notlogin" translatesAutoresizingMaskIntoConstraints="NO" id="7WP-7T-sdI">
+                        <rect key="frame" x="10" y="19" width="80" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="6gQ-4r-2tf"/>
+                            <constraint firstAttribute="height" constant="80" id="hNi-e3-ZYc"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="点击登录账号" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXo-bd-K0i">
+                        <rect key="frame" x="100" y="35" width="104" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="登陆享用同步数据等完整功能" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c4u-Q0-1iL">
+                        <rect key="frame" x="100" y="66" width="186" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="fXo-bd-K0i" firstAttribute="leading" secondItem="7WP-7T-sdI" secondAttribute="trailing" constant="10" id="2Xc-gp-a5P"/>
+                    <constraint firstItem="7WP-7T-sdI" firstAttribute="centerY" secondItem="CEt-fJ-Hqu" secondAttribute="centerY" id="79H-Gj-Ttf"/>
+                    <constraint firstItem="fXo-bd-K0i" firstAttribute="top" secondItem="CEt-fJ-Hqu" secondAttribute="top" constant="35" id="Knx-gq-JVy"/>
+                    <constraint firstItem="7WP-7T-sdI" firstAttribute="leading" secondItem="CEt-fJ-Hqu" secondAttribute="leading" constant="10" id="L6x-1X-Uo1"/>
+                    <constraint firstItem="c4u-Q0-1iL" firstAttribute="leading" secondItem="fXo-bd-K0i" secondAttribute="leading" id="bYQ-fQ-Cer"/>
+                    <constraint firstItem="c4u-Q0-1iL" firstAttribute="top" secondItem="fXo-bd-K0i" secondAttribute="bottom" constant="10" id="wu6-k4-Lrr"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="avaImage" destination="7WP-7T-sdI" id="4HS-1Y-Ryz"/>
+                <outlet property="detialHint" destination="c4u-Q0-1iL" id="eTh-YN-L9d"/>
+                <outlet property="loginHint" destination="fXo-bd-K0i" id="0Wm-CE-UJt"/>
+            </connections>
+            <point key="canvasLocation" x="-28" y="133"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="profile_icon_headportrait_notlogin" width="50" height="50"/>
+    </resources>
+</document>

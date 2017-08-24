@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>20-25岁</string>
+		<key>subcategories</key>
+		<array/>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>26-30岁</string>
+		<key>subcategories</key>
+		<array/>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>31-40岁</string>
+		<key>subcategories</key>
+		<array/>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>41-50岁</string>
+		<key>subcategories</key>
+		<array/>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>50岁以上</string>
+		<key>subcategories</key>
+		<array/>
+	</dict>
+</array>
+</plist>
