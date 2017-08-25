@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import SDWebImage
 class HouseRentViewCell: UITableViewCell {
     
     @IBOutlet weak var picture: UIImageView!
@@ -24,15 +24,19 @@ class HouseRentViewCell: UITableViewCell {
             guard let viewModel = viewModel else {
                 return
             }
+            
             title.text = viewModel.title
-            if let time = viewModel.empty_time {
+            if let time = viewModel.time {
+                
                 checkInTime.text = "入住时间 : \(time)"
-
+            
             }
             if let price = viewModel.price {
-                self.price.text = "$" + String(price)
+               
+                self.price.text = "$" + price
 
             }
+            
             if let source = viewModel.house_type {
                 house_source.setTitleWithSpace(source)
 
@@ -40,6 +44,10 @@ class HouseRentViewCell: UITableViewCell {
             if let type = viewModel.house_type {
                 house_type.setTitleWithSpace(type)
 
+            }
+            if let picture = viewModel.picture?.first{
+                
+                self.picture.sd_setImage(with:  NSURL.init(string: picture)! as URL, placeholderImage: #imageLiteral(resourceName: "moren"))
             }
             
         }

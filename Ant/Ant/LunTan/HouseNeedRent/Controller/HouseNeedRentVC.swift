@@ -94,8 +94,8 @@ extension HouseNeedRentVC {
             }
             for i in 0..<resultList.count - 1 {
                 let dict = resultList[i]
-                let basic = HouseRentStatus(dict: dict as! [String : AnyObject])
-                self?.modelInfo.append(basic)
+                let basic = HouseRentStatus.mj_object(withKeyValues: dict)
+                self?.modelInfo.append(basic!)
             }
             //离开当前组
             group.leave()

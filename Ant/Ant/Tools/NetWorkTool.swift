@@ -17,6 +17,7 @@ enum RequestType : String {
 
 enum LunTanType : String {
     case house = "house"
+    case seek = "seek"
     case job = "job"
     case car = "car"
     case secondHand = "market"
@@ -203,30 +204,45 @@ extension NetWorkTool {
     
     // MARK:- 论坛发布信息
     func publishInfo(_ token: String,
-                     cate_1: LunTanType,
+                     cate_1: LunTanType.RawValue,
                      cate_2 : String,
                      rootpath : String,
-                     savepath : LunTanType,
+                     savepath : LunTanType.RawValue,
                      image  : UIImage,
-                     date : String,
+                     title : String,
                      finished: @escaping (_ result: [String: AnyObject]?, _ error: Error?) -> ()) {
         //1.获取请求的URLString
         let urlString = "http://106.15.199.8/jraz/api/user/publish"
+        self.requestSerializer.setValue(token, forHTTPHeaderField: "token")
         //2.获取请求参数
-        let parameters = ["token" : token , "cate_1": cate_1, "cate_2" : cate_2 , "rootpath" : rootpath , "savepath" : savepath , "image" : image,"date" : date ] as [String : Any]
+        let parameters = ["cate_1": cate_1, "cate_2" : cate_2 , "rootpath" : rootpath , "savepath" : savepath , "title" : title ] as [String : Any]
         //3.发送请求参数
-        
-        request(.POST, urlString: urlString, parameters: parameters as [String : AnyObject]) { (result, error) -> () in
-            //获取字典数据
-            guard let resultDict = result as? [String : AnyObject] else {
-                finished(nil, error)
+        post(urlString, parameters: parameters, constructingBodyWith: { [weak self](formData) in
+            if let imageData = UIImageJPEGRepresentation(image, 0.5){
+            let imageName =  self?.getNowTime()
+             formData.appendPart(withFileData: imageData, name: "image", fileName: imageName! , mimeType: "image/png")
+            }
+
+        }, progress: { (Progress) in
+            
+        }, success: { (URLSessionDataTask, success) in         //获取字典数据
+            guard let resultDict = success as? [String : AnyObject] else {
                 return
             }
+            finished(resultDict , nil)
             //将数组数据回调给外界控制器
-            finished(resultDict, error)
+        }) { (URLSessionDataTask, error) in
+            finished(nil , error)
         }
     }
     
+    func getNowTime() -> (String){
+      let date = NSDate.init(timeIntervalSinceNow: 0)
+      let a  =  date.timeIntervalSince1970
+      let timesString = "\(a).png"
+      return  timesString
+    }
+
     // MARK:- 论坛信息列表查询均
     func infoList(VCType cate_1: LunTanType, p: Int,  finished: @escaping (_ result: [String: AnyObject]?, _ error: Error?) -> ()) {
         //1.获取请求的URLString
