@@ -319,10 +319,12 @@ extension HouseRentListVC {
             self?.pages = pages
             for i in 0..<resultList.count {
                 let dict = resultList[i]
-                let basic = HouseRentStatus(dict: dict as! [String : AnyObject])
-                self?.modelInfo.append(basic)
+                let basic = HouseRentStatus.mj_object(withKeyValues: dict)
+                 print(basic?.picture)
+                self?.modelInfo.append(basic!)
                 
             }
+            
             if   self?.page == self?.pages {
                 self?.tableView?.mj_footer.endRefreshingWithNoMoreData()
             }else {

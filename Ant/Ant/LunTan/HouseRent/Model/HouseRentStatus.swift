@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import MJExtension
 class HouseRentStatus: NSObject {
 
     var title: String?
@@ -15,13 +15,10 @@ class HouseRentStatus: NSObject {
     var time: String?
     var house_type: String?
     var house_source: String?
-    var price: Int?
+    var price: String?
     var contact_name: String?
-    
-    init(dict: [String : AnyObject]) {
-        super.init()
-        setValuesForKeys(dict)
-    }
-    
+    var id : Int?
+    var picture : [String]?
+  
     override func setValue(_ value: Any?, forUndefinedKey key: String) { }
 }

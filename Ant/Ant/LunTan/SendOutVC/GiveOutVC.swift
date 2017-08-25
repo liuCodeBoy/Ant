@@ -5,7 +5,7 @@
 //  Created by LiuXinQiang on 2017/7/12.
 //  Copyright © 2017年 LiuXinQiang. All rights reserved.
 //
-
+import AFNetworking
 import UIKit
 import SVProgressHUD
 import TZImagePickerController
@@ -68,7 +68,21 @@ class GiveOutVC: UIViewController,TZImagePickerControllerDelegate{
     }
     
     func sendOut() {
-        SVProgressHUD.showSuccess(withStatus: "发布成功")
+        
+        let   token = UserInfoModel.shareInstance.account?.token
+        
+        if token == nil {
+            self.presentHintMessage(target: self, hintMessgae: "您尚未登陆")
+        }else{
+
+            NetWorkTool.shareInstance.publishInfo("27b8aa7d70b76adf024079ab8093282a", cate_1: LunTanType.house.rawValue , cate_2: "1", rootpath: "forum_image", savepath: LunTanType.house.rawValue , image: #imageLiteral(resourceName: "moren"), title:"程永康吊人一个") { (userinfo, error) in
+                if error == nil &&  userinfo?["code"] as? String == "200"{
+                    SVProgressHUD.showSuccess(withStatus: "发布成功")
+                }
+            }
+        }
+
+        
     
     }
     

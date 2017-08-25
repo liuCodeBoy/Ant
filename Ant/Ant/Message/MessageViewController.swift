@@ -75,6 +75,6 @@ class MessageViewController: UIViewController ,UITableViewDataSource,UITableView
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.navigationController?.pushViewController(UIStoryboard.init(name: "Others", bundle: nil).instantiateInitialViewController()!, animated: true)
+        self.navigationController?.pushViewController(UIStoryboard.init(name: "SelfProfile", bundle: nil).instantiateInitialViewController()!, animated: true)
     }
 }
