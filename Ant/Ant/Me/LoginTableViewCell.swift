@@ -14,6 +14,7 @@ class LoginTableViewCell: UITableViewCell {
     @IBOutlet weak var loginHint: UILabel!
     @IBOutlet weak var detialHint: UILabel!
     
+    var push: (() -> ())?
 
     
     override func awakeFromNib() {
@@ -23,6 +24,10 @@ class LoginTableViewCell: UITableViewCell {
         detialHint.text = profileNumber != nil ? nil :  "登陆享用同步数据等完整功能"
         //接受通知
         NotificationCenter.default.addObserver(self, selector: #selector(didLogin), name: isLoginNotification, object: nil)
+        
+        //登录后点击头像跳转个人界面
+        let avatarTap = UITapGestureRecognizer(target: self, action: #selector(loadSelfProfileVC))
+        avaImage.addGestureRecognizer(avatarTap)
     }
     
     deinit {
@@ -35,8 +40,13 @@ class LoginTableViewCell: UITableViewCell {
             detialHint.text = ""
         }
     }
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
+    }
+    
+    func loadSelfProfileVC() {
+    
     }
     
 }

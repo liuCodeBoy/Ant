@@ -47,6 +47,7 @@
                     <constraint firstItem="SgA-H1-sPs" firstAttribute="centerY" secondItem="95r-YN-W6i" secondAttribute="centerY" id="aqF-3f-5M8"/>
                 </constraints>
             </tableViewCellContentView>
+            <gestureRecognizers/>
             <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
             <connections>
                 <outlet property="con_Detial" destination="SgA-H1-sPs" id="bI3-Ex-Zug"/>

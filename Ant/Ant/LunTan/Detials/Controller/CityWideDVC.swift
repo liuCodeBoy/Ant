@@ -12,16 +12,23 @@ class CityWideDVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
     
     var tableView: UITableView?
     
+    var modelInfo: LunTanDetialModel?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         loadDetialTableView()
+        loadCellData(index: 1)
         
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.tabBarController?.tabBar.isHidden = true
     }
     
     
     func loadDetialTableView() {
         
-        let frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height - 70)
+        let frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height - 60)
         
         self.tableView = UITableView(frame: frame, style: .grouped)
         
@@ -111,11 +118,11 @@ class CityWideDVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
         case 0:
             return UIScreen.main.bounds.width * 0.6
         case 1:
-            return 38
+            return 30
         case 2:
-            return 38
+            return 30
         case 3:
-            return 38
+            return 30
         case 4:
             return 10
         case 5:
@@ -126,7 +133,7 @@ class CityWideDVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
     }
     
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        if section == 2 {
+        if section == 3 {
             return 140
         } else {
             return 0.00001
@@ -141,26 +148,70 @@ class CityWideDVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
         case 0:
             
             switch indexPath.row {
-            case 0: cell = tableView.dequeueReusableCell(withIdentifier: "cityWideBasicInfo")
+            case 0:
+            let cityWideBasicInfo = tableView.dequeueReusableCell(withIdentifier: "cityWideBasicInfo") as! CityWideBasicInfo
+            cityWideBasicInfo.viewModel = modelInfo
+            
+            cell = cityWideBasicInfo
             
             if (cell?.responds(to: #selector(setter: UITableViewCell.separatorInset)))! {
                 cell?.separatorInset = UIEdgeInsets.zero
                 }
-            case 1: cell = tableView.dequeueReusableCell(withIdentifier: "cityWideDetial")
+            case 1:
+            let detialcontroduction = tableView.dequeueReusableCell(withIdentifier: "cityWideDetial") as! CityWideDetial
+            detialcontroduction.viewModel = modelInfo
+                
+            cell = detialcontroduction
+            
             if (cell?.responds(to: #selector(setter: UITableViewCell.separatorInset)))! {
                 cell?.separatorInset = UIEdgeInsets.zero
                 }
             default: break
             }
             
-        case 1: cell = tableView.dequeueReusableCell(withIdentifier: "detialControduction")
+        case 1:
+            let selfintro = tableView.dequeueReusableCell(withIdentifier: "detialControduction")
+            selfintro?.textLabel?.text = modelInfo?.self_info
             
-        case 2: cell = tableView.dequeueReusableCell(withIdentifier: "detialControduction")
+            cell = selfintro
             
-        case 3: cell = tableView.dequeueReusableCell(withIdentifier: "connactOptions")
-        if (cell?.responds(to: #selector(setter: UITableViewCell.separatorInset)))! {
-            cell?.separatorInset = UIEdgeInsets(top: 0, left: 50, bottom: 0, right: 0)
+        case 2:
+            let friendreq = tableView.dequeueReusableCell(withIdentifier: "detialControduction")
+            friendreq?.textLabel?.text = modelInfo?.friends_request
+            
+            cell = friendreq
+            
+        case 3:
+            let connactoptions = tableView.dequeueReusableCell(withIdentifier: "connactOptions") as! ConnactOptions
+            
+            if let key = modelInfo?.connactDict[indexPath.row].first?.key {
+                connactoptions.con_Ways.text = key
             }
+            if let value = modelInfo?.connactDict[indexPath.row].first?.value {
+                connactoptions.con_Detial.text = value
+            }
+            
+            switch modelInfo?.connactDict[indexPath.row].first?.key {
+            case "联系人"?:
+                connactoptions.con_Image.image = #imageLiteral(resourceName: "luntan_detial_icon_connact_profile")
+            case "电话"?:
+                connactoptions.con_Image.image = #imageLiteral(resourceName: "luntan_detial_icon_connact_phone")
+            case "微信"?:
+                connactoptions.con_Image.image = #imageLiteral(resourceName: "luntan_detial_icon_connact_wechat")
+            case "QQ"?:
+                connactoptions.con_Image.image = #imageLiteral(resourceName: "luntan_detial_icon_connact_qq")
+            case "邮箱"?:
+                connactoptions.con_Image.image = #imageLiteral(resourceName: "luntan_detial_icon_connact_email")
+            default:
+                break
+            }
+            
+            cell = connactoptions
+            
+            if (cell?.responds(to: #selector(setter: UITableViewCell.separatorInset)))! {
+                cell?.separatorInset = UIEdgeInsets(top: 0, left: 50, bottom: 0, right: 0)
+            }
+
         case 4: cell = tableView.dequeueReusableCell(withIdentifier: "messageHeader")
             
         case 5: cell = tableView.dequeueReusableCell(withIdentifier: "messagesCell")
@@ -175,7 +226,7 @@ class CityWideDVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
         switch indexPath.section {
         case 0:
             switch indexPath.row {
-            case 0: return 80
+            case 0: return 65
             case 1: return 150
             default: return 20
             }
@@ -191,6 +242,42 @@ class CityWideDVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
             return 120
         default:
             return 20
+        }
+    }
+    
+}
+
+extension CityWideDVC {
+    
+    // MARK:- load data
+    
+    fileprivate func loadCellData(index: Int) {
+        let group = DispatchGroup()
+        //将当前的下载操作添加到组中
+        group.enter()
+        NetWorkTool.shareInstance.infoDetial(VCType: .cityWide, id: index + 1) { [weak self](result, error)  in
+            //在这里异步加载任务
+            
+            if error != nil {
+                print(error ?? "load house info list failed")
+                return
+            }
+            
+            guard let resultDict = result!["result"] else {
+                return
+            }
+            
+            let basic = LunTanDetialModel(dict: resultDict as! [String : AnyObject])
+            self?.modelInfo = basic
+            //离开当前组
+            print(resultDict)
+            group.leave()
+            
+        }
+        group.notify(queue: DispatchQueue.main) {
+            //在这里告诉调用者,下完完毕,执行下一步操作
+            self.tableView?.reloadData()
+            
         }
     }
     

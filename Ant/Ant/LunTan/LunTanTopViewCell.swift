@@ -24,7 +24,7 @@ class LunTanTopViewCell: UITableViewCell {
     
      override func awakeFromNib() {
         super.awakeFromNib()
-         self.headerView = UIView.init(frame: CGRect.init(x: 0, y: 0, width: screenWidth, height: 38))
+         self.headerView = UIView.init(frame: CGRect.init(x: 0, y: 0, width: screenWidth, height: 30))
          let lineView = UIView.init(frame: CGRect.init(x: 0, y: 37, width: screenWidth, height: 1))
          lineView.backgroundColor = UIColor.init(red: 241/255.0, green: 241/255.0, blue: 241/255.0, alpha: 1.0)
         self.headerView?.addSubview(lineView)
@@ -92,6 +92,10 @@ class LunTanTopViewCell: UITableViewCell {
             presentVC = CarSale
         case 4:
             presentVC = UIStoryboard.init(name: "SecondHand", bundle: nil).instantiateInitialViewController()!
+        case 5:
+            let cityWide = CityWideVC()
+            cityWide.title = "同城交友"
+            presentVC = cityWide
         default: break
         }
         

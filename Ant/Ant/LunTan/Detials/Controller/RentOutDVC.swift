@@ -21,7 +21,7 @@ class RentOutDVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         // MARK:- 底部菜单
         let menuView = Menu()
         self.tabBarController?.tabBar.isHidden = true
-        menuView.frame = CGRect(x: 0, y: screenHeight - 134, width: screenWidth, height: 70)
+        menuView.frame = CGRect(x: 0, y: screenHeight - 124, width: screenWidth, height: 60)
         self.view.addSubview(menuView)
         loadCellData(index: 1)
 
@@ -30,7 +30,7 @@ class RentOutDVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     func loadDetialTableView() {
         
-        let frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height - 70)
+        let frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height - 60)
         
         self.tableView = UITableView(frame: frame, style: .grouped)
         
@@ -91,7 +91,15 @@ class RentOutDVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
                 urlArray.append(url!)
             }
             
+//            if let pic = modelInfo?.pictureArray {
+//                return LoopView(images: pic, frame: frame, isAutoScroll: true)
+//            } else {
+//                return LoopView(images: urlArray, frame: frame, isAutoScroll: true)
+//            }
+            
             return LoopView(images: urlArray, frame: frame, isAutoScroll: true)
+
+            
             
         case 1:
             
@@ -124,9 +132,9 @@ class RentOutDVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         case 0:
             return UIScreen.main.bounds.width * 0.6
         case 1:
-            return 38
+            return 30
         case 2:
-            return 38
+            return 30
         case 3:
             return 10
         case 4:
@@ -246,6 +254,34 @@ class RentOutDVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             return 120
         default:
             return 20
+        }
+    }
+    
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        switch indexPath.section {
+        case 2:
+            switch indexPath.row {
+            case 1:
+                //自动打开拨号页面并自动拨打电话
+                let urlString = "tel://123456"
+                if let url = URL(string: urlString) {
+                    //根据iOS系统版本，分别处理
+                    if #available(iOS 10, *) {
+                        UIApplication.shared.open(url, options: [:],
+                                                  completionHandler: {
+                                                    (success) in
+                        })
+                    } else {
+                        UIApplication.shared.openURL(url)
+                    }
+                }
+            default:
+                break
+            }
+        default:
+            break
         }
     }
 

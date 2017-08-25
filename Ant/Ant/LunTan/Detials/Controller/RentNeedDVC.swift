@@ -21,14 +21,14 @@ class RentNeedDVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
         
         let view = Menu()
         self.tabBarController?.tabBar.isHidden = true
-        view.frame = CGRect(x: 0, y: screenHeight - 134, width: screenWidth, height: 70)
+        view.frame = CGRect(x: 0, y: screenHeight - 124, width: screenWidth, height: 60)
         self.view.addSubview(view)
     }
     
     
     func loadDetialTableView() {
         
-        let frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height - 70)
+        let frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height - 60)
         
         self.tableView = UITableView(frame: frame, style: .grouped)
         
