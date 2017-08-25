@@ -21,14 +21,14 @@ class CarBusinessDVC: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         let view = Menu()
         self.tabBarController?.tabBar.isHidden = true
-        view.frame = CGRect(x: 0, y: screenHeight - 134, width: screenWidth, height: 70)
+        view.frame = CGRect(x: 0, y: screenHeight - 124, width: screenWidth, height: 60)
         self.view.addSubview(view)
        
     }
     
     func loadDetialTableView() {
         
-        let frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height - 70)
+        let frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height - 60)
         
         self.tableView = UITableView(frame: frame, style: .grouped)
         
@@ -112,9 +112,9 @@ class CarBusinessDVC: UIViewController, UITableViewDelegate, UITableViewDataSour
         case 0:
             return UIScreen.main.bounds.width * 0.6
         case 1:
-            return 38
+            return 30
         case 2:
-            return 38
+            return 30
         case 3:
             return 10
         case 4:

@@ -25,4 +25,33 @@ class CityWideDetial: UITableViewCell {
         
     }
     
+    var viewModel: LunTanDetialModel? {
+        didSet {
+            if let area = viewModel?.area {
+                self.city.text = area
+            }
+            if let sex = viewModel?.sex {
+                self.sex.text = sex
+            }
+            if let age = viewModel?.age {
+                self.age.text = age
+            }
+            if let height = viewModel?.height {
+                self.height.text = height
+            }
+            if let weight = viewModel?.weight {
+                self.height.text = weight
+            }
+            if let academic = viewModel?.education {
+                self.academic.text = academic
+            }
+            if let job = viewModel?.job {
+                self.academic.text = job
+            }
+            if let home = viewModel?.hometown {
+                self.hometown.text = home
+            }
+        }
+    }
+    
 }

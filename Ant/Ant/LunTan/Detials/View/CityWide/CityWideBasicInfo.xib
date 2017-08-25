@@ -11,11 +11,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="CityWideBasicInfo" customModule="Ant" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="480" height="80"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="65" id="KGk-i7-Jjw" customClass="CityWideBasicInfo" customModule="Ant" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="65"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="480" height="79.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="480" height="64.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="寻找喜欢骑行和自驾游的小伙伴们" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pir-3Q-459">
@@ -43,20 +43,20 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="it5-0n-aZo">
-                        <rect key="frame" x="357" y="63.5" width="10" height="10"/>
+                        <rect key="frame" x="357" y="48.5" width="10" height="10"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="10" id="MXL-63-vZe"/>
                             <constraint firstAttribute="width" constant="10" id="ykg-eh-xVn"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="墨尔本" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KQn-Rz-30Z">
-                        <rect key="frame" x="369" y="62.5" width="31" height="12"/>
+                        <rect key="frame" x="369" y="47.5" width="31" height="12"/>
                         <fontDescription key="fontDescription" type="system" pointSize="10"/>
                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="58分钟前发布" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y4r-Sb-DaE">
-                        <rect key="frame" x="411" y="62.5" width="64" height="12"/>
+                        <rect key="frame" x="411" y="47.5" width="64" height="12"/>
                         <fontDescription key="fontDescription" type="system" pointSize="10"/>
                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
@@ -89,6 +89,7 @@
                 <outlet property="hobby" destination="kAm-yq-4bo" id="Fht-7E-c1f"/>
                 <outlet property="titleIntro" destination="pir-3Q-459" id="Pkw-dU-LUV"/>
             </connections>
+            <point key="canvasLocation" x="34" y="46.5"/>
         </tableViewCell>
     </objects>
 </document>

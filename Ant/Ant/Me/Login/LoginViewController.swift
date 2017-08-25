@@ -7,7 +7,8 @@
 //
 
 import UIKit
-import  SVProgressHUD
+import SVProgressHUD
+
 var isLogin: Bool = UserInfoModel.shareInstance.isLogin
 
 class LoginViewController: UIViewController {

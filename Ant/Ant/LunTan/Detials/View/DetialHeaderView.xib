@@ -11,29 +11,37 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="DetialHeaderView" customModule="Ant" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="480" height="40"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="31" id="KGk-i7-Jjw" customClass="DetialHeaderView" customModule="Ant" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="30"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="480" height="39.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="480" height="29.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3yO-d6-ZlA">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="29.5"/>
+                        <color key="backgroundColor" red="0.95491327479999999" green="0.9643678617" blue="0.9643678617" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Jf-sN-aQF">
-                        <rect key="frame" x="10" y="8" width="2" height="20"/>
+                        <rect key="frame" x="10" y="8" width="2" height="15"/>
                         <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="20" id="Yez-Y4-aL2"/>
+                            <constraint firstAttribute="height" constant="15" id="Yez-Y4-aL2"/>
                             <constraint firstAttribute="width" constant="2" id="gN1-Tv-lo4"/>
                         </constraints>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DetialHeader" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wgY-XK-Xgt">
-                        <rect key="frame" x="15" y="12" width="68.5" height="13.5"/>
+                        <rect key="frame" x="15" y="9.5" width="68.5" height="13.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="3yO-d6-ZlA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="9Mn-9J-iyn"/>
+                    <constraint firstAttribute="bottom" secondItem="3yO-d6-ZlA" secondAttribute="bottom" id="9fp-ab-ruZ"/>
+                    <constraint firstAttribute="trailing" secondItem="3yO-d6-ZlA" secondAttribute="trailing" id="BUj-Uk-ude"/>
+                    <constraint firstItem="3yO-d6-ZlA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="TKb-Ry-FSN"/>
                     <constraint firstItem="wgY-XK-Xgt" firstAttribute="leading" secondItem="7Jf-sN-aQF" secondAttribute="trailing" constant="3" id="TrB-5t-hXf"/>
                     <constraint firstItem="wgY-XK-Xgt" firstAttribute="centerY" secondItem="7Jf-sN-aQF" secondAttribute="centerY" id="TrW-0C-Z17"/>
                     <constraint firstItem="7Jf-sN-aQF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="WJd-ID-iIz"/>
@@ -44,6 +52,7 @@
             <connections>
                 <outlet property="DetialHeaderLabel" destination="wgY-XK-Xgt" id="mQo-OW-Fxl"/>
             </connections>
+            <point key="canvasLocation" x="48" y="49.5"/>
         </tableViewCell>
     </objects>
 </document>

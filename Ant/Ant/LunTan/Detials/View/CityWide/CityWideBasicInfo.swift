@@ -27,5 +27,30 @@ class CityWideBasicInfo: UITableViewCell {
     
     }
     
+    var viewModel: LunTanDetialModel? {
+        didSet {
+            
+            if let title = viewModel?.title {
+                self.titleIntro.text = title
+            }
+            if let academic = viewModel?.education {
+                self.academic.setTitleWithSpace(academic)
+            }
+            if let hobby = viewModel?.job {
+                self.hobby.setTitleWithSpace(hobby)
+            }
+            if let constellation = viewModel?.constellation {
+                self.constellation.setTitleWithSpace(constellation)
+            }
+            if let area = viewModel?.area {
+                self.city.text = area
+            }
+            if let time = viewModel?.checkinTime {
+                self.creatAt.text = time
+            }
+            
+            
+        }
+    }
 
 }

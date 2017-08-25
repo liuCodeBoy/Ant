@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		47D1D894541B9E7EF0089AB9 /* Pods_Ant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DD636BD2B55585CF3CFD8D6 /* Pods_Ant.framework */; };
+		D31917FF1F4FD5AB002423C7 /* CityWideVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31917FE1F4FD5AB002423C7 /* CityWideVC.swift */; };
 		D33998D11F4EC007009DACD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D33998D01F4EC007009DACD0 /* Assets.xcassets */; };
 		D33998DF1F4EC5CB009DACD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33998DE1F4EC5CB009DACD0 /* AppDelegate.swift */; };
 		D33998E11F4EC5FF009DACD0 /* city.plist in Resources */ = {isa = PBXBuildFile; fileRef = D33998E01F4EC5FF009DACD0 /* city.plist */; };
@@ -194,6 +195,7 @@
 		0DD636BD2B55585CF3CFD8D6 /* Pods_Ant.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ant.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AB7A0C894F7CEC6FD3D65C2 /* Pods-Ant.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ant.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ant/Pods-Ant.release.xcconfig"; sourceTree = "<group>"; };
 		7BA4638AF15569E824CB6399 /* Pods-Ant.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ant.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ant/Pods-Ant.debug.xcconfig"; sourceTree = "<group>"; };
+		D31917FE1F4FD5AB002423C7 /* CityWideVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityWideVC.swift; sourceTree = "<group>"; };
 		D33998C61F4EC007009DACD0 /* Ant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D33998D01F4EC007009DACD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D33998D51F4EC007009DACD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -409,6 +411,45 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D31917F91F4FD238002423C7 /* CityWide */ = {
+			isa = PBXGroup;
+			children = (
+				D31917FB1F4FD238002423C7 /* Model */,
+				D31917FC1F4FD238002423C7 /* View */,
+				D31917FA1F4FD238002423C7 /* Controller */,
+			);
+			path = CityWide;
+			sourceTree = "<group>";
+		};
+		D31917FA1F4FD238002423C7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D31917FE1F4FD5AB002423C7 /* CityWideVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D31917FB1F4FD238002423C7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D31917FC1F4FD238002423C7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D31917FD1F4FD26D002423C7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		D33998BD1F4EC007009DACD0 = {
 			isa = PBXGroup;
 			children = (
@@ -458,6 +499,7 @@
 				D33999411F4EC771009DACD0 /* JobSearch */,
 				D33998E71F4EC770009DACD0 /* CarSale */,
 				D339996D1F4EC771009DACD0 /* SecondHand */,
+				D31917F91F4FD238002423C7 /* CityWide */,
 				D33999741F4EC771009DACD0 /* SendOutVC */,
 				D33999501F4EC771009DACD0 /* Public */,
 				D33998EA1F4EC770009DACD0 /* ChoseTableView.swift */,
@@ -500,14 +542,14 @@
 		D33998ED1F4EC770009DACD0 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				D33998F31F4EC770009DACD0 /* RentOutDVC.swift */,
+				D33998F21F4EC770009DACD0 /* RentNeedDVC.swift */,
+				D33998F11F4EC770009DACD0 /* RecruitDVC.swift */,
+				D33998F51F4EC770009DACD0 /* WantJobDVC.swift */,
+				D33998F41F4EC770009DACD0 /* SecondHandDVC.swift */,
 				D33998EE1F4EC770009DACD0 /* CarBusinessDVC.swift */,
 				D33998EF1F4EC770009DACD0 /* CarServiceDVC.swift */,
 				D33998F01F4EC770009DACD0 /* CityWideDVC.swift */,
-				D33998F11F4EC770009DACD0 /* RecruitDVC.swift */,
-				D33998F21F4EC770009DACD0 /* RentNeedDVC.swift */,
-				D33998F31F4EC770009DACD0 /* RentOutDVC.swift */,
-				D33998F41F4EC770009DACD0 /* SecondHandDVC.swift */,
-				D33998F51F4EC770009DACD0 /* WantJobDVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -541,9 +583,14 @@
 		D33998FD1F4EC770009DACD0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D33999211F4EC771009DACD0 /* RentNeed */,
+				D33999241F4EC771009DACD0 /* RentOut */,
+				D33999301F4EC771009DACD0 /* WantJob */,
+				D339991C1F4EC771009DACD0 /* Recruit */,
 				D33998FE1F4EC770009DACD0 /* CarBusiness */,
 				D33999031F4EC770009DACD0 /* CarService */,
 				D33999081F4EC771009DACD0 /* CityWide */,
+				D33999291F4EC771009DACD0 /* SecondHand */,
 				D339990E1F4EC771009DACD0 /* ConnactOptions.swift */,
 				D339990F1F4EC771009DACD0 /* ConnactOptions.xib */,
 				D33999101F4EC771009DACD0 /* DetialControduction.swift */,
@@ -558,11 +605,6 @@
 				D33999191F4EC771009DACD0 /* MessageHeader.xib */,
 				D339991A1F4EC771009DACD0 /* MessagesCell.swift */,
 				D339991B1F4EC771009DACD0 /* MessagesCell.xib */,
-				D339991C1F4EC771009DACD0 /* Recruit */,
-				D33999211F4EC771009DACD0 /* RentNeed */,
-				D33999241F4EC771009DACD0 /* RentOut */,
-				D33999291F4EC771009DACD0 /* SecondHand */,
-				D33999301F4EC771009DACD0 /* WantJob */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -802,6 +844,7 @@
 		D339996D1F4EC771009DACD0 /* SecondHand */ = {
 			isa = PBXGroup;
 			children = (
+				D31917FD1F4FD26D002423C7 /* Model */,
 				D339996E1F4EC771009DACD0 /* Controller */,
 				D33999721F4EC771009DACD0 /* View */,
 			);
@@ -1332,6 +1375,7 @@
 				D3399A551F4EC771009DACD0 /* NewsDetailVCViewController.swift in Sources */,
 				D3399A221F4EC771009DACD0 /* InviteJobInfoView.swift in Sources */,
 				D33999E61F4EC771009DACD0 /* CustomStyle-Extension.swift in Sources */,
+				D31917FF1F4FD5AB002423C7 /* CityWideVC.swift in Sources */,
 				D3399A4C1F4EC771009DACD0 /* ChoseCityVC.swift in Sources */,
 				D3399A4B1F4EC771009DACD0 /* CateModel.swift in Sources */,
 				D3399A401F4EC771009DACD0 /* LunTanListWithLocationCell.swift in Sources */,

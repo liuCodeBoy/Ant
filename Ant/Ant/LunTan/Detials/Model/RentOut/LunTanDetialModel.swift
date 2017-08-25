@@ -33,14 +33,27 @@ class LunTanDetialModel: NSObject {
     var experience: String?
     var industry_id: Int?
     var job_nature: String?
-    var self_info: String?
-    var time: Int?
+    var self_info: String?  //同城交友
+    var time: Int?          //同城交友
     var visa: String?
     
     //汽车买卖
     var company_address: String?
     var company_internet: String?
     var company_name: String?
+    
+    //同城交友
+    var age: String?
+    var constellation: String?
+    var felling_state: String?
+    var friends_request: String?
+    var height: String?
+    var hometown: String?
+    var job: String?
+    var name: String?
+    var sex: String?
+    var weight: String?
+    
     
 
     // MARK:- 处理完的数据
@@ -58,9 +71,11 @@ class LunTanDetialModel: NSObject {
         setValuesForKeys(dict)
         
         //处理模型的数据
-//        for urlItem in picture! {
-//            let url = URL(string: urlItem)
-//            self.pictureArray.append(url!)
+//        if let pictureArray = picture {
+//            for urlItem in pictureArray {
+//                let url = URL(string: urlItem)
+//                self.pictureArray.append(url!)
+//            }
 //        }
         if let check = empty_time {
             checkinTime = Date.createDateString(String(check))

@@ -44,25 +44,25 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="性别：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ney-DF-RJF">
-                        <rect key="frame" x="273" y="15" width="49" height="19.5"/>
+                        <rect key="frame" x="293" y="15" width="49" height="19.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="身高：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ha6-zQ-cNT">
-                        <rect key="frame" x="273" y="49.5" width="49" height="19.5"/>
+                        <rect key="frame" x="293" y="49.5" width="49" height="19.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="学历：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HUP-NM-TOc">
-                        <rect key="frame" x="273" y="84" width="49" height="19.5"/>
+                        <rect key="frame" x="293" y="84" width="49" height="19.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="家乡：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zGj-8b-8Pw">
-                        <rect key="frame" x="273" y="118.5" width="49" height="19.5"/>
+                        <rect key="frame" x="293" y="118.5" width="49" height="19.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -92,25 +92,25 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="165cm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ij2-d2-oxl">
-                        <rect key="frame" x="322" y="49.5" width="49" height="19.5"/>
+                        <rect key="frame" x="342" y="49.5" width="49" height="19.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="本科" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kkL-61-p5w">
-                        <rect key="frame" x="322" y="84" width="33" height="19.5"/>
+                        <rect key="frame" x="342" y="84" width="33" height="19.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="江苏" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KoS-1C-HG6">
-                        <rect key="frame" x="322" y="118.5" width="33" height="19.5"/>
+                        <rect key="frame" x="342" y="118.5" width="33" height="19.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="女" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7x7-NF-ZkG">
-                        <rect key="frame" x="322" y="15" width="16.5" height="19.5"/>
+                        <rect key="frame" x="342" y="15" width="16.5" height="19.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -125,7 +125,7 @@
                     <constraint firstItem="HUP-NM-TOc" firstAttribute="leading" secondItem="Ha6-zQ-cNT" secondAttribute="leading" id="69U-M0-hhq"/>
                     <constraint firstItem="kkL-61-p5w" firstAttribute="centerY" secondItem="WtH-6D-Ocv" secondAttribute="centerY" id="Dz7-Uq-mY4"/>
                     <constraint firstItem="Ney-DF-RJF" firstAttribute="leading" secondItem="Ha6-zQ-cNT" secondAttribute="leading" id="Eao-n0-2tB"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="Ney-DF-RJF" secondAttribute="trailing" constant="150" id="J8G-PM-mfl"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Ney-DF-RJF" secondAttribute="trailing" constant="130" id="J8G-PM-mfl"/>
                     <constraint firstItem="jq6-XT-9cY" firstAttribute="leading" secondItem="ty4-Mr-xFO" secondAttribute="trailing" id="OAg-tP-kiU"/>
                     <constraint firstItem="KoS-1C-HG6" firstAttribute="leading" secondItem="7x7-NF-ZkG" secondAttribute="leading" id="VX2-BZ-28m"/>
                     <constraint firstItem="HUP-NM-TOc" firstAttribute="centerY" secondItem="WtH-6D-Ocv" secondAttribute="centerY" id="W6I-wn-lIT"/>
