@@ -49,7 +49,7 @@ playground.xcworkspace
 
 Pods
 !Podfile
-!Podfile.lock
+Podfile.lock
 
 # Carthage
 #
