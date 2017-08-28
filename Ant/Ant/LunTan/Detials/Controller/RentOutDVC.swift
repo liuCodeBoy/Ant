@@ -13,7 +13,10 @@ class RentOutDVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var tableView: UITableView?
     
     var modelInfo: LunTanDetialModel?
-     
+    
+    var houseRentId  = 0
+    
+    lazy var urls = [String]()
     override func viewDidLoad() {
         super.viewDidLoad()
         loadDetialTableView()
@@ -23,7 +26,7 @@ class RentOutDVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         self.tabBarController?.tabBar.isHidden = true
         menuView.frame = CGRect(x: 0, y: screenHeight - 124, width: screenWidth, height: 60)
         self.view.addSubview(menuView)
-        loadCellData(index: 1)
+        loadCellData()
 
     }
     
@@ -77,13 +80,6 @@ class RentOutDVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             
             let frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.width * 0.6)
             
-            let urls = [
-            "http://img3.cache.netease.com/photo/0009/2016-05-27/BO1HVHOV0AI20009.jpg",
-            "http://img3.cache.netease.com/photo/0009/2016-05-27/BO1HVIJ30AI20009.png",
-            "http://img5.cache.netease.com/photo/0009/2016-05-27/BO1HVLIM0AI20009.jpg",
-            "http://img6.cache.netease.com/photo/0009/2016-05-27/BO1HVJCD0AI20009.jpg",
-            "http://img2.cache.netease.com/photo/0009/2016-05-27/BO1HVPUT0AI20009.png"
-            ]
         
             var urlArray: [URL] = [URL]()
             for str in urls {
@@ -196,8 +192,14 @@ class RentOutDVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         case 2:
             let connactoptions = tableView.dequeueReusableCell(withIdentifier: "connactOptions") as! ConnactOptions
             
-            if let key = modelInfo?.connactDict[indexPath.row].first?.key {
+//            guard modelInfo.con else {
+//                <#statements#>
+//            }
+            
+            if let contact = modelInfo?.connactDict[indexPath.row] {
+                if  let key = contact.first?.key{
                 connactoptions.con_Ways.text = key
+                }
             }
             if let value = modelInfo?.connactDict[indexPath.row].first?.value {
                 connactoptions.con_Detial.text = value
@@ -291,11 +293,12 @@ extension RentOutDVC {
     
     // MARK:- load data
     
-    fileprivate func loadCellData(index: Int) {
+    fileprivate func loadCellData() {
         let group = DispatchGroup()
         //将当前的下载操作添加到组中
         group.enter()
-        NetWorkTool.shareInstance.infoDetial(VCType: .house, id: index + 1) { [weak self](result, error)  in
+        
+        NetWorkTool.shareInstance.infoDetial(VCType: .house, id: houseRentId) { [weak self](result, error)  in
             //在这里异步加载任务
             
             if error != nil {

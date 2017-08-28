@@ -32,6 +32,10 @@ class NetWorkTool: AFHTTPSessionManager {
     static let shareInstance : NetWorkTool = {
         let  tools = NetWorkTool()
         tools.responseSerializer.acceptableContentTypes?.insert("text/html")
+        tools.responseSerializer.acceptableContentTypes?.insert("application/json")
+        tools.responseSerializer.acceptableContentTypes?.insert("text/plain")
+        tools.responseSerializer.acceptableContentTypes?.insert("text/json")
+
        return tools
     }()
     
@@ -208,7 +212,7 @@ extension NetWorkTool {
                      cate_2 : String,
                      rootpath : String,
                      savepath : LunTanType.RawValue,
-                     image  : UIImage,
+                     image  : [UIImage],
                      title : String,
                      finished: @escaping (_ result: [String: AnyObject]?, _ error: Error?) -> ()) {
         //1.获取请求的URLString
@@ -218,9 +222,11 @@ extension NetWorkTool {
         let parameters = ["cate_1": cate_1, "cate_2" : cate_2 , "rootpath" : rootpath , "savepath" : savepath , "title" : title ] as [String : Any]
         //3.发送请求参数
         post(urlString, parameters: parameters, constructingBodyWith: { [weak self](formData) in
-            if let imageData = UIImageJPEGRepresentation(image, 0.5){
+            for pic in image {
+            if let imageData = UIImageJPEGRepresentation(pic, 0.5){
             let imageName =  self?.getNowTime()
-             formData.appendPart(withFileData: imageData, name: "image", fileName: imageName! , mimeType: "image/png")
+            formData.appendPart(withFileData: imageData, name: "image", fileName: imageName! , mimeType: "image/png")
+              }
             }
 
         }, progress: { (Progress) in
@@ -231,7 +237,12 @@ extension NetWorkTool {
             }
             finished(resultDict , nil)
             //将数组数据回调给外界控制器
+            print(resultDict)
+            
         }) { (URLSessionDataTask, error) in
+            
+            
+            print(error)
             finished(nil , error)
         }
     }

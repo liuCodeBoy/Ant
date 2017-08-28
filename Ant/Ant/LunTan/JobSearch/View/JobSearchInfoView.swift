@@ -154,6 +154,7 @@ fileprivate let  cellID = "cellID"
                 switch indexPath.row {
                 case 0:
                     cell?.textLabel?.text = "联系人名称"
+                    cell?.detailTextLabel?.text = "asdasds"
                 case 1:
                     cell?.textLabel?.text  = "联系电话"
                 case 2:

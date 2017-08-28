@@ -17,7 +17,7 @@ class HouseRentStatus: NSObject {
     var house_source: String?
     var price: String?
     var contact_name: String?
-    var id : Int?
+    var id : NSNumber?
     var picture : [String]?
   
     override func setValue(_ value: Any?, forUndefinedKey key: String) { }
