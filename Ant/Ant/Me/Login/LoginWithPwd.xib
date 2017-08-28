@@ -103,7 +103,7 @@
                     <items>
                         <navigationItem title="密码登录" id="DIm-2a-ed5">
                             <barButtonItem key="backBarButtonItem" title="返回" id="Yk2-X3-7dZ"/>
-                            <barButtonItem key="leftBarButtonItem" image="login_nav_icon_arrow_return" style="plain" id="JQZ-dJ-U23">
+                            <barButtonItem key="leftBarButtonItem" image="login_nav_icon_arrow_return" style="done" id="JQZ-dJ-U23">
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <action selector="back:" destination="-1" id="IWc-AG-FAG"/>

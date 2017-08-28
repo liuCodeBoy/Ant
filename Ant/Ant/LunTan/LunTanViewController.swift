@@ -58,6 +58,11 @@ class LunTanViewController: UIViewController,UITableViewDelegate,UITableViewData
          self.view.addSubview(tableView)
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        self.tabBarController?.tabBar.isHidden = false
+    }
+    
 
     
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {

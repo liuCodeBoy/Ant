@@ -8,7 +8,7 @@
 
 import UIKit
 let isLoginNotification = NSNotification.Name(rawValue:"didLogin")
- let appdelegate = UIApplication.shared.delegate as? AppDelegate
+let appdelegate = UIApplication.shared.delegate as? AppDelegate
 class ProfileViewController: UIViewController {
     var  modelView : UIView?
     var tableView: UITableView?
@@ -27,6 +27,7 @@ class ProfileViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
         self.tabBarController?.tabBar.isHidden = false
 
       }
@@ -109,19 +110,36 @@ extension ProfileViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        if indexPath.section == 0 {
-            //            isLogin ? print("you have login") : loadLoginViewController()
-            loadLoginViewController()
-        }
-        
-        
-        if indexPath.section == 1 && indexPath.row == 2{
-              addSliderView()
+        if isLogin == true {
+            switch indexPath.section {
+            case 0:
+                loadSelfProfileController()
+            case 1:
+                switch indexPath.row {
+                case 0:
+                    print("my issue")
+                case 1:
+                    print("my favourite")
+                case 2:
+                    addSliderView()
+                case 3:
+                    print("my settings")
+                default: break
+                }
+            case 2:
+                print("advice")
+            default: break
+            }
+        } else {
+            if indexPath.section == 1 && indexPath.row == 2 {
+                addSliderView()
+            } else {
+                needLogin()
+            }
             
         }
-        if indexPath.section == 1 && indexPath.row != 2 {
-            needLogin()
-        }
+        
+       
     }
     
 
@@ -214,14 +232,19 @@ extension  ProfileViewController {
 
 extension ProfileViewController {
     
-     fileprivate func loadLoginViewController() {
+    fileprivate func loadLoginViewController() {
         
         let loginVC = LoginViewController()
         self.navigationController?.navigationBar.isTranslucent = false
         
         self.navigationController?.pushViewController(loginVC, animated: true)
         
-        
+    }
+    
+    fileprivate func loadSelfProfileController() {
+        let selfprofileVC = UIStoryboard.init(name: "SelfProfile", bundle: nil).instantiateInitialViewController()!
+        self.navigationController?.pushViewController(selfprofileVC, animated: true)
+        self.tabBarController?.tabBar.isHidden = true
     }
 }
 

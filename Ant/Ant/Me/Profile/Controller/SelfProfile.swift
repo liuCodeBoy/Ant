@@ -57,6 +57,28 @@ class SelfProfile: UITableViewController {
     override func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return 0.0001
     }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "nickname" {
+            let dest = segue.destination as! SelfDetialViewController
+            dest.info = self.nickName.text!
+            
+            dest.changeClosure = { (text) in
+                self.nickName.text = text
+            }
+        } else if segue.identifier == "phone" {
+            let dest = segue.destination as! SelfDetialViewController
+            dest.info = self.phoneNumber.text!
+            dest.changeClosure = { (test) in
+                self.phoneNumber.text = test
+            }
+            
+        } else {
+            
+        }
+        
+    }
 
 
 }

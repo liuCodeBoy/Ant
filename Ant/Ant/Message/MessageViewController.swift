@@ -73,8 +73,6 @@ class MessageViewController: UIViewController ,UITableViewDataSource,UITableView
         cell?.accessoryType = .disclosureIndicator
         return cell!
     }
+
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.navigationController?.pushViewController(UIStoryboard.init(name: "SelfProfile", bundle: nil).instantiateInitialViewController()!, animated: true)
-    }
 }
