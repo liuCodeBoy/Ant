@@ -118,7 +118,7 @@
                     </textAttributes>
                     <items>
                         <navigationItem title="用户注册" id="l6L-1s-fAL">
-                            <barButtonItem key="leftBarButtonItem" image="login_nav_icon_arrow_return" style="plain" id="Y3N-AF-G4r">
+                            <barButtonItem key="leftBarButtonItem" title="Item" image="login_nav_icon_arrow_return" style="done" id="Y3N-AF-G4r">
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <action selector="back:" destination="-1" id="kyo-b7-Kd3"/>

@@ -189,6 +189,7 @@
 		D3399A961F4EC771009DACD0 /* ThemeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33999D61F4EC771009DACD0 /* ThemeColor.swift */; };
 		D3399A971F4EC771009DACD0 /* TopScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33999D71F4EC771009DACD0 /* TopScrollView.swift */; };
 		D3399A9B1F4EC9C8009DACD0 /* BaseTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3399A9A1F4EC9C8009DACD0 /* BaseTabBarVC.swift */; };
+		D39AA8EA1F53EDE600FBB060 /* SelfDetialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39AA8E91F53EDE600FBB060 /* SelfDetialViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -380,6 +381,7 @@
 		D33999D61F4EC771009DACD0 /* ThemeColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeColor.swift; sourceTree = "<group>"; };
 		D33999D71F4EC771009DACD0 /* TopScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopScrollView.swift; sourceTree = "<group>"; };
 		D3399A9A1F4EC9C8009DACD0 /* BaseTabBarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTabBarVC.swift; sourceTree = "<group>"; };
+		D39AA8E91F53EDE600FBB060 /* SelfDetialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelfDetialViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -471,10 +473,10 @@
 		D33998C81F4EC007009DACD0 /* Ant */ = {
 			isa = PBXGroup;
 			children = (
-				D33998E61F4EC770009DACD0 /* LunTan */,
 				D339997B1F4EC771009DACD0 /* Main */,
-				D33999981F4EC771009DACD0 /* Me */,
+				D33998E61F4EC770009DACD0 /* LunTan */,
 				D33999AF1F4EC771009DACD0 /* Message */,
+				D33999981F4EC771009DACD0 /* Me */,
 				D33999B31F4EC771009DACD0 /* Others */,
 				D33999BB1F4EC771009DACD0 /* Tools */,
 				D33998DE1F4EC5CB009DACD0 /* AppDelegate.swift */,
@@ -942,6 +944,7 @@
 			isa = PBXGroup;
 			children = (
 				D33999AB1F4EC771009DACD0 /* SelfProfile.swift */,
+				D39AA8E91F53EDE600FBB060 /* SelfDetialViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1373,6 +1376,7 @@
 				D3399A431F4EC771009DACD0 /* SecondHandIssueVC.swift in Sources */,
 				D3399A631F4EC771009DACD0 /* NoCommandCell.swift in Sources */,
 				D3399A551F4EC771009DACD0 /* NewsDetailVCViewController.swift in Sources */,
+				D39AA8EA1F53EDE600FBB060 /* SelfDetialViewController.swift in Sources */,
 				D3399A221F4EC771009DACD0 /* InviteJobInfoView.swift in Sources */,
 				D33999E61F4EC771009DACD0 /* CustomStyle-Extension.swift in Sources */,
 				D31917FF1F4FD5AB002423C7 /* CityWideVC.swift in Sources */,

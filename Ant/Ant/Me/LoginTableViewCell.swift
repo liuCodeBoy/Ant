@@ -14,9 +14,6 @@ class LoginTableViewCell: UITableViewCell {
     @IBOutlet weak var loginHint: UILabel!
     @IBOutlet weak var detialHint: UILabel!
     
-    var push: (() -> ())?
-
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         let   profileNumber  = UserInfoModel.shareInstance.account?.phoneNumber
@@ -26,8 +23,8 @@ class LoginTableViewCell: UITableViewCell {
         NotificationCenter.default.addObserver(self, selector: #selector(didLogin), name: isLoginNotification, object: nil)
         
         //登录后点击头像跳转个人界面
-        let avatarTap = UITapGestureRecognizer(target: self, action: #selector(loadSelfProfileVC))
-        avaImage.addGestureRecognizer(avatarTap)
+//        let avatarTap = UITapGestureRecognizer(target: self, action: #selector(loadSelfProfileVC))
+//        avaImage.addGestureRecognizer(avatarTap)
     }
     
     deinit {
@@ -37,7 +34,7 @@ class LoginTableViewCell: UITableViewCell {
     func didLogin() {
         if isLogin == true {
             loginHint.text = UserInfoModel.shareInstance.account?.phoneNumber
-            detialHint.text = ""
+            detialHint.text = "查看个人资料"
         }
     }
     
@@ -45,8 +42,5 @@ class LoginTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
-    func loadSelfProfileVC() {
-    
-    }
     
 }

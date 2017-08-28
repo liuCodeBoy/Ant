@@ -45,13 +45,13 @@
                                                     </state>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="标题" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ua7-a0-ryh">
-                                                    <rect key="frame" x="8" y="42" width="357" height="21.5"/>
+                                                    <rect key="frame" x="8" y="42" width="396" height="21.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X8f-1U-tCj">
-                                                    <rect key="frame" x="0.0" y="71.5" width="375" height="80"/>
+                                                    <rect key="frame" x="0.0" y="71.5" width="414" height="80"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="moren" translatesAutoresizingMaskIntoConstraints="NO" id="QZs-hd-gMu">
                                                             <rect key="frame" x="20" y="10" width="80" height="60"/>
@@ -60,7 +60,7 @@
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="正文" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KIm-dl-HVe">
-                                                            <rect key="frame" x="108" y="30" width="255" height="20"/>
+                                                            <rect key="frame" x="108" y="30" width="294" height="20"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -79,7 +79,7 @@
                                                     </constraints>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="45分钟前" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="50W-rZ-IBe">
-                                                    <rect key="frame" x="321" y="159" width="44" height="12"/>
+                                                    <rect key="frame" x="360" y="159" width="44" height="12"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
@@ -188,7 +188,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="正文" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fpg-Nw-lZD">
-                                                    <rect key="frame" x="120" y="25" width="235" height="21"/>
+                                                    <rect key="frame" x="120" y="25" width="274" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -200,7 +200,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="二手市场" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u6S-BO-Z9c">
-                                                    <rect key="frame" x="318" y="86" width="45" height="13.5"/>
+                                                    <rect key="frame" x="357" y="86" width="45" height="13.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
@@ -258,7 +258,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="290"/>
                                 </imageView>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="IJw-7g-xB6" userLabel="avatar">
-                                    <rect key="frame" x="118" y="75" width="140" height="140"/>
+                                    <rect key="frame" x="118" y="75.5" width="140" height="139"/>
                                     <constraints>
                                         <constraint firstAttribute="width" secondItem="IJw-7g-xB6" secondAttribute="height" multiplier="1:1" id="Kdc-W4-WG3"/>
                                     </constraints>
@@ -275,7 +275,7 @@
                                     </connections>
                                 </button>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle" translatesAutoresizingMaskIntoConstraints="NO" id="lGU-lL-Bi8" userLabel="circle">
-                                    <rect key="frame" x="103" y="60.5" width="169" height="169"/>
+                                    <rect key="frame" x="103.5" y="61" width="168" height="168"/>
                                     <constraints>
                                         <constraint firstAttribute="width" secondItem="lGU-lL-Bi8" secondAttribute="height" multiplier="1:1" id="35q-gw-Cny"/>
                                     </constraints>
