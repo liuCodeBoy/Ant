@@ -70,7 +70,11 @@ extension HouseRentListVC: UITableViewDelegate,UITableViewDataSource {
     }
     // tableView点击触发事件
     func  tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //取出模型
+        let  model = self.modelInfo[indexPath.row]
         let rentOutDVC = RentOutDVC()
+        rentOutDVC.houseRentId = Int(model.id!)
+        rentOutDVC.urls = model.picture!
         self.navigationController?.pushViewController(rentOutDVC, animated: true)
     }
     
@@ -102,6 +106,7 @@ extension HouseRentListVC {
         self.tableView?.delegate = self
         self.tableView?.dataSource = self
         self.tableView?.sectionIndexColor = UIColor.init(red: 252/255.0, green: 74/255.0, blue: 132/255.0, alpha: 1.0)
+        self.tableView?.showsVerticalScrollIndicator = false
         self.view.addSubview(self.tableView!)
         //设置回调
         //默认下拉刷新
@@ -287,6 +292,11 @@ extension HouseRentListVC {
 // MARK:- Pass the data to the tableView
 extension HouseRentListVC {
     
+    override func viewWillAppear(_ animated: Bool) {
+        self.tabBarController?.tabBar.isHidden = true
+    }
+    
+    
     // MARK:- DispatchGroup
     
     fileprivate func loadCellData(page : Int) {
@@ -320,7 +330,6 @@ extension HouseRentListVC {
             for i in 0..<resultList.count {
                 let dict = resultList[i]
                 let basic = HouseRentStatus.mj_object(withKeyValues: dict)
-                 print(basic?.picture)
                 self?.modelInfo.append(basic!)
                 
             }
@@ -332,8 +341,6 @@ extension HouseRentListVC {
             }
             //离开当前组
             group.leave()
-            
-            
         }
         group.notify(queue: DispatchQueue.main) {
             //在这里告诉调用者,下完完毕,执行下一步操作

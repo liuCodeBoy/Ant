@@ -74,8 +74,9 @@ class GiveOutVC: UIViewController,TZImagePickerControllerDelegate{
         if token == nil {
             self.presentHintMessage(target: self, hintMessgae: "您尚未登陆")
         }else{
-
-            NetWorkTool.shareInstance.publishInfo("27b8aa7d70b76adf024079ab8093282a", cate_1: LunTanType.house.rawValue , cate_2: "1", rootpath: "forum_image", savepath: LunTanType.house.rawValue , image: #imageLiteral(resourceName: "moren"), title:"程永康吊人一个") { (userinfo, error) in
+            let cate_2 = (self.picPickerView?.images.count)! > 1 ? "2" : "1"
+            
+            NetWorkTool.shareInstance.publishInfo("27b8aa7d70b76adf024079ab8093282a", cate_1: LunTanType.house.rawValue , cate_2: cate_2, rootpath: "forum_image", savepath: LunTanType.house.rawValue , image: (self.picPickerView?.images)!, title:"8.28") { (userinfo, error) in
                 if error == nil &&  userinfo?["code"] as? String == "200"{
                     SVProgressHUD.showSuccess(withStatus: "发布成功")
                 }

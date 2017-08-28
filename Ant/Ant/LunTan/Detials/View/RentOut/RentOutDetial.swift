@@ -40,9 +40,9 @@ class RentOutDetial: UITableViewCell {
             if let label = viewModel?.labelItems?[0] {
                 lable1.setTitleWithSpace(label)
             }
-            if let label = viewModel?.labelItems?[1] {
-                lable2.setTitleWithSpace(label)
-            }
+//            if let label = viewModel?.labelItems?[1] {
+//                lable2.setTitleWithSpace(label)
+//            }
             
         }
       

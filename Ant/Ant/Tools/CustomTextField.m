@@ -22,25 +22,25 @@
     CGFloat  _fontSize;
 }
 
-
--(CGRect)textRectForBounds:(CGRect)bounds{
-    CGRect  inset = CGRectMake(bounds.origin.x + 15 ,  -(bounds.size.height / 2) + 25, bounds.size.width - 30,  bounds.size.height);
-    return inset;
-}
-
-
-
--(CGRect)placeholderRectForBounds:(CGRect)bounds {
-     CGRect  inset = CGRectMake(bounds.origin.x + 15 ,  -(bounds.size.height / 2) + 25, bounds.size.width - 30,  bounds.size.height);
-    return inset;
-
-}
-
--(CGRect)editingRectForBounds:(CGRect)bounds{
-    CGRect  inset = CGRectMake(bounds.origin.x + 15 ,  -(bounds.size.height / 2) + 25, bounds.size.width - 30,  bounds.size.height);
-    return inset;
-
-}
+//
+//-(CGRect)textRectForBounds:(CGRect)bounds{
+//    CGRect  inset = CGRectMake(bounds.origin.x + 15 ,  -(bounds.size.height / 2) + 25, bounds.size.width - 30,  bounds.size.height);
+//    return inset;
+//}
+//
+//
+//
+//-(CGRect)placeholderRectForBounds:(CGRect)bounds {
+//     CGRect  inset = CGRectMake(bounds.origin.x + 15 ,  -(bounds.size.height / 2) + 25, bounds.size.width - 30,  bounds.size.height);
+//    return inset;
+//
+//}
+//
+//-(CGRect)editingRectForBounds:(CGRect)bounds{
+//    CGRect  inset = CGRectMake(bounds.origin.x + 15 ,  -(bounds.size.height / 2) + 25, bounds.size.width - 30,  bounds.size.height);
+//    return inset;
+//
+//}
 
 /**
  *  自定义初始化方法
@@ -102,6 +102,7 @@
         [attString addAttribute:NSForegroundColorAttributeName value:[UIColor blueColor] range:NSMakeRange(text.length - 1, 1)];
         _label.attributedText = attString;
     }
+
 }
 
 /**
@@ -109,7 +110,8 @@
  */
 -(void)createLabel
 {
-    _label = [[UILabel alloc]initWithFrame:CGRectMake(_frame.origin.x + 15,  -(_frame.size.height / 2) + 25 , _frame.size.width, _frame.size.height)];
+    _label = [[UILabel alloc]initWithFrame:CGRectMake(_frame.origin.x + 15,  0 , _frame.size.width - 30, _frame.size.height)];
+
     if (_leftView) {
         _label.frame = CGRectMake(_leftView.frame.size.width, _label.frame.origin.y, _label.frame.size.width-_leftView.frame.size.width, _label.frame.size.height);
     }
@@ -161,7 +163,7 @@
     
     //判断是否是我们想要限定的那个输入框
     {
-        if ([toBeString length] > 150) { //如果输入框内容大于20则弹出警告
+        if ([toBeString length] > 150) { //如果输入框内容大于150则弹出警告
             textField.text = [toBeString substringToIndex: 150];
             [SVProgressHUD showErrorWithStatus:@"你的输入超过最大限额"];
             
@@ -169,7 +171,6 @@
         }
     }
     
-    return YES;
     return YES;
 }
 //点击清空按钮

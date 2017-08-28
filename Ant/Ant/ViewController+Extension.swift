@@ -20,7 +20,6 @@ extension UIViewController{
         self.navigationController?.navigationBar.barTintColor = UIColor.applicationMainColor()
     }
     
-
 }
 
 

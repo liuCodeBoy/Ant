@@ -125,7 +125,7 @@ class HouseRentTabView: UITableView,UITableViewDelegate, UITableViewDataSource,U
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var  cell = tableView.dequeueReusableCell(withIdentifier: cellID)
         if  cell == nil {
-            cell = UITableViewCell.init(style: .default, reuseIdentifier: cellID)
+            cell = UITableViewCell.init(style: .value1 , reuseIdentifier: cellID)
         }
         cell?.accessoryType = .disclosureIndicator
         if indexPath.section == 0 {
@@ -169,11 +169,12 @@ class HouseRentTabView: UITableView,UITableViewDelegate, UITableViewDataSource,U
             }
             
         }
-        
         return cell!
-        
-        
     }
+    
+//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        
+//    }
     
 }
 

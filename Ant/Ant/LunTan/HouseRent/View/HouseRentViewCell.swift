@@ -48,7 +48,10 @@ class HouseRentViewCell: UITableViewCell {
             if let picture = viewModel.picture?.first{
                 
                 self.picture.sd_setImage(with:  NSURL.init(string: picture)! as URL, placeholderImage: #imageLiteral(resourceName: "moren"))
-            }
+            }else {
+                self.picture.image = #imageLiteral(resourceName: "moren")
+            
+             }
             
         }
     }
