@@ -9,6 +9,7 @@
 import UIKit
 
 class UserInfoModel {
+    
     static let shareInstance: UserInfoModel = UserInfoModel()
     
     var account: UserInfo?
@@ -19,6 +20,7 @@ class UserInfoModel {
     }
     
     var isLogin: Bool {
+        
         if account == nil {
             return false
         }
@@ -26,7 +28,6 @@ class UserInfoModel {
         guard (account?.phoneNumber) != nil else {
             return false
         }
-        
         return true
         
     }

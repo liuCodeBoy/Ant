@@ -49,10 +49,6 @@ extension UIButton {
     
 }
 
-extension UIAlertController {
-
-}
-
 extension UIViewController {
     
 

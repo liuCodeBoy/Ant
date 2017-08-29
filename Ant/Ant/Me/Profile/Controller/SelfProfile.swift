@@ -9,7 +9,7 @@
 import UIKit
 
 class SelfProfile: UITableViewController {
-    
+        
     @IBOutlet weak var avatar: UIImageView!
     @IBOutlet weak var nickName: UILabel!
     @IBOutlet weak var sex: UILabel!
@@ -18,8 +18,15 @@ class SelfProfile: UITableViewController {
     @IBOutlet weak var exitLogin: UIButton!
     @IBAction func exit(_ sender: UIButton) {
         
-        print("exit")
+        //清除用户登录信息
+        let manager = FileManager.default
+        let srcUrl = NSHomeDirectory() + "/Documents/userInfo.plist"
+        try! manager.removeItem(atPath: srcUrl)
+        isLogin = false
         
+        NotificationCenter.default.post(name: isLoginNotification, object: nil)
+        
+        self.navigationController?.popViewController(animated: true)
     }
     
 
@@ -79,6 +86,7 @@ class SelfProfile: UITableViewController {
         }
         
     }
+    
 
 
 }

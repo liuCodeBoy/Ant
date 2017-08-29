@@ -18,7 +18,7 @@ class LoginTableViewCell: UITableViewCell {
         super.awakeFromNib()
         let   profileNumber  = UserInfoModel.shareInstance.account?.phoneNumber
         loginHint.text = profileNumber != nil ? profileNumber :  "点击登录账号"
-        detialHint.text = profileNumber != nil ? nil :  "登陆享用同步数据等完整功能"
+        detialHint.text = profileNumber != nil ? "查看个人资料" :  "登陆享用同步数据等完整功能"
         //接受通知
         NotificationCenter.default.addObserver(self, selector: #selector(didLogin), name: isLoginNotification, object: nil)
         
@@ -35,6 +35,10 @@ class LoginTableViewCell: UITableViewCell {
         if isLogin == true {
             loginHint.text = UserInfoModel.shareInstance.account?.phoneNumber
             detialHint.text = "查看个人资料"
+        } else {
+            loginHint.text = "点击登录账号"
+            detialHint.text = "登陆享用同步数据等完整功能"
+            
         }
     }
     

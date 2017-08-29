@@ -345,16 +345,16 @@
 		D33999961F4EC771009DACD0 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		D33999971F4EC771009DACD0 /* WeatherModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
 		D339999A1F4EC771009DACD0 /* Extension-CustomAttrs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension-CustomAttrs.swift"; sourceTree = "<group>"; };
-		D339999B1F4EC771009DACD0 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		D339999C1F4EC771009DACD0 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
-		D339999D1F4EC771009DACD0 /* LoginWithPwd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginWithPwd.swift; sourceTree = "<group>"; };
-		D339999E1F4EC771009DACD0 /* LoginWithPwd.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginWithPwd.xib; sourceTree = "<group>"; };
-		D339999F1F4EC771009DACD0 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
-		D33999A01F4EC771009DACD0 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		D33999A11F4EC771009DACD0 /* Register.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
-		D33999A21F4EC771009DACD0 /* Register.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Register.xib; sourceTree = "<group>"; };
-		D33999A31F4EC771009DACD0 /* UserInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
-		D33999A41F4EC771009DACD0 /* UserInfoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoModel.swift; sourceTree = "<group>"; };
+		D339999B1F4EC771009DACD0 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ../LoginViewController.swift; sourceTree = "<group>"; };
+		D339999C1F4EC771009DACD0 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LoginViewController.xib; path = ../LoginViewController.xib; sourceTree = "<group>"; };
+		D339999D1F4EC771009DACD0 /* LoginWithPwd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginWithPwd.swift; path = ../LoginWithPwd.swift; sourceTree = "<group>"; };
+		D339999E1F4EC771009DACD0 /* LoginWithPwd.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LoginWithPwd.xib; path = ../LoginWithPwd.xib; sourceTree = "<group>"; };
+		D339999F1F4EC771009DACD0 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileTableViewCell.swift; path = ../ProfileTableViewCell.swift; sourceTree = "<group>"; };
+		D33999A01F4EC771009DACD0 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = ../ProfileViewController.swift; sourceTree = "<group>"; };
+		D33999A11F4EC771009DACD0 /* Register.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Register.swift; path = ../Register.swift; sourceTree = "<group>"; };
+		D33999A21F4EC771009DACD0 /* Register.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Register.xib; path = ../Register.xib; sourceTree = "<group>"; };
+		D33999A31F4EC771009DACD0 /* UserInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserInfo.swift; path = ../UserInfo.swift; sourceTree = "<group>"; };
+		D33999A41F4EC771009DACD0 /* UserInfoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserInfoModel.swift; path = ../UserInfoModel.swift; sourceTree = "<group>"; };
 		D33999A51F4EC771009DACD0 /* LoginTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginTableViewCell.swift; sourceTree = "<group>"; };
 		D33999A61F4EC771009DACD0 /* LoginTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginTableViewCell.xib; sourceTree = "<group>"; };
 		D33999AB1F4EC771009DACD0 /* SelfProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelfProfile.swift; sourceTree = "<group>"; };
@@ -915,17 +915,10 @@
 		D33999991F4EC771009DACD0 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				D39AA8EC1F54FAD900FBB060 /* Model */,
+				D39AA8ED1F54FAD900FBB060 /* View */,
+				D39AA8EB1F54FAD900FBB060 /* Controller */,
 				D339999A1F4EC771009DACD0 /* Extension-CustomAttrs.swift */,
-				D339999B1F4EC771009DACD0 /* LoginViewController.swift */,
-				D339999C1F4EC771009DACD0 /* LoginViewController.xib */,
-				D339999D1F4EC771009DACD0 /* LoginWithPwd.swift */,
-				D339999E1F4EC771009DACD0 /* LoginWithPwd.xib */,
-				D339999F1F4EC771009DACD0 /* ProfileTableViewCell.swift */,
-				D33999A01F4EC771009DACD0 /* ProfileViewController.swift */,
-				D33999A11F4EC771009DACD0 /* Register.swift */,
-				D33999A21F4EC771009DACD0 /* Register.xib */,
-				D33999A31F4EC771009DACD0 /* UserInfo.swift */,
-				D33999A41F4EC771009DACD0 /* UserInfoModel.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -1085,6 +1078,37 @@
 				D33999961F4EC771009DACD0 /* SearchViewController.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		D39AA8EB1F54FAD900FBB060 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D33999A01F4EC771009DACD0 /* ProfileViewController.swift */,
+				D339999B1F4EC771009DACD0 /* LoginViewController.swift */,
+				D339999D1F4EC771009DACD0 /* LoginWithPwd.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D39AA8EC1F54FAD900FBB060 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D33999A31F4EC771009DACD0 /* UserInfo.swift */,
+				D33999A41F4EC771009DACD0 /* UserInfoModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D39AA8ED1F54FAD900FBB060 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D33999A11F4EC771009DACD0 /* Register.swift */,
+				D33999A21F4EC771009DACD0 /* Register.xib */,
+				D339999E1F4EC771009DACD0 /* LoginWithPwd.xib */,
+				D339999F1F4EC771009DACD0 /* ProfileTableViewCell.swift */,
+				D339999C1F4EC771009DACD0 /* LoginViewController.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

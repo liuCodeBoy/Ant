@@ -52,15 +52,17 @@ class HouseNeedRentVC: UIViewController,UITableViewDelegate,UITableViewDataSourc
         
         let cell = tableView.dequeueReusableCell(withIdentifier: houseNeedRentCellID) as! LunTanListWithAvatarCell
         cell.viewModel = modelInfo[indexPath.row]
+        //头像点击事件
+        cell.avatarClick = {
+            self.present(UIStoryboard.init(name: "Others", bundle: nil).instantiateInitialViewController()!, animated: true, completion: nil)
+        }
         return cell
     }
     // tableView点击触发事件
     func  tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        let rentNeedVC =  RentNeedDVC()
-//        self.navigationController?.pushViewController(rentNeedVC, animated: true)
+        let rentNeedVC =  RentNeedDVC()
+        self.navigationController?.pushViewController(rentNeedVC, animated: true)
         
-        let vc = UIStoryboard.init(name: "Others", bundle: nil).instantiateInitialViewController()!
-        present(vc, animated: true, completion: nil)
     }
     
   
