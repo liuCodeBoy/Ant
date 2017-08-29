@@ -9,6 +9,7 @@
 import UIKit
 let isLoginNotification = NSNotification.Name(rawValue:"didLogin")
 let appdelegate = UIApplication.shared.delegate as? AppDelegate
+
 class ProfileViewController: UIViewController {
     var  modelView : UIView?
     var tableView: UITableView?
@@ -16,9 +17,6 @@ class ProfileViewController: UIViewController {
     var silderView : UISlider?
     var items = ["我的发布", "我的收藏", "正文字体", "个人设置"]
     var imgs = [#imageLiteral(resourceName: "profile_icon_edit"), #imageLiteral(resourceName: "profile_icon_collect"), #imageLiteral(resourceName: "profile_icon_textfont"), #imageLiteral(resourceName: "profile_icon_setting")]
-    
-    var isLogin: Bool = UserInfoModel.shareInstance.isLogin
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,9 +27,7 @@ class ProfileViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         self.tabBarController?.tabBar.isHidden = false
-
       }
-
     }
 
 
@@ -133,6 +129,8 @@ extension ProfileViewController: UITableViewDelegate, UITableViewDataSource {
         } else {
             if indexPath.section == 1 && indexPath.row == 2 {
                 addSliderView()
+            } else if indexPath.section == 0 {
+                loadLoginViewController()
             } else {
                 needLogin()
             }

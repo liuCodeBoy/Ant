@@ -36,11 +36,8 @@
                         <color key="textColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dollar" translatesAutoresizingMaskIntoConstraints="NO" id="BV4-Ip-wvg">
-                        <rect key="frame" x="421" y="28" width="10" height="25"/>
-                    </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="900" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ogX-TC-u5x">
-                        <rect key="frame" x="433" y="30" width="32" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$900" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ogX-TC-u5x">
+                        <rect key="frame" x="423" y="30" width="42" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
@@ -50,10 +47,8 @@
                     <constraint firstItem="piZ-75-yTs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="1OV-Fz-wWP"/>
                     <constraint firstItem="Fn1-cD-6rk" firstAttribute="centerY" secondItem="piZ-75-yTs" secondAttribute="centerY" id="2IZ-2B-Pab"/>
                     <constraint firstItem="Fn1-cD-6rk" firstAttribute="leading" secondItem="piZ-75-yTs" secondAttribute="trailing" constant="5" id="DQy-dP-3y0"/>
-                    <constraint firstItem="ogX-TC-u5x" firstAttribute="leading" secondItem="BV4-Ip-wvg" secondAttribute="trailing" constant="2" id="FS5-Ue-oQg"/>
                     <constraint firstItem="ogX-TC-u5x" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="30" id="LDX-og-rrl"/>
                     <constraint firstAttribute="trailing" secondItem="ogX-TC-u5x" secondAttribute="trailing" constant="15" id="N7r-aX-4i7"/>
-                    <constraint firstItem="ogX-TC-u5x" firstAttribute="centerY" secondItem="BV4-Ip-wvg" secondAttribute="centerY" id="URI-WI-npH"/>
                     <constraint firstItem="AR5-jE-iRj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="c6M-yW-j7b"/>
                     <constraint firstItem="piZ-75-yTs" firstAttribute="top" secondItem="AR5-jE-iRj" secondAttribute="bottom" constant="8" id="fNH-IO-3NG"/>
                     <constraint firstItem="AR5-jE-iRj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="fQH-Pf-XJo"/>
@@ -67,7 +62,4 @@
             </connections>
         </tableViewCell>
     </objects>
-    <resources>
-        <image name="dollar" width="10" height="25"/>
-    </resources>
 </document>

@@ -10,6 +10,8 @@ import UIKit
 
 class LunTanListWithAvatarCell: UITableViewCell {
     
+    var avatarClick: (() -> Void)?
+    
     @IBOutlet weak var title: UILabel!
     @IBOutlet weak var avatar: UIImageView!
     @IBOutlet weak var name: UILabel!
@@ -25,10 +27,16 @@ class LunTanListWithAvatarCell: UITableViewCell {
         changeBorderLineStyle(target: lable1, borderColor: .lightGray)
         changeBorderLineStyle(target: lable2, borderColor: skyblue)
         changeBorderLineStyle(target: lable3, borderColor: .red)
-        self.avatar.isUserInteractionEnabled = true
+
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(avatarDidClicked))
+        avatar.addGestureRecognizer(tap)
+
     }
     
-
+    func avatarDidClicked() {
+        avatarClick!()
+    }
     
     
     var viewModel: HouseRentStatus? {

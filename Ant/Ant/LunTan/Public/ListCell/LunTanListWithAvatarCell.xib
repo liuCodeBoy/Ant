@@ -24,7 +24,7 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile_icon_headportrait_notlogin" translatesAutoresizingMaskIntoConstraints="NO" id="ZDL-gL-IMZ">
+                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile_icon_headportrait_notlogin" translatesAutoresizingMaskIntoConstraints="NO" id="ZDL-gL-IMZ">
                         <rect key="frame" x="405" y="20.5" width="40" height="40"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="40" id="AeL-c6-80r"/>
@@ -32,18 +32,20 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="James" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KL1-Mv-R13">
-                        <rect key="frame" x="412" y="62.5" width="26" height="11"/>
+                        <rect key="frame" x="412" y="62.5" width="26" height="19"/>
                         <fontDescription key="fontDescription" type="system" pointSize="8"/>
                         <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ry3-xH-VNj" userLabel="iphoneCall">
-                        <rect key="frame" x="413" y="83.5" width="25" height="25"/>
-                        <color key="backgroundColor" red="0.5300136258" green="0.75684539740000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ry3-xH-VNj" userLabel="iphoneCall">
+                        <rect key="frame" x="415.5" y="91.5" width="20" height="17"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="25" id="DJn-Ed-Sl1"/>
-                            <constraint firstAttribute="width" constant="25" id="LWm-TU-S8W"/>
+                            <constraint firstAttribute="height" constant="17" id="DJn-Ed-Sl1"/>
+                            <constraint firstAttribute="width" constant="20" id="LWm-TU-S8W"/>
                         </constraints>
+                        <state key="normal" image="double_arrow">
+                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </state>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="apartment" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jhh-Mb-dXr">
                         <rect key="frame" x="15" y="83.5" width="60" height="15"/>
@@ -76,7 +78,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50分钟前更新" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SEB-4J-Dcf">
-                        <rect key="frame" x="302.5" y="102" width="70.5" height="13.5"/>
+                        <rect key="frame" x="305" y="102" width="70.5" height="13.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                         <color key="textColor" red="0.72151237726211548" green="0.7216002345085144" blue="0.72148257493972778" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
@@ -116,6 +118,7 @@
         </tableViewCell>
     </objects>
     <resources>
+        <image name="double_arrow" width="34" height="28"/>
         <image name="profile_icon_headportrait_notlogin" width="50" height="50"/>
     </resources>
 </document>
