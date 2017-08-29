@@ -222,10 +222,13 @@ extension NetWorkTool {
         let parameters = ["cate_1": cate_1, "cate_2" : cate_2 , "rootpath" : rootpath , "savepath" : savepath , "title" : title ] as [String : Any]
         //3.发送请求参数
         post(urlString, parameters: parameters, constructingBodyWith: { [weak self](formData) in
+            //确定选择类型
+            var  cateName =  ""
+            cateName =  image.count > 1 ?  "image" :  "image[]"
             for pic in image {
             if let imageData = UIImageJPEGRepresentation(pic, 0.5){
             let imageName =  self?.getNowTime()
-            formData.appendPart(withFileData: imageData, name: "image", fileName: imageName! , mimeType: "image/png")
+            formData.appendPart(withFileData: imageData, name: cateName, fileName: imageName! , mimeType: "image/png")
               }
             }
 

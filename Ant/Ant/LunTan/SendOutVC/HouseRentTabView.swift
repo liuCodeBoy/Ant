@@ -7,11 +7,12 @@
 //
 
 import UIKit
-
+typealias pushModifyVC = (String? , IndexPath) -> (Void)
 class HouseRentTabView: UITableView,UITableViewDelegate, UITableViewDataSource,UITextFieldDelegate {
     var  tableView = UITableView()
     var  textField  : UITextField?
-    
+    //初始化一个闭包类型
+    var  pushModifyVCClouse : pushModifyVC?
     fileprivate let cellID = "cellID"
     
     override init(frame: CGRect, style: UITableViewStyle) {
@@ -89,6 +90,8 @@ class HouseRentTabView: UITableView,UITableViewDelegate, UITableViewDataSource,U
          detailScriptLable.text = "详尽描述"
          detailView.addSubview(detailScriptLable)
          let detailDescriptFiled = CustomTextField.init(frame: CGRect.init(x: 10, y: 30, width: screenWidth - 20 , height: 140), placeholder: "字数在150字以内", clear: true, leftView: nil, fontSize: 12)
+         detailDescriptFiled?.backgroundColor = UIColor.init(red: 240 / 255, green: 240 / 255, blue: 240 / 255, alpha: 1.0)
+
             self.textField = detailDescriptFiled
             detailView.addSubview(detailDescriptFiled!)
             view = detailView
@@ -121,12 +124,85 @@ class HouseRentTabView: UITableView,UITableViewDelegate, UITableViewDataSource,U
         return 50
     }
     
-    
+    //点击事件触发
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+       let  cell = tableView.cellForRow(at: indexPath)
+        cell?.detailTextLabel?.text = " "
+       let  detailText =   cell?.detailTextLabel?.text == nil ?  " " : cell?.detailTextLabel?.text
+//        cell?.detailTextLabel?.text = detailText
+        if indexPath.section == 1 {
+        switch indexPath.row {
+                        case 0:
+                            cell?.textLabel?.text = "所在区域"
+                        case 1:
+                            cell?.textLabel?.text  = "房屋户型"
+                        case 2:
+                            cell?.textLabel?.text = "出租方式"
+                        case 3:
+                            cell?.textLabel?.text = "空出时间"
+                        case 4:
+                            cell?.textLabel?.text = "房屋来源"
+                        case 5:
+                            cell?.textLabel?.text = "出租价格"
+                        case 6:
+                            cell?.textLabel?.text = "最短租期"
+                        default:
+                            cell?.textLabel?.text = ""
+        
+          }
+        }else{
+            if self.pushModifyVCClouse != nil {
+                pushModifyVCClouse!(detailText!, indexPath)
+            }
+        }
+    }
+
+//    else if indexPath.section == 1 {
+//
+//            switch indexPath.row {
+//            case 0:
+//                cell?.textLabel?.text = "所在区域"
+//            case 1:
+//                cell?.textLabel?.text  = "房屋户型"
+//            case 2:
+//                cell?.textLabel?.text = "出租方式"
+//            case 3:
+//                cell?.textLabel?.text = "空出时间"
+//            case 4:
+//                cell?.textLabel?.text = "房屋来源"
+//            case 5:
+//                cell?.textLabel?.text = "出租价格"
+//            case 6:
+//                cell?.textLabel?.text = "最短租期"
+//            default:
+//                cell?.textLabel?.text = ""
+//            }
+//        }else if indexPath.section == 2 {
+//            switch indexPath.row {
+//            case 0:
+//                cell?.textLabel?.text = "联系人名称"
+//            case 1:
+//                cell?.textLabel?.text  = "联系电话"
+//            case 2:
+//                cell?.textLabel?.text = "微信"
+//            case 3:
+//                cell?.textLabel?.text = "QQ"
+//            case 4:
+//                cell?.textLabel?.text = "邮箱"
+//            case 5:
+//                cell?.textLabel?.text = "选择标签"
+//            default:
+//                cell?.textLabel?.text = ""
+//            }
+
+        
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var  cell = tableView.dequeueReusableCell(withIdentifier: cellID)
         if  cell == nil {
             cell = UITableViewCell.init(style: .value1 , reuseIdentifier: cellID)
         }
+         cell?.detailTextLabel?.text = " "
         cell?.accessoryType = .disclosureIndicator
         if indexPath.section == 0 {
             cell?.textLabel?.text = "标题"
@@ -171,10 +247,6 @@ class HouseRentTabView: UITableView,UITableViewDelegate, UITableViewDataSource,U
         }
         return cell!
     }
-    
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        
-//    }
     
 }
 

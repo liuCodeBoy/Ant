@@ -25,6 +25,7 @@ class LunTanListWithAvatarCell: UITableViewCell {
         changeBorderLineStyle(target: lable1, borderColor: .lightGray)
         changeBorderLineStyle(target: lable2, borderColor: skyblue)
         changeBorderLineStyle(target: lable3, borderColor: .red)
+        self.avatar.isUserInteractionEnabled = true
     }
     
 
