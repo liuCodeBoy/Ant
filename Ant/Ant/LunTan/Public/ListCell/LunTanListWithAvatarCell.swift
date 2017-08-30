@@ -35,7 +35,9 @@ class LunTanListWithAvatarCell: UITableViewCell {
     }
     
     func avatarDidClicked() {
-        avatarClick!()
+        if avatarClick != nil {
+          avatarClick!()
+        }
     }
     
     
