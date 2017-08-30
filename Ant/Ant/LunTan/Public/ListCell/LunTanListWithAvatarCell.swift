@@ -27,10 +27,11 @@ class LunTanListWithAvatarCell: UITableViewCell {
         changeBorderLineStyle(target: lable1, borderColor: .lightGray)
         changeBorderLineStyle(target: lable2, borderColor: skyblue)
         changeBorderLineStyle(target: lable3, borderColor: .red)
+
         
         let tap = UITapGestureRecognizer(target: self, action: #selector(avatarDidClicked))
         avatar.addGestureRecognizer(tap)
-        
+
     }
     
     func avatarDidClicked() {

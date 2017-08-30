@@ -146,6 +146,7 @@ class NewsTableView: UITableView ,UITableViewDelegate, UITableViewDataSource{
                     let number = (model?.id)!
                     let url = NSURL.init(string: (model?.url!)!)
                     if self?.showNewsDetailClouse != nil {
+                        
                         self?.showNewsDetailClouse!("\(String(describing: number))", url)
                     }
                 }

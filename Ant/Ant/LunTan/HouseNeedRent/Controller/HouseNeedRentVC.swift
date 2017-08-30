@@ -62,9 +62,8 @@ class HouseNeedRentVC: UIViewController,UITableViewDelegate,UITableViewDataSourc
     func  tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let rentNeedVC =  RentNeedDVC()
         self.navigationController?.pushViewController(rentNeedVC, animated: true)
-        
-    }
-    
+
+    }    
   
 
 
