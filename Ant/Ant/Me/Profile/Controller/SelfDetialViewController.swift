@@ -17,8 +17,10 @@ class SelfDetialViewController: UIViewController {
     @IBOutlet weak var inputText: UITextField!
     
     @IBAction func backBtn(_ sender: UIButton) {
+
         self.navigationController?.popViewController(animated: true)
         self.changeClosure!(inputText.text)
+        self.inputText.sizeToFit()
     }
     
     
@@ -39,5 +41,6 @@ class SelfDetialViewController: UIViewController {
         self.back.layer.cornerRadius = 5
         self.back.layer.masksToBounds = true
     }
+
 
 }

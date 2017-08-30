@@ -219,24 +219,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n0F-wK-bQU">
-                                <rect key="frame" x="16" y="38" width="343" height="40"/>
-                                <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B43-WI-bzi" userLabel="Input Text">
-                                        <rect key="frame" x="5" y="9.5" width="333" height="21"/>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstItem="B43-WI-bzi" firstAttribute="centerY" secondItem="n0F-wK-bQU" secondAttribute="centerY" id="9YS-vK-PAD"/>
-                                    <constraint firstAttribute="height" constant="40" id="VpZ-lb-7w6"/>
-                                    <constraint firstItem="B43-WI-bzi" firstAttribute="leading" secondItem="n0F-wK-bQU" secondAttribute="leading" constant="5" id="dN7-1h-9Cq"/>
-                                    <constraint firstAttribute="trailing" secondItem="B43-WI-bzi" secondAttribute="trailing" constant="5" id="u0r-Jd-haD"/>
-                                </constraints>
-                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lMc-Zk-gsY">
                                 <rect key="frame" x="84" y="103" width="206" height="38"/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -250,6 +232,23 @@
                                     <action selector="backBtn:" destination="WGD-GY-BIC" eventType="touchUpInside" id="5JQ-3W-VGX"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n0F-wK-bQU">
+                                <rect key="frame" x="16" y="38" width="343" height="40"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" usesAttributedText="YES" adjustsFontSizeToFit="NO" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="B43-WI-bzi" userLabel="Input Text">
+                                        <rect key="frame" x="5" y="9.5" width="333" height="21"/>
+                                        <attributedString key="attributedText"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="B43-WI-bzi" firstAttribute="centerY" secondItem="n0F-wK-bQU" secondAttribute="centerY" id="9YS-vK-PAD"/>
+                                    <constraint firstAttribute="height" constant="40" id="VpZ-lb-7w6"/>
+                                    <constraint firstItem="B43-WI-bzi" firstAttribute="leading" secondItem="n0F-wK-bQU" secondAttribute="leading" constant="5" id="dN7-1h-9Cq"/>
+                                    <constraint firstAttribute="trailing" secondItem="B43-WI-bzi" secondAttribute="trailing" constant="5" id="u0r-Jd-haD"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>

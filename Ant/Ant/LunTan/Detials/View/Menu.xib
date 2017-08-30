@@ -17,11 +17,11 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="480" height="167"/>
+            <rect key="frame" x="0.0" y="0.0" width="480" height="90"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dLe-iE-IzW">
-                    <rect key="frame" x="0.0" y="107" width="480" height="60"/>
+                    <rect key="frame" x="0.0" y="30" width="480" height="60"/>
                     <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="58a-96-BTy">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="60"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -43,7 +43,7 @@
                     <blurEffect style="light"/>
                 </visualEffectView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VBY-GW-IZa">
-                    <rect key="frame" x="0.0" y="107" width="480" height="60"/>
+                    <rect key="frame" x="0.0" y="30" width="480" height="60"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TgM-7J-CGy" userLabel="detial">
                             <rect key="frame" x="381" y="0.0" width="99" height="60"/>
@@ -250,7 +250,7 @@
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="-66" y="320.5"/>
+            <point key="canvasLocation" x="-66" y="359"/>
         </view>
     </objects>
     <resources>
