@@ -14,7 +14,10 @@ class HouseRentTabView: UITableView,UITableViewDelegate, UITableViewDataSource,U
     //初始化一个闭包类型
     var  pushModifyVCClouse : pushModifyVC?
     fileprivate let cellID = "cellID"
-    
+    //初始化一个房屋出租模型
+    var houseRentstaus  = HouseRentStatus()
+    //创建房屋出租字典
+    var houseRentDic  = NSMutableDictionary()
     override init(frame: CGRect, style: UITableViewStyle) {
         super.init(frame: frame, style: style)
         
@@ -127,10 +130,8 @@ class HouseRentTabView: UITableView,UITableViewDelegate, UITableViewDataSource,U
     //点击事件触发
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
        let  cell = tableView.cellForRow(at: indexPath)
-        cell?.detailTextLabel?.text = " "
        let  detailText =   cell?.detailTextLabel?.text == nil ?  " " : cell?.detailTextLabel?.text
-//        cell?.detailTextLabel?.text = detailText
-        if indexPath.section == 1 {
+       if indexPath.section == 1 {
         switch indexPath.row {
                         case 0:
                             cell?.textLabel?.text = "所在区域"
@@ -156,46 +157,60 @@ class HouseRentTabView: UITableView,UITableViewDelegate, UITableViewDataSource,U
             }
         }
     }
-
-//    else if indexPath.section == 1 {
-//
-//            switch indexPath.row {
-//            case 0:
-//                cell?.textLabel?.text = "所在区域"
-//            case 1:
-//                cell?.textLabel?.text  = "房屋户型"
-//            case 2:
-//                cell?.textLabel?.text = "出租方式"
-//            case 3:
-//                cell?.textLabel?.text = "空出时间"
-//            case 4:
-//                cell?.textLabel?.text = "房屋来源"
-//            case 5:
-//                cell?.textLabel?.text = "出租价格"
-//            case 6:
-//                cell?.textLabel?.text = "最短租期"
-//            default:
-//                cell?.textLabel?.text = ""
-//            }
-//        }else if indexPath.section == 2 {
-//            switch indexPath.row {
-//            case 0:
-//                cell?.textLabel?.text = "联系人名称"
-//            case 1:
-//                cell?.textLabel?.text  = "联系电话"
-//            case 2:
-//                cell?.textLabel?.text = "微信"
-//            case 3:
-//                cell?.textLabel?.text = "QQ"
-//            case 4:
-//                cell?.textLabel?.text = "邮箱"
-//            case 5:
-//                cell?.textLabel?.text = "选择标签"
-//            default:
-//                cell?.textLabel?.text = ""
-//            }
-
+    
+    
+    //改变tableview数据状态
+    func  changeTableData(indexPath: IndexPath , text : String){
+        if indexPath.section == 0 {
+            houseRentstaus.title = text
+        }else if indexPath.section == 1 {
+            switch indexPath.row {
+            case 3:
+                 houseRentstaus.empty_time = Int(text)
+            case 4:
+                 houseRentstaus.house_source = text
+            case 5:
+                 houseRentstaus.price = text
+            default:
+                 break
+            }
+        }else if indexPath.section == 2 {
+            switch indexPath.row {
+            case 0:
+                houseRentstaus.contact_name = text
+            case 1:
+                houseRentstaus.contact_phone = text
+            case 2:
+                houseRentstaus.weixin = text
+            case 3:
+                houseRentstaus.qq = text
+            case 4:
+                houseRentstaus.email = text
+            case 5:
+                houseRentstaus.label = text
+            default:
+                break
+            }
+        }
+        self.houseRentDic = ["title" : houseRentstaus.title,
+                             "area" : houseRentstaus.area ,
+                             "content" : self.textField?.text ,
+                             "house_type" : houseRentstaus.house_type ,
+                             "rent_way" : houseRentstaus.rent_way ,
+                             "empty_time" : "\(houseRentstaus.empty_time)" ,
+                             "time" : houseRentstaus.time,
+                             "house_source": houseRentstaus.house_source ,
+                             "price" : houseRentstaus.price ?? String(),
+                             "contact_name" : houseRentstaus.contact_name ,
+                             "contact_phone" : houseRentstaus.contact_phone ,
+                             "weixin" : houseRentstaus.weixin ,
+                             "qq" : houseRentstaus.qq ,
+                             "email" : houseRentstaus.email ,
+                             "label" : houseRentstaus.label 
+                             ]
         
+    }
+
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var  cell = tableView.dequeueReusableCell(withIdentifier: cellID)
@@ -206,23 +221,31 @@ class HouseRentTabView: UITableView,UITableViewDelegate, UITableViewDataSource,U
         cell?.accessoryType = .disclosureIndicator
         if indexPath.section == 0 {
             cell?.textLabel?.text = "标题"
+            cell?.detailTextLabel?.text = houseRentstaus.title
         }else if indexPath.section == 1 {
             
             switch indexPath.row {
             case 0:
                 cell?.textLabel?.text = "所在区域"
+                cell?.detailTextLabel?.text = houseRentstaus.area
             case 1:
                 cell?.textLabel?.text  = "房屋户型"
+                cell?.detailTextLabel?.text = houseRentstaus.house_type
             case 2:
                 cell?.textLabel?.text = "出租方式"
+                cell?.detailTextLabel?.text = houseRentstaus.rent_way
             case 3:
                 cell?.textLabel?.text = "空出时间"
+                cell?.detailTextLabel?.text = "\(houseRentstaus.time)"
             case 4:
                 cell?.textLabel?.text = "房屋来源"
+                cell?.detailTextLabel?.text = houseRentstaus.house_source
             case 5:
                 cell?.textLabel?.text = "出租价格"
+                cell?.detailTextLabel?.text = houseRentstaus.price
             case 6:
                 cell?.textLabel?.text = "最短租期"
+              
             default:
                 cell?.textLabel?.text = ""
             }
@@ -230,16 +253,22 @@ class HouseRentTabView: UITableView,UITableViewDelegate, UITableViewDataSource,U
             switch indexPath.row {
             case 0:
                 cell?.textLabel?.text = "联系人名称"
+                cell?.detailTextLabel?.text = houseRentstaus.contact_name
             case 1:
                 cell?.textLabel?.text  = "联系电话"
+                cell?.detailTextLabel?.text = houseRentstaus.contact_phone
             case 2:
                 cell?.textLabel?.text = "微信"
+                cell?.detailTextLabel?.text = houseRentstaus.weixin
             case 3:
                 cell?.textLabel?.text = "QQ"
+                cell?.detailTextLabel?.text = houseRentstaus.qq
             case 4:
                 cell?.textLabel?.text = "邮箱"
+                cell?.detailTextLabel?.text = houseRentstaus.email
             case 5:
                 cell?.textLabel?.text = "选择标签"
+                cell?.detailTextLabel?.text = houseRentstaus.label
             default:
                 cell?.textLabel?.text = ""
             }
