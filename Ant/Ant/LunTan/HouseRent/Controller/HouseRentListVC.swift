@@ -96,16 +96,18 @@ extension HouseRentListVC {
         giveVC.title = "房屋出租"
         let listTableview = HouseRentTabView.init(frame: CGRect.init(x: 0, y: 0, width: screenWidth, height: screenHeight), style: .grouped)
         giveVC.listTableView = listTableview
+        
         listTableview.pushModifyVCClouse = {[weak self](text , index) in
             //获取当前故事版
             let storyBoard = UIStoryboard(name: "SelfProfile", bundle: nil)
             let  dest  = storyBoard.instantiateViewController(withIdentifier: "modify") as? SelfDetialViewController
              dest?.info = text!
-            self?.navigationController?.pushViewController(dest!, animated: true)
+             self?.navigationController?.pushViewController(dest!, animated: true)
             
             dest?.changeClosure = {[weak self](changeText) in
-                let  cell = giveVC.listTableView?.cellForRow(at: index)
-                cell?.detailTextLabel?.text = changeText
+                listTableview.changeTableData(indexPath: index, text: changeText!)
+                giveVC.cateDict = listTableview.houseRentDic
+                listTableview.reloadData()
                 
             }
         }

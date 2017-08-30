@@ -213,25 +213,30 @@ extension NetWorkTool {
                      rootpath : String,
                      savepath : LunTanType.RawValue,
                      image  : [UIImage],
-                     title : String,
+                     dict : NSDictionary?,
                      finished: @escaping (_ result: [String: AnyObject]?, _ error: Error?) -> ()) {
         //1.获取请求的URLString
         let urlString = "http://106.15.199.8/jraz/api/user/publish"
         self.requestSerializer.setValue(token, forHTTPHeaderField: "token")
         //2.获取请求参数
-        let parameters = ["cate_1": cate_1, "cate_2" : cate_2 , "rootpath" : rootpath , "savepath" : savepath , "title" : title ] as [String : Any]
+        var parameters = ["cate_1": cate_1, "cate_2" : cate_2 , "rootpath" : rootpath , "savepath" : savepath ] as [String : Any]
+        for (key, value) in dict!{
+            parameters.updateValue(value, forKey: key as! String)
+        }
+//
         //3.发送请求参数
         post(urlString, parameters: parameters, constructingBodyWith: { [weak self](formData) in
             //确定选择类型
+            if image.count > 0 {
             var  cateName =  ""
-            cateName =  image.count > 1 ?  "image" :  "image[]"
+            cateName =  image.count > 1 ?  "image[]" :  "image"
             for pic in image {
             if let imageData = UIImageJPEGRepresentation(pic, 0.5){
             let imageName =  self?.getNowTime()
             formData.appendPart(withFileData: imageData, name: cateName, fileName: imageName! , mimeType: "image/png")
               }
             }
-
+          }
         }, progress: { (Progress) in
             
         }, success: { (URLSessionDataTask, success) in         //获取字典数据
@@ -243,7 +248,6 @@ extension NetWorkTool {
             print(resultDict)
             
         }) { (URLSessionDataTask, error) in
-            
             
             print(error)
             finished(nil , error)

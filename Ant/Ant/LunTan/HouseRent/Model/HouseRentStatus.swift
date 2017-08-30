@@ -12,7 +12,18 @@ class HouseRentStatus: NSObject {
 
     var title: String?
     var empty_time: Int?
-    var time: String?
+    var content : String?
+    var area : String?
+    var rent_way : String?
+    var time : String?
+    var contact_phone : String?
+    var weixin : String?
+    var qq : String?
+    var email : String?
+    var label : String?
+    var status : String?
+    var type :  String?
+    
     var house_type: String?
     var house_source: String?
     var price: String?
