@@ -223,7 +223,7 @@ extension NetWorkTool {
         for (key, value) in dict!{
             parameters.updateValue(value, forKey: key as! String)
         }
-//
+
         //3.发送请求参数
         post(urlString, parameters: parameters, constructingBodyWith: { [weak self](formData) in
             //确定选择类型

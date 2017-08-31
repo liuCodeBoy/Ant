@@ -11,6 +11,7 @@ import SDWebImage
 
 class LunTanDetialModel: NSObject {
     
+    var id : NSNumber?
     var picture: [String]?
     var title: String?
     var house_type: String?
@@ -26,6 +27,9 @@ class LunTanDetialModel: NSObject {
     var weixin: String?
     var qq: String?
     var email: String?
+    //MARK: -  求租
+    var type:  String?
+
     
     // MARK:- 求职
     var education: String?
@@ -119,3 +123,5 @@ class LunTanDetialModel: NSObject {
     override func setValue(_ value: Any?, forUndefinedKey key: String) { }
     
 }
+
+

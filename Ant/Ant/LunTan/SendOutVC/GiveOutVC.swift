@@ -54,7 +54,9 @@ class GiveOutVC: UIViewController,TZImagePickerControllerDelegate{
   
     
     
-    
+    override func viewWillAppear(_ animated: Bool) {
+        self.tabBarController?.tabBar.isHidden = true
+    }
     
     func craetTableView() -> () {
         //初始化tableView 
@@ -81,6 +83,9 @@ class GiveOutVC: UIViewController,TZImagePickerControllerDelegate{
             NetWorkTool.shareInstance.publishInfo(token!, cate_1: LunTanType.house.rawValue , cate_2: cate_2, rootpath: "forum_image", savepath: LunTanType.house.rawValue , image: (self.picPickerView?.images)!, dict : self.cateDict) { (userinfo, error) in
                 if error == nil &&  userinfo?["code"] as? String == "200"{
                     SVProgressHUD.showSuccess(withStatus: "发布成功")
+                    self.navigationController?.popViewController(animated: true)
+                }else {
+                    SVProgressHUD.showError(withStatus: "服务器错误")
                 }
             }
         }

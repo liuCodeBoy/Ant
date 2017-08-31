@@ -216,7 +216,7 @@
 		D33998F31F4EC770009DACD0 /* RentOutDVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RentOutDVC.swift; sourceTree = "<group>"; };
 		D33998F41F4EC770009DACD0 /* SecondHandDVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondHandDVC.swift; sourceTree = "<group>"; };
 		D33998F51F4EC770009DACD0 /* WantJobDVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WantJobDVC.swift; sourceTree = "<group>"; };
-		D33998F81F4EC770009DACD0 /* LunTanDetialModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LunTanDetialModel.swift; sourceTree = "<group>"; };
+		D33998F81F4EC770009DACD0 /* LunTanDetialModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LunTanDetialModel.swift; path = RentOut/LunTanDetialModel.swift; sourceTree = "<group>"; };
 		D33998FA1F4EC770009DACD0 /* CustomStyle-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CustomStyle-Extension.swift"; sourceTree = "<group>"; };
 		D33998FB1F4EC770009DACD0 /* Date-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date-Extension.swift"; sourceTree = "<group>"; };
 		D33998FC1F4EC770009DACD0 /* ShareSDK-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShareSDK-Extension.swift"; sourceTree = "<group>"; };
@@ -559,17 +559,9 @@
 		D33998F61F4EC770009DACD0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				D33998F71F4EC770009DACD0 /* RentOut */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		D33998F71F4EC770009DACD0 /* RentOut */ = {
-			isa = PBXGroup;
-			children = (
 				D33998F81F4EC770009DACD0 /* LunTanDetialModel.swift */,
 			);
-			path = RentOut;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		D33998F91F4EC770009DACD0 /* Tools */ = {

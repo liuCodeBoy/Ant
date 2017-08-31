@@ -23,11 +23,11 @@ class DetialControduction: UITableViewCell {
     
     var viewModel: LunTanDetialModel? {
         didSet {
-            
             if let text = viewModel?.content {
                 self.detialLbl.text = text
-                DetialHCons.constant = detialLbl.getLabHeight(labelStr: detialLbl.text!, font: detialLbl.font, width: UIScreen.main.bounds.width - 20)
+                DetialHCons.constant = detialLbl.getLabHeight(labelStr: detialLbl.text!, font: detialLbl.font, width: UIScreen.main.bounds.width - 40)
                 detialHeight = DetialHCons.constant
+        
             }
         }
     }
