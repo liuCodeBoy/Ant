@@ -48,18 +48,37 @@ class HouseRentVC: UIViewController {
     //发布信息
     func sendOutInformation() -> () {
         
-        
         let  giveVC = GiveOutVC()
-        giveVC.listTableView  = HouseRentTabView.init(frame: CGRect.init(x: 0, y: 0, width: screenWidth, height: screenHeight), style: .grouped)
+        giveVC.title = "房屋出租"
+        let listTableview = HouseRentTabView.init(frame: CGRect.init(x: 0, y: 0, width: screenWidth, height: screenHeight), style: .grouped)
+        giveVC.listTableView = listTableview
+        
+        listTableview.pushModifyVCClouse = {[weak self](text , index) in
+            //获取当前故事版
+            let storyBoard = UIStoryboard(name: "SelfProfile", bundle: nil)
+            let  dest  = storyBoard.instantiateViewController(withIdentifier: "modify") as? SelfDetialViewController
+            dest?.info = text!
+            self?.navigationController?.pushViewController(dest!, animated: true)
+            giveVC.cateDict = listTableview.houseRentDic
+            dest?.changeClosure = {(changeText) in
+                listTableview.changeTableData(indexPath: index, text: changeText!)
+                giveVC.cateDict = listTableview.houseRentDic
+                listTableview.reloadData()
+            }
+        }
+        listTableview.pushChooseVCClouse = {[weak self](strArr , index) in
+            let choseVC = ChoseTableView()
+            //初始化闭包
+            choseVC.choseBtnClouse = {(name) in
+                listTableview.changeTableData(indexPath: index, text: name!)
+                giveVC.cateDict = listTableview.houseRentDic
+                listTableview.reloadData()
+            }
+            choseVC.resourceArr = strArr as! NSMutableArray
+            self?.navigationController?.pushViewController(choseVC, animated: true)
+        }
         self.navigationController?.pushViewController(giveVC, animated: true)
-//        let alert = UIAlertController(title: "提示", message: "需要先登录才能进行改操作", preferredStyle: .alert)
-//        let notLogin = UIAlertAction(title: "暂不登陆", style: .cancel, handler: nil)
-//        let login = UIAlertAction(title: "立即登录", style: .destructive) { (_) in
-//            
-//        }
-//        alert.addAction(login)
-//        alert.addAction(notLogin)
-//        self.present(alert, animated: true, completion: nil)
+        
     }
     
     //设置导航栏

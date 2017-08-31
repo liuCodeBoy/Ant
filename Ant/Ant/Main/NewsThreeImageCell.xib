@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,19 +16,19 @@
             <rect key="frame" x="0.0" y="0.0" width="533" height="150"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Wxe-7C-VPI" id="YA4-iS-b3q">
-                <rect key="frame" x="0.0" y="0.0" width="533" height="149.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="533" height="150"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MZF-yU-yH9">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MZF-yU-yH9">
                         <rect key="frame" x="10" y="55" width="158.5" height="70"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="70" id="N3q-tz-Ro5"/>
                         </constraints>
                     </imageView>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OWS-Lw-rGR">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OWS-Lw-rGR">
                         <rect key="frame" x="183.5" y="55" width="158" height="70"/>
                     </imageView>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gJs-CC-sbf">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gJs-CC-sbf">
                         <rect key="frame" x="356.5" y="55" width="158.5" height="70"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="菲律宾莱特岛附近发生6.6级地震 震源深度10千米菲律宾莱特岛附近发生6.6级地震 震源深度10千米" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ul-Bp-lOM">
@@ -41,7 +41,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="新闻来自XXX" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lI4-az-V4D">
-                        <rect key="frame" x="10" y="130" width="79.5" height="16"/>
+                        <rect key="frame" x="10" y="133" width="79.5" height="16"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
@@ -63,7 +63,7 @@
                     <constraint firstItem="OWS-Lw-rGR" firstAttribute="height" secondItem="MZF-yU-yH9" secondAttribute="height" id="aEJ-Nl-0Ln"/>
                     <constraint firstItem="gJs-CC-sbf" firstAttribute="height" secondItem="OWS-Lw-rGR" secondAttribute="height" id="kuK-mG-2tS"/>
                     <constraint firstItem="OWS-Lw-rGR" firstAttribute="leading" secondItem="MZF-yU-yH9" secondAttribute="trailing" constant="15" id="wXS-Gz-GH5"/>
-                    <constraint firstItem="lI4-az-V4D" firstAttribute="top" secondItem="MZF-yU-yH9" secondAttribute="bottom" constant="5" id="yri-Pk-QEL"/>
+                    <constraint firstItem="lI4-az-V4D" firstAttribute="top" secondItem="MZF-yU-yH9" secondAttribute="bottom" constant="8" id="yri-Pk-QEL"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>

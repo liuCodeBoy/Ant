@@ -86,19 +86,9 @@ class RentOutDVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
                 let url = URL(string: str)
                 urlArray.append(url!)
             }
-            
-//            if let pic = modelInfo?.pictureArray {
-//                return LoopView(images: pic, frame: frame, isAutoScroll: true)
-//            } else {
-//                return LoopView(images: urlArray, frame: frame, isAutoScroll: true)
-//            }
-            
             return LoopView(images: urlArray, frame: frame, isAutoScroll: true)
 
-            
-            
         case 1:
-            
             let detialHeader = Bundle.main.loadNibNamed("DetialHeaderView", owner: nil, options: nil)?.first as? DetialHeaderView
             detialHeader?.DetialHeaderLabel.text = "详情介绍"
             

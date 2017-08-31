@@ -148,6 +148,7 @@
 //编辑完成
 - (void)textFieldDidEndEditing:(UITextField *)textField
 {
+    
 }
 //点击键盘调用
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string

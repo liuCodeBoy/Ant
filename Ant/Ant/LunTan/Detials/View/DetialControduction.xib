@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -15,11 +15,11 @@
             <rect key="frame" x="0.0" y="0.0" width="458" height="43"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="458" height="42.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="458" height="43"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="此房毗邻悉尼大学，地理位置极佳" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I6U-RY-QGq">
-                        <rect key="frame" x="12" y="5" width="214.5" height="32.5"/>
+                        <rect key="frame" x="15" y="5" width="428" height="32.5"/>
                         <constraints>
                             <constraint firstAttribute="height" priority="750" constant="50" id="S0U-HS-bxZ"/>
                         </constraints>
@@ -29,8 +29,9 @@
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="I6U-RY-QGq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="B7M-Q9-DLr"/>
+                    <constraint firstItem="I6U-RY-QGq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="B7M-Q9-DLr"/>
                     <constraint firstItem="I6U-RY-QGq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="OV0-4i-Am2"/>
+                    <constraint firstAttribute="trailing" secondItem="I6U-RY-QGq" secondAttribute="trailing" constant="15" id="WJI-RE-zmu"/>
                     <constraint firstAttribute="bottom" secondItem="I6U-RY-QGq" secondAttribute="bottom" priority="750" constant="5" id="WQb-cN-4aD"/>
                 </constraints>
             </tableViewCellContentView>
@@ -38,7 +39,7 @@
                 <outlet property="DetialHCons" destination="S0U-HS-bxZ" id="Vv2-cx-h9F"/>
                 <outlet property="detialLbl" destination="I6U-RY-QGq" id="WWd-0T-lnh"/>
             </connections>
-            <point key="canvasLocation" x="16" y="-65.5"/>
+            <point key="canvasLocation" x="-519" y="-252"/>
         </tableViewCell>
     </objects>
 </document>

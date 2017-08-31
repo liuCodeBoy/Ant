@@ -8,11 +8,13 @@
 
 import UIKit
 typealias pushModifyVC = (String? , IndexPath) -> (Void)
+typealias pushChooseVC = ([String] , IndexPath) -> (Void)
 class HouseRentTabView: UITableView,UITableViewDelegate, UITableViewDataSource,UITextFieldDelegate {
     var  tableView = UITableView()
     var  textField  : UITextField?
     //初始化一个闭包类型
     var  pushModifyVCClouse : pushModifyVC?
+    var  pushChooseVCClouse : pushChooseVC?
     fileprivate let cellID = "cellID"
     //初始化一个房屋出租模型
     var houseRentstaus  = HouseRentStatus()
@@ -94,7 +96,6 @@ class HouseRentTabView: UITableView,UITableViewDelegate, UITableViewDataSource,U
          detailView.addSubview(detailScriptLable)
          let detailDescriptFiled = CustomTextField.init(frame: CGRect.init(x: 10, y: 30, width: screenWidth - 20 , height: 140), placeholder: "字数在150字以内", clear: true, leftView: nil, fontSize: 12)
          detailDescriptFiled?.backgroundColor = UIColor.init(red: 240 / 255, green: 240 / 255, blue: 240 / 255, alpha: 1.0)
-
             self.textField = detailDescriptFiled
             detailView.addSubview(detailDescriptFiled!)
             view = detailView
@@ -131,42 +132,46 @@ class HouseRentTabView: UITableView,UITableViewDelegate, UITableViewDataSource,U
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
        let  cell = tableView.cellForRow(at: indexPath)
        let  detailText =   cell?.detailTextLabel?.text == nil ?  " " : cell?.detailTextLabel?.text
-       if indexPath.section == 1 {
-        switch indexPath.row {
-                        case 0:
-                            cell?.textLabel?.text = "所在区域"
-                        case 1:
-                            cell?.textLabel?.text  = "房屋户型"
-                        case 2:
-                            cell?.textLabel?.text = "出租方式"
-                        case 3:
-                            cell?.textLabel?.text = "空出时间"
-                        case 4:
-                            cell?.textLabel?.text = "房屋来源"
-                        case 5:
-                            cell?.textLabel?.text = "出租价格"
-                        case 6:
-                            cell?.textLabel?.text = "最短租期"
-                        default:
-                            cell?.textLabel?.text = ""
-        
-          }
-        }else{
-            if self.pushModifyVCClouse != nil {
+        if indexPath.section == 1 {
+        if indexPath.row == 1 {
+            cell?.textLabel?.text  = "房屋户型"
+            if self.pushChooseVCClouse != nil {
+                let  wayArr = ["不限","Apartment","House","Unit","Studio","Town House","Office","仓库/车库","其它"]
+                self.pushChooseVCClouse!(wayArr ,indexPath)
+            }
+            }else if indexPath.row == 2 {
+            cell?.textLabel?.text = "出租方式"
+            if self.pushChooseVCClouse != nil {
+                let  wayArr = ["不限","单间","客厅","整租","share"]
+                self.pushChooseVCClouse!(wayArr ,indexPath)
+             }
+            }else{
+               if self.pushModifyVCClouse != nil {
                 pushModifyVCClouse!(detailText!, indexPath)
             }
         }
+        }else{
+            if self.pushModifyVCClouse != nil {
+                pushModifyVCClouse!(detailText!, indexPath)
+                 }
+            }
     }
     
     
     //改变tableview数据状态
-    func  changeTableData(indexPath: IndexPath , text : String){
+    func  changeTableData(indexPath: IndexPath , text : String?){
         if indexPath.section == 0 {
             houseRentstaus.title = text
         }else if indexPath.section == 1 {
             switch indexPath.row {
+            case 0:
+                houseRentstaus.area = text
+            case 1:
+                houseRentstaus.house_type = text
+            case 2:
+                houseRentstaus.rent_way = text
             case 3:
-                 houseRentstaus.empty_time = Int(text)
+                houseRentstaus.empty_time = Int(text!)
             case 4:
                  houseRentstaus.house_source = text
             case 5:
@@ -236,7 +241,8 @@ class HouseRentTabView: UITableView,UITableViewDelegate, UITableViewDataSource,U
                 cell?.detailTextLabel?.text = houseRentstaus.rent_way
             case 3:
                 cell?.textLabel?.text = "空出时间"
-                cell?.detailTextLabel?.text = "\(houseRentstaus.time)"
+               let emptyTime =  houseRentstaus.empty_time == nil ? "" : "\(houseRentstaus.empty_time!)"
+               cell?.detailTextLabel?.text = emptyTime
             case 4:
                 cell?.textLabel?.text = "房屋来源"
                 cell?.detailTextLabel?.text = houseRentstaus.house_source

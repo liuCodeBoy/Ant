@@ -29,11 +29,12 @@ class HouseRentListVC: UIViewController {
     var plistName : String?
     var tableView : UITableView?
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         loadCellData(page: self.page)
         initTableView()
-        //        定义发布按钮
+        // 定义发布按钮
         creatRightBtn()
         //加载头部
         loadListView()
@@ -75,6 +76,7 @@ extension HouseRentListVC: UITableViewDelegate,UITableViewDataSource {
         let rentOutDVC = RentOutDVC()
         rentOutDVC.houseRentId = Int(model.id!)
         rentOutDVC.urls = model.picture!
+       // rentOutDVC.modelInfo = model
         self.navigationController?.pushViewController(rentOutDVC, animated: true)
     }
     
@@ -91,7 +93,6 @@ extension HouseRentListVC {
     
     
     func showHouseRent(){
-        
         let  giveVC = GiveOutVC()
         giveVC.title = "房屋出租"
         let listTableview = HouseRentTabView.init(frame: CGRect.init(x: 0, y: 0, width: screenWidth, height: screenHeight), style: .grouped)
@@ -103,15 +104,24 @@ extension HouseRentListVC {
             let  dest  = storyBoard.instantiateViewController(withIdentifier: "modify") as? SelfDetialViewController
              dest?.info = text!
              self?.navigationController?.pushViewController(dest!, animated: true)
-            
-            dest?.changeClosure = {[weak self](changeText) in
+             giveVC.cateDict = listTableview.houseRentDic
+             dest?.changeClosure = {(changeText) in
                 listTableview.changeTableData(indexPath: index, text: changeText!)
                 giveVC.cateDict = listTableview.houseRentDic
                 listTableview.reloadData()
-                
             }
         }
-        
+        listTableview.pushChooseVCClouse = {[weak self](strArr , index) in
+            let choseVC = ChoseTableView()
+            //初始化闭包
+            choseVC.choseBtnClouse = {(name) in
+            listTableview.changeTableData(indexPath: index, text: name!)
+            giveVC.cateDict = listTableview.houseRentDic
+            listTableview.reloadData()
+        }
+            choseVC.resourceArr = strArr as! NSMutableArray
+            self?.navigationController?.pushViewController(choseVC, animated: true)
+        }
         self.navigationController?.pushViewController(giveVC, animated: true)
         
     }
@@ -329,7 +339,6 @@ extension HouseRentListVC {
                 print(error ?? "load house info list failed")
                 return
             }
-            
             guard let resultDict = result!["result"] else {
                 return
             }
@@ -341,8 +350,7 @@ extension HouseRentListVC {
                 return
                 
             }
-            
-            
+
             self?.pages = pages
             for i in 0..<resultList.count {
                 let dict = resultList[i]
@@ -350,7 +358,6 @@ extension HouseRentListVC {
                 self?.modelInfo.append(basic!)
                 
             }
-            
             if   self?.page == self?.pages {
                 self?.tableView?.mj_footer.endRefreshingWithNoMoreData()
             }else {
