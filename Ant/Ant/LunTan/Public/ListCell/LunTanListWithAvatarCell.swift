@@ -41,7 +41,7 @@ class LunTanListWithAvatarCell: UITableViewCell {
     }
     
     
-    var viewModel: HouseRentStatus? {
+    var viewModel: LunTanDetialModel? {
         didSet {
             if let title = viewModel?.title {
                 self.title.text = title
@@ -50,7 +50,7 @@ class LunTanListWithAvatarCell: UITableViewCell {
                 self.name.text = name
             }
             if let time = viewModel?.time {
-                self.createTime.text = time
+                self.createTime.text = "\(time)"
             }
             if let lable1 = viewModel?.house_type {
                 self.lable1.text = lable1

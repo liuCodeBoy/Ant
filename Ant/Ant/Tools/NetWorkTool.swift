@@ -262,11 +262,11 @@ extension NetWorkTool {
     }
 
     // MARK:- 论坛信息列表查询均
-    func infoList(VCType cate_1: LunTanType, p: Int,  finished: @escaping (_ result: [String: AnyObject]?, _ error: Error?) -> ()) {
+    func infoList(VCType cate_1: LunTanType, cate_2 : String, cate_3 : String, cate_4 : String,p: Int,  finished: @escaping (_ result: [String: AnyObject]?, _ error: Error?) -> ()) {
         //1.获取请求的URLString
         let urlString = "http://106.15.199.8/jraz/api/forum/forumList"
         //2.获取请求参数
-        let parameters = ["cate_1" : cate_1.rawValue, "p": p] as [String : AnyObject]
+        let parameters = ["cate_1" : cate_1.rawValue, "cate_2" : cate_2, "cate_3": cate_3,"cate_4" : cate_4, "p": p] as [String : AnyObject]
         //3.发送请求参数
         request(.POST, urlString: urlString, parameters: parameters as [String : AnyObject]) { (result, error) -> () in
             //获取字典数据

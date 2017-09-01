@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -15,11 +16,14 @@
             <rect key="frame" x="0.0" y="0.0" width="480" height="258"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="480" height="257.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="480" height="258"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="求租方式" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ho5-U0-Twj">
                         <rect key="frame" x="10" y="57" width="65.5" height="19.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="65.5" id="4i7-av-Uvk"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
@@ -60,8 +64,8 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="健身房 公交站 火车站 超市 学校 游泳池" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ogt-o9-ogj">
-                        <rect key="frame" x="86" y="125.5" width="300" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="健身房 公交站 火车站 超市 学校 游泳池" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ogt-o9-ogj">
+                        <rect key="frame" x="86" y="125.5" width="366" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -110,6 +114,7 @@
                     <constraint firstItem="8xN-mW-lUc" firstAttribute="centerY" secondItem="Cwy-9J-YZB" secondAttribute="centerY" id="6KV-gg-WmB"/>
                     <constraint firstItem="XNc-E1-fxe" firstAttribute="leading" secondItem="AN5-1v-EKh" secondAttribute="leading" id="7ov-CJ-P0n"/>
                     <constraint firstItem="Ho5-U0-Twj" firstAttribute="top" secondItem="j7X-aG-2g4" secondAttribute="bottom" constant="10" id="APm-CP-d91"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="ogt-o9-ogj" secondAttribute="trailing" constant="20" id="Czu-FS-YHS"/>
                     <constraint firstItem="c8T-4M-dYq" firstAttribute="leading" secondItem="Ho5-U0-Twj" secondAttribute="leading" id="DAS-yN-rhF"/>
                     <constraint firstItem="ogt-o9-ogj" firstAttribute="leading" secondItem="AN5-1v-EKh" secondAttribute="leading" id="Fof-k8-pkF"/>
                     <constraint firstItem="Tb5-xz-IBH" firstAttribute="centerY" secondItem="S0y-2f-nQx" secondAttribute="centerY" id="Fy9-0G-JSg"/>

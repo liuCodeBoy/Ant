@@ -8,8 +8,11 @@
 
 import UIKit
 import SDWebImage
-
+//import MJExtension
 class LunTanDetialModel: NSObject {
+    
+    var listCellType : Int?
+    
     
     var id : NSNumber?
     var picture: [String]?
@@ -28,7 +31,7 @@ class LunTanDetialModel: NSObject {
     var qq: String?
     var email: String?
     //MARK: -  求租
-    var type:  String?
+    var type:  Int?
 
     
     // MARK:- 求职
@@ -72,6 +75,7 @@ class LunTanDetialModel: NSObject {
     
     init(dict: [String: AnyObject]){
         super.init()
+        
         setValuesForKeys(dict)
         
         //处理模型的数据

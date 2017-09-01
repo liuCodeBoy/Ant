@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import SDWebImage
 class LunTanListWithLocationCell: UITableViewCell {
     
     @IBOutlet weak var img: UIImageView!
@@ -25,6 +25,48 @@ class LunTanListWithLocationCell: UITableViewCell {
     @IBOutlet weak var job: UILabel!
     @IBOutlet weak var cons: UILabel!
     
+    var viewModel: LunTanDetialModel? {
+        didSet {
+            guard let viewModel = viewModel else {
+                return
+            }
+            
+            if  viewModel.listCellType == 1 {
+                infoView.isHidden = true
+                self.cons.isHidden = true
+                self.job.isHidden = true
+                self.edu.isHidden = true
+            }else{
+                infoView.isHidden = false
+                self.cons.isHidden = false
+                self.job.isHidden = false
+                self.edu.isHidden = false
+            }
+            if let title = viewModel.title {
+                self.title.text = title
+            }
+            
+            if let picture = viewModel.picture?.first{
+                
+                self.img.sd_setImage(with:  NSURL.init(string: picture)! as URL, placeholderImage: #imageLiteral(resourceName: "moren"))
+                
+            }else {
+                self.img.image = #imageLiteral(resourceName: "moren")
+            }
+            if let time = viewModel.time {
+                self.creatTimeLbl.text = "\(time)"
+            }
+            if let lable1 = viewModel.job_nature {
+                self.label1.text = lable1
+            }
+           
+        }
+     
+            
+            
+        
+       
+    }
 
     override func awakeFromNib() {
         super.awakeFromNib()

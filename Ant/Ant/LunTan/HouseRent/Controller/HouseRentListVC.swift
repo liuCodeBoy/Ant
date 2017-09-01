@@ -93,6 +93,11 @@ extension HouseRentListVC {
     
     
     func showHouseRent(){
+        
+        let   token = UserInfoModel.shareInstance.account?.token!
+        if token == nil {
+            self.presentHintMessage(target: self, hintMessgae: "您尚未登陆")
+        }else{
         let  giveVC = GiveOutVC()
         giveVC.title = "房屋出租"
         let listTableview = HouseRentTabView.init(frame: CGRect.init(x: 0, y: 0, width: screenWidth, height: screenHeight), style: .grouped)
@@ -123,7 +128,7 @@ extension HouseRentListVC {
             self?.navigationController?.pushViewController(choseVC, animated: true)
         }
         self.navigationController?.pushViewController(giveVC, animated: true)
-        
+        }
     }
     
     func initTableView(){
@@ -333,7 +338,7 @@ extension HouseRentListVC {
         let group = DispatchGroup()
         //将当前的下载操作添加到组中
         group.enter()
-        NetWorkTool.shareInstance.infoList(VCType: .house, p: page) { [weak self](result, error)  in
+        NetWorkTool.shareInstance.infoList(VCType: .house,cate_2 : "", cate_3 : "", cate_4 : "", p: page) { [weak self](result, error)  in
             //在这里异步加载任务
             if error != nil {
                 print(error ?? "load house info list failed")
