@@ -143,7 +143,9 @@ class WantJobDVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         case 2:
             
             let connactoptions = tableView.dequeueReusableCell(withIdentifier: "connactOptions") as! ConnactOptions
-            
+            guard modelInfo?.connactDict.count != 0 else {
+                return connactoptions
+            }
             if let key = modelInfo?.connactDict[indexPath.row].first?.key {
                 connactoptions.con_Ways.text = key
             }

@@ -55,7 +55,6 @@ class HouseNeedRentVC: UIViewController,UITableViewDelegate,UITableViewDataSourc
         self.tableView?.dataSource = self
         self.tableView?.sectionIndexColor = UIColor.init(red: 252/255.0, green: 74/255.0, blue: 132/255.0, alpha: 1.0)
         self.tableView?.showsVerticalScrollIndicator = false
-
         self.view.addSubview(self.tableView!)
         //设置回调
         //默认下拉刷新
@@ -350,7 +349,6 @@ extension HouseNeedRentVC {
             }
             guard let pages  = resultDict["pages"]   as? Int else {
                 return
-                
             }
             self?.pages = pages
             for i in 0..<resultList.count {
@@ -364,11 +362,8 @@ extension HouseNeedRentVC {
             }else {
                 self?.tableView?.mj_footer.endRefreshing()
             }
-
             //离开当前组
             group.leave()
-            
-            
         }
         group.notify(queue: DispatchQueue.main) {
             //在这里告诉调用者,下完完毕,执行下一步操作

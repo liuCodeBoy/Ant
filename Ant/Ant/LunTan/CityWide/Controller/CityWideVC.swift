@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MJRefresh
 
 class CityWideVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
     let listViewCell = "LunTanListWithLocationCell"
@@ -23,8 +24,16 @@ class CityWideVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
     var  plistName : String?
     var  tableView : UITableView?
     
+    //定义当前页数
+    var page  = 1
+    //定义当前的page总页数
+    var  pages  = 1
+    fileprivate lazy var modelInfo: [LunTanDetialModel] = [LunTanDetialModel]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        loadCellData(page: page)
         initTableView()
         //定义发布按钮
         creatRightBtn()
@@ -54,16 +63,39 @@ class CityWideVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
     func initTableView() -> () {
         self.view.backgroundColor = UIColor.white
+        self.tableView?.showsVerticalScrollIndicator = false
         self.tableView = UITableView.init(frame:CGRect.init(x: 0, y: 30, width: screenWidth, height: screenHeight - 44), style: .plain)
         self.tableView?.delegate = self
         self.tableView?.dataSource = self
         self.tableView?.sectionIndexColor = UIColor.init(red: 252/255.0, green: 74/255.0, blue: 132/255.0, alpha: 1.0)
         self.view.addSubview(self.tableView!)
+        //设置回调
+        //默认下拉刷新
+        tableView?.mj_header = MJRefreshNormalHeader(refreshingTarget: self, refreshingAction:#selector(HouseRentListVC.refresh))
+        // 马上进入刷新状态
+        self.tableView?.mj_header.beginRefreshing()
+        //上拉刷新
+        tableView?.mj_footer = MJRefreshBackNormalFooter(refreshingTarget: self, refreshingAction: #selector(HouseRentListVC.loadMore))
+    }
+    //MARK: -  refresh
+    func  loadMore() {
+        self.loadCellData(page: self.page)
     }
     
     
+    func  refresh() {
+        weak var  weakself = self
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.8, execute: {
+            //结束刷新
+            weakself?.tableView?.mj_header.endRefreshing()
+            //重新调用数据接口
+            weakself?.tableView?.reloadData()
+        })
+    }
+
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return modelInfo.count
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -73,11 +105,16 @@ class CityWideVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
         
-        let  cell = tableView.dequeueReusableCell(withIdentifier: listViewCell)
+        let  cell = tableView.dequeueReusableCell(withIdentifier: listViewCell) as? LunTanListWithLocationCell
+        cell?.viewModel = modelInfo[indexPath.row]
         return cell!
     }
     func  tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let cityWideDVC =  CityWideDVC()
+        //取出模型
+        let  model = self.modelInfo[indexPath.row]
+        cityWideDVC.cityWideId = Int(model.id!)
+        cityWideDVC.urls = model.picture!
         self.navigationController?.pushViewController(cityWideDVC, animated: true)
     }
     
@@ -90,6 +127,65 @@ class CityWideVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
     }
     
 }
+
+extension CityWideVC{
+
+    
+    // MARK:- DispatchGroup
+    fileprivate func loadCellData(page : Int) {
+        if   self.page != self.pages {
+            self.page += 1
+        }
+        let group = DispatchGroup()
+        //将当前的下载操作添加到组中
+        group.enter()
+        NetWorkTool.shareInstance.infoList(VCType: .cityWide , cate_2 : "", cate_3 : "", cate_4 : "", p: page) { [weak self](result, error)  in
+            //在这里异步加载任务
+            
+            if error != nil {
+                print(error ?? "load house info list failed")
+                return
+            }
+            
+            guard let resultDict = result!["result"] else {
+                return
+            }
+            
+            guard let resultList  = resultDict["list"]   as? NSArray else {
+                return
+            }
+            guard let pages  = resultDict["pages"]   as? Int else {
+                return
+            }
+            
+            self?.pages = pages
+            for i in 0..<resultList.count {
+                let dict = resultList[i]
+                let basic = LunTanDetialModel.init(dict: dict as! [String : AnyObject])
+                
+                self?.modelInfo.append(basic)
+            }
+            
+            if   self?.page == self?.pages {
+                self?.tableView?.mj_footer.endRefreshingWithNoMoreData()
+            }else {
+                self?.tableView?.mj_footer.endRefreshing()
+            }
+            //离开当前组
+            group.leave()
+        }
+        group.notify(queue: DispatchQueue.main) {
+            //在这里告诉调用者,下完完毕,执行下一步操作
+            self.tableView?.reloadData()
+            
+        }
+    }
+
+
+
+}
+
+
 
 //MARK: - TopListChoose
 extension  CityWideVC {
@@ -214,7 +310,6 @@ extension  CityWideVC {
         rotationAnim.duration = 0.2
         rotationAnim.isRemovedOnCompletion = false
         rotationAnim.fillMode = kCAFillModeForwards
-        
         // 3.将动画添加到layer中
         sender.layer.add(rotationAnim, forKey: nil)
     }

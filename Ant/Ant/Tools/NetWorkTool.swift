@@ -238,7 +238,6 @@ extension NetWorkTool {
             }
           }
         }, progress: { (Progress) in
-            
         }, success: { (URLSessionDataTask, success) in         //获取字典数据
             guard let resultDict = success as? [String : AnyObject] else {
                 return
@@ -295,12 +294,28 @@ extension NetWorkTool {
             }
             //将数组数据回调给外界控制器
             finished(resultDict, error)
-            
         }
     }
 
-    
-    
-    
 }
 
+  //MARK: - 个人发布界面 
+extension NetWorkTool {
+    func userRelated( token: String, uid: Int, cate:String , p : Int , finished: @escaping (_ result: [String: AnyObject]?, _ error: Error?) -> ()) {
+        //1.获取请求的URLString
+        let urlString = "http://106.15.199.8/jraz/api/user/userRelated"
+        self.requestSerializer.setValue(token, forHTTPHeaderField: "token")
+        //2.获取请求参数
+        let parameters = ["uid" : uid, "cate": cate , "p" : p] as [String : AnyObject]
+        //3.发送请求参数
+        request(.POST, urlString: urlString, parameters: parameters as [String : AnyObject]) { (result, error) -> () in
+            //获取字典数据
+            guard let resultDict = result as? [String : AnyObject] else {
+                finished(nil, error)
+                return
+            }
+            //将数组数据回调给外界控制器
+            finished(resultDict, error)
+        }
+    }
+}

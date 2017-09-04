@@ -170,7 +170,7 @@
                 <outlet property="sex" destination="1ay-wV-mKK" id="P4h-ul-sfk"/>
                 <outlet property="title" destination="PXw-ey-6fx" id="Cwy-Xn-6vG"/>
             </connections>
-            <point key="canvasLocation" x="194" y="-85"/>
+            <point key="canvasLocation" x="70.5" y="-90"/>
         </tableViewCell>
     </objects>
     <resources>

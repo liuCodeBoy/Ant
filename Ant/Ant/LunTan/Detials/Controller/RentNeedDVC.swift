@@ -33,10 +33,8 @@ class RentNeedDVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
         let frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height - 60)
         
         self.tableView = UITableView(frame: frame, style: .grouped)
-        
         self.tableView?.delegate = self
         self.tableView?.dataSource = self
-        
         self.tableView?.backgroundColor = UIColor.init(white: 0.9, alpha: 1)
         self.tableView?.showsVerticalScrollIndicator = false 
         self.tableView?.separatorStyle = .singleLine
