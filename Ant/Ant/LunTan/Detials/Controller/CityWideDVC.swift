@@ -14,6 +14,11 @@ class CityWideDVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
     
     var modelInfo: LunTanDetialModel?
     
+    //定义标题高度
+    var titHeight = 20
+    //定义接受id
+    var cityWideId  = 0
+    lazy var urls = [String]()
     override func viewDidLoad() {
         super.viewDidLoad()
         loadDetialTableView()
@@ -69,23 +74,13 @@ class CityWideDVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
         
         switch section {
         case 0:
-            
             let frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.width * 0.6)
-            
-            let urls = [
-                "http://img3.cache.netease.com/photo/0009/2016-05-27/BO1HVHOV0AI20009.jpg",
-                "http://img3.cache.netease.com/photo/0009/2016-05-27/BO1HVIJ30AI20009.png",
-                "http://img5.cache.netease.com/photo/0009/2016-05-27/BO1HVLIM0AI20009.jpg",
-                "http://img6.cache.netease.com/photo/0009/2016-05-27/BO1HVJCD0AI20009.jpg",
-                "http://img2.cache.netease.com/photo/0009/2016-05-27/BO1HVPUT0AI20009.png"
-            ]
-            
             var urlArray: [URL] = [URL]()
-            for str in urls {
+            for str in urls
+            {
                 let url = URL(string: str)
                 urlArray.append(url!)
             }
-            
             return LoopView(images: urlArray, frame: frame, isAutoScroll: true)
         
         case 1:
@@ -151,18 +146,16 @@ class CityWideDVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
             case 0:
             let cityWideBasicInfo = tableView.dequeueReusableCell(withIdentifier: "cityWideBasicInfo") as! CityWideBasicInfo
             cityWideBasicInfo.viewModel = modelInfo
+            self.titHeight = cityWideBasicInfo.cityWideHeight
             
             cell = cityWideBasicInfo
-            
             if (cell?.responds(to: #selector(setter: UITableViewCell.separatorInset)))! {
                 cell?.separatorInset = UIEdgeInsets.zero
                 }
             case 1:
             let detialcontroduction = tableView.dequeueReusableCell(withIdentifier: "cityWideDetial") as! CityWideDetial
             detialcontroduction.viewModel = modelInfo
-                
             cell = detialcontroduction
-            
             if (cell?.responds(to: #selector(setter: UITableViewCell.separatorInset)))! {
                 cell?.separatorInset = UIEdgeInsets.zero
                 }
@@ -223,10 +216,11 @@ class CityWideDVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+       
         switch indexPath.section {
         case 0:
             switch indexPath.row {
-            case 0: return 65
+            case 0: return CGFloat(self.titHeight + 40)
             case 1: return 150
             default: return 20
             }
@@ -255,7 +249,7 @@ extension CityWideDVC {
         let group = DispatchGroup()
         //将当前的下载操作添加到组中
         group.enter()
-        NetWorkTool.shareInstance.infoDetial(VCType: .cityWide, id: index + 1) { [weak self](result, error)  in
+        NetWorkTool.shareInstance.infoDetial(VCType: .cityWide, id: cityWideId) { [weak self](result, error)  in
             //在这里异步加载任务
             
             if error != nil {
@@ -270,7 +264,6 @@ extension CityWideDVC {
             let basic = LunTanDetialModel(dict: resultDict as! [String : AnyObject])
             self?.modelInfo = basic
             //离开当前组
-            print(resultDict)
             group.leave()
             
         }

@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		47D1D894541B9E7EF0089AB9 /* Pods_Ant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DD636BD2B55585CF3CFD8D6 /* Pods_Ant.framework */; };
+		B6480CE81F58F9C100E4ABB3 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6480CE61F58F9C100E4ABB3 /* UserInfo.swift */; };
+		B6480CE91F58F9C100E4ABB3 /* UserInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6480CE71F58F9C100E4ABB3 /* UserInfoModel.swift */; };
+		B6480CEC1F58F9CD00E4ABB3 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6480CEA1F58F9CD00E4ABB3 /* Register.swift */; };
+		B6480CED1F58F9CD00E4ABB3 /* Register.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6480CEB1F58F9CD00E4ABB3 /* Register.xib */; };
+		B6480CF01F58F9E000E4ABB3 /* LoginWithPwd.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6480CEE1F58F9E000E4ABB3 /* LoginWithPwd.swift */; };
+		B6480CF11F58F9E000E4ABB3 /* LoginWithPwd.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6480CEF1F58F9E000E4ABB3 /* LoginWithPwd.xib */; };
+		B6480CF61F58FA1E00E4ABB3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6480CF41F58FA1E00E4ABB3 /* LoginViewController.swift */; };
+		B6480CF71F58FA1E00E4ABB3 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6480CF51F58FA1E00E4ABB3 /* LoginViewController.xib */; };
+		B6480CFB1F58FA3400E4ABB3 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6480CF91F58FA3400E4ABB3 /* ProfileViewController.swift */; };
 		D31917FF1F4FD5AB002423C7 /* CityWideVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31917FE1F4FD5AB002423C7 /* CityWideVC.swift */; };
 		D33998D11F4EC007009DACD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D33998D01F4EC007009DACD0 /* Assets.xcassets */; };
 		D33998DF1F4EC5CB009DACD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33998DE1F4EC5CB009DACD0 /* AppDelegate.swift */; };
@@ -154,16 +163,6 @@
 		D3399A651F4EC771009DACD0 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33999961F4EC771009DACD0 /* SearchViewController.swift */; };
 		D3399A661F4EC771009DACD0 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33999971F4EC771009DACD0 /* WeatherModel.swift */; };
 		D3399A671F4EC771009DACD0 /* Extension-CustomAttrs.swift in Sources */ = {isa = PBXBuildFile; fileRef = D339999A1F4EC771009DACD0 /* Extension-CustomAttrs.swift */; };
-		D3399A681F4EC771009DACD0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D339999B1F4EC771009DACD0 /* LoginViewController.swift */; };
-		D3399A691F4EC771009DACD0 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D339999C1F4EC771009DACD0 /* LoginViewController.xib */; };
-		D3399A6A1F4EC771009DACD0 /* LoginWithPwd.swift in Sources */ = {isa = PBXBuildFile; fileRef = D339999D1F4EC771009DACD0 /* LoginWithPwd.swift */; };
-		D3399A6B1F4EC771009DACD0 /* LoginWithPwd.xib in Resources */ = {isa = PBXBuildFile; fileRef = D339999E1F4EC771009DACD0 /* LoginWithPwd.xib */; };
-		D3399A6C1F4EC771009DACD0 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D339999F1F4EC771009DACD0 /* ProfileTableViewCell.swift */; };
-		D3399A6D1F4EC771009DACD0 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33999A01F4EC771009DACD0 /* ProfileViewController.swift */; };
-		D3399A6E1F4EC771009DACD0 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33999A11F4EC771009DACD0 /* Register.swift */; };
-		D3399A6F1F4EC771009DACD0 /* Register.xib in Resources */ = {isa = PBXBuildFile; fileRef = D33999A21F4EC771009DACD0 /* Register.xib */; };
-		D3399A701F4EC771009DACD0 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33999A31F4EC771009DACD0 /* UserInfo.swift */; };
-		D3399A711F4EC771009DACD0 /* UserInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33999A41F4EC771009DACD0 /* UserInfoModel.swift */; };
 		D3399A721F4EC771009DACD0 /* LoginTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33999A51F4EC771009DACD0 /* LoginTableViewCell.swift */; };
 		D3399A731F4EC771009DACD0 /* LoginTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D33999A61F4EC771009DACD0 /* LoginTableViewCell.xib */; };
 		D3399A761F4EC771009DACD0 /* SelfProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33999AB1F4EC771009DACD0 /* SelfProfile.swift */; };
@@ -196,6 +195,15 @@
 		0DD636BD2B55585CF3CFD8D6 /* Pods_Ant.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ant.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AB7A0C894F7CEC6FD3D65C2 /* Pods-Ant.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ant.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ant/Pods-Ant.release.xcconfig"; sourceTree = "<group>"; };
 		7BA4638AF15569E824CB6399 /* Pods-Ant.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ant.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ant/Pods-Ant.debug.xcconfig"; sourceTree = "<group>"; };
+		B6480CE61F58F9C100E4ABB3 /* UserInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserInfo.swift; path = Ant/Me/Login/UserInfo.swift; sourceTree = SOURCE_ROOT; };
+		B6480CE71F58F9C100E4ABB3 /* UserInfoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserInfoModel.swift; path = Ant/Me/Login/UserInfoModel.swift; sourceTree = SOURCE_ROOT; };
+		B6480CEA1F58F9CD00E4ABB3 /* Register.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Register.swift; path = Ant/Me/Login/Register.swift; sourceTree = SOURCE_ROOT; };
+		B6480CEB1F58F9CD00E4ABB3 /* Register.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Register.xib; path = Ant/Me/Login/Register.xib; sourceTree = SOURCE_ROOT; };
+		B6480CEE1F58F9E000E4ABB3 /* LoginWithPwd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginWithPwd.swift; path = Ant/Me/Login/LoginWithPwd.swift; sourceTree = SOURCE_ROOT; };
+		B6480CEF1F58F9E000E4ABB3 /* LoginWithPwd.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LoginWithPwd.xib; path = Ant/Me/Login/LoginWithPwd.xib; sourceTree = SOURCE_ROOT; };
+		B6480CF41F58FA1E00E4ABB3 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Ant/Me/Login/LoginViewController.swift; sourceTree = SOURCE_ROOT; };
+		B6480CF51F58FA1E00E4ABB3 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LoginViewController.xib; path = Ant/Me/Login/LoginViewController.xib; sourceTree = SOURCE_ROOT; };
+		B6480CF91F58FA3400E4ABB3 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = Ant/Me/Login/ProfileViewController.swift; sourceTree = SOURCE_ROOT; };
 		D31917FE1F4FD5AB002423C7 /* CityWideVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityWideVC.swift; sourceTree = "<group>"; };
 		D33998C61F4EC007009DACD0 /* Ant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D33998D01F4EC007009DACD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -345,16 +353,6 @@
 		D33999961F4EC771009DACD0 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		D33999971F4EC771009DACD0 /* WeatherModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
 		D339999A1F4EC771009DACD0 /* Extension-CustomAttrs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension-CustomAttrs.swift"; sourceTree = "<group>"; };
-		D339999B1F4EC771009DACD0 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ../LoginViewController.swift; sourceTree = "<group>"; };
-		D339999C1F4EC771009DACD0 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LoginViewController.xib; path = ../LoginViewController.xib; sourceTree = "<group>"; };
-		D339999D1F4EC771009DACD0 /* LoginWithPwd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginWithPwd.swift; path = ../LoginWithPwd.swift; sourceTree = "<group>"; };
-		D339999E1F4EC771009DACD0 /* LoginWithPwd.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LoginWithPwd.xib; path = ../LoginWithPwd.xib; sourceTree = "<group>"; };
-		D339999F1F4EC771009DACD0 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileTableViewCell.swift; path = ../ProfileTableViewCell.swift; sourceTree = "<group>"; };
-		D33999A01F4EC771009DACD0 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = ../ProfileViewController.swift; sourceTree = "<group>"; };
-		D33999A11F4EC771009DACD0 /* Register.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Register.swift; path = ../Register.swift; sourceTree = "<group>"; };
-		D33999A21F4EC771009DACD0 /* Register.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Register.xib; path = ../Register.xib; sourceTree = "<group>"; };
-		D33999A31F4EC771009DACD0 /* UserInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserInfo.swift; path = ../UserInfo.swift; sourceTree = "<group>"; };
-		D33999A41F4EC771009DACD0 /* UserInfoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserInfoModel.swift; path = ../UserInfoModel.swift; sourceTree = "<group>"; };
 		D33999A51F4EC771009DACD0 /* LoginTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginTableViewCell.swift; sourceTree = "<group>"; };
 		D33999A61F4EC771009DACD0 /* LoginTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginTableViewCell.xib; sourceTree = "<group>"; };
 		D33999AB1F4EC771009DACD0 /* SelfProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelfProfile.swift; sourceTree = "<group>"; };
@@ -1075,9 +1073,8 @@
 		D39AA8EB1F54FAD900FBB060 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				D33999A01F4EC771009DACD0 /* ProfileViewController.swift */,
-				D339999B1F4EC771009DACD0 /* LoginViewController.swift */,
-				D339999D1F4EC771009DACD0 /* LoginWithPwd.swift */,
+				B6480CF41F58FA1E00E4ABB3 /* LoginViewController.swift */,
+				B6480CF51F58FA1E00E4ABB3 /* LoginViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1085,8 +1082,8 @@
 		D39AA8EC1F54FAD900FBB060 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				D33999A31F4EC771009DACD0 /* UserInfo.swift */,
-				D33999A41F4EC771009DACD0 /* UserInfoModel.swift */,
+				B6480CE61F58F9C100E4ABB3 /* UserInfo.swift */,
+				B6480CE71F58F9C100E4ABB3 /* UserInfoModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1094,11 +1091,11 @@
 		D39AA8ED1F54FAD900FBB060 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				D33999A11F4EC771009DACD0 /* Register.swift */,
-				D33999A21F4EC771009DACD0 /* Register.xib */,
-				D339999E1F4EC771009DACD0 /* LoginWithPwd.xib */,
-				D339999F1F4EC771009DACD0 /* ProfileTableViewCell.swift */,
-				D339999C1F4EC771009DACD0 /* LoginViewController.xib */,
+				B6480CEA1F58F9CD00E4ABB3 /* Register.swift */,
+				B6480CEB1F58F9CD00E4ABB3 /* Register.xib */,
+				B6480CEE1F58F9E000E4ABB3 /* LoginWithPwd.swift */,
+				B6480CEF1F58F9E000E4ABB3 /* LoginWithPwd.xib */,
+				B6480CF91F58FA3400E4ABB3 /* ProfileViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1170,14 +1167,13 @@
 				D33999F41F4EC771009DACD0 /* CityWideDetial.xib in Resources */,
 				D3399A0B1F4EC771009DACD0 /* RentOutBasicInfo.xib in Resources */,
 				D3399A391F4EC771009DACD0 /* job_recruit_visa.plist in Resources */,
-				D3399A6F1F4EC771009DACD0 /* Register.xib in Resources */,
-				D3399A6B1F4EC771009DACD0 /* LoginWithPwd.xib in Resources */,
 				D3399A5F1F4EC771009DACD0 /* NewsTopTitleCell.xib in Resources */,
 				D3399A051F4EC771009DACD0 /* RecruitBasicInfo.xib in Resources */,
 				D3399A611F4EC771009DACD0 /* NewsTypeTableCell.xib in Resources */,
 				D3399A0F1F4EC771009DACD0 /* SecondHandBasicInfo.xib in Resources */,
 				D33999FB1F4EC771009DACD0 /* DetialHeaderView.xib in Resources */,
 				D3399A311F4EC771009DACD0 /* city_wide_marriage_status.plist in Resources */,
+				B6480CED1F58F9CD00E4ABB3 /* Register.xib in Resources */,
 				D33998E11F4EC5FF009DACD0 /* city.plist in Resources */,
 				D33998D11F4EC007009DACD0 /* Assets.xcassets in Resources */,
 				D3399A1B1F4EC771009DACD0 /* HouseRentVC.xib in Resources */,
@@ -1187,12 +1183,14 @@
 				D3399A411F4EC771009DACD0 /* LunTanListWithLocationCell.xib in Resources */,
 				D3399A381F4EC771009DACD0 /* job_recruit_type.plist in Resources */,
 				D3399A2D1F4EC771009DACD0 /* car_business_source.plist in Resources */,
+				B6480CF11F58F9E000E4ABB3 /* LoginWithPwd.xib in Resources */,
 				D3399A341F4EC771009DACD0 /* house_rent_create_time.plist in Resources */,
 				D3399A301F4EC771009DACD0 /* city_wide_age.plist in Resources */,
 				D3399A261F4EC771009DACD0 /* LunTanTopViewCell.xib in Resources */,
 				D3399A451F4EC771009DACD0 /* SecondHand.storyboard in Resources */,
 				D33999F71F4EC771009DACD0 /* ConnactOptions.xib in Resources */,
 				D3399A071F4EC771009DACD0 /* RecruitDetial.xib in Resources */,
+				B6480CF71F58FA1E00E4ABB3 /* LoginViewController.xib in Resources */,
 				D3399A731F4EC771009DACD0 /* LoginTableViewCell.xib in Resources */,
 				D33999F91F4EC771009DACD0 /* DetialControduction.xib in Resources */,
 				D3399A1D1F4EC771009DACD0 /* HouseRentViewCell.xib in Resources */,
@@ -1213,7 +1211,6 @@
 				D3399A641F4EC771009DACD0 /* NoCommandCell.xib in Resources */,
 				D3399A2F1F4EC771009DACD0 /* car_service_type.plist in Resources */,
 				D3399A011F4EC771009DACD0 /* MessageHeader.xib in Resources */,
-				D3399A691F4EC771009DACD0 /* LoginViewController.xib in Resources */,
 				D3399A791F4EC771009DACD0 /* MessageViewCell.xib in Resources */,
 				D3399A321F4EC771009DACD0 /* city_wide_sex.plist in Resources */,
 				D3399A3A1F4EC771009DACD0 /* second_hand_classify.plist in Resources */,
@@ -1314,6 +1311,7 @@
 				D33998E51F4EC610009DACD0 /* ViewController+Extension.swift in Sources */,
 				D3399A9B1F4EC9C8009DACD0 /* BaseTabBarVC.swift in Sources */,
 				D3399A211F4EC771009DACD0 /* JobSearchStatus.swift in Sources */,
+				B6480CE91F58F9C100E4ABB3 /* UserInfoModel.swift in Sources */,
 				D3399A5C1F4EC771009DACD0 /* NewsThreeImageCell.swift in Sources */,
 				D3399A661F4EC771009DACD0 /* WeatherModel.swift in Sources */,
 				D3399A291F4EC771009DACD0 /* Category.swift in Sources */,
@@ -1327,16 +1325,15 @@
 				D3399A5A1F4EC771009DACD0 /* NewsRotationModel.swift in Sources */,
 				D3399A041F4EC771009DACD0 /* RecruitBasicInfo.swift in Sources */,
 				D3399A421F4EC771009DACD0 /* SecondHandCategory.swift in Sources */,
+				B6480CEC1F58F9CD00E4ABB3 /* Register.swift in Sources */,
 				D33999E81F4EC771009DACD0 /* ShareSDK-Extension.swift in Sources */,
 				D3399A191F4EC771009DACD0 /* HouseRentStatus.swift in Sources */,
 				D3399A961F4EC771009DACD0 /* ThemeColor.swift in Sources */,
 				D3399A0E1F4EC771009DACD0 /* SecondHandBasicInfo.swift in Sources */,
 				D33999E71F4EC771009DACD0 /* Date-Extension.swift in Sources */,
 				D3399A4D1F4EC771009DACD0 /* CommentListVC.swift in Sources */,
-				D3399A711F4EC771009DACD0 /* UserInfoModel.swift in Sources */,
 				D3399A851F4EC771009DACD0 /* CustomButton.swift in Sources */,
 				D3399A811F4EC771009DACD0 /* BtnScrollView.swift in Sources */,
-				D3399A6A1F4EC771009DACD0 /* LoginWithPwd.swift in Sources */,
 				D33998DF1F4EC5CB009DACD0 /* AppDelegate.swift in Sources */,
 				D3399A021F4EC771009DACD0 /* MessagesCell.swift in Sources */,
 				D33999F11F4EC771009DACD0 /* CityWideBasicInfo.swift in Sources */,
@@ -1365,12 +1362,11 @@
 				D33999DD1F4EC771009DACD0 /* CarBusinessDVC.swift in Sources */,
 				D33999DF1F4EC771009DACD0 /* CityWideDVC.swift in Sources */,
 				D33999EB1F4EC771009DACD0 /* CarBusinessDetial.swift in Sources */,
+				B6480CF01F58F9E000E4ABB3 /* LoginWithPwd.swift in Sources */,
 				D3399A7B1F4EC771009DACD0 /* OthersIssueVC.swift in Sources */,
 				D3399A3D1F4EC771009DACD0 /* ViewController.swift in Sources */,
 				D3399A5E1F4EC771009DACD0 /* NewsTopTitleCell.swift in Sources */,
 				D33999F81F4EC771009DACD0 /* DetialControduction.swift in Sources */,
-				D3399A6D1F4EC771009DACD0 /* ProfileViewController.swift in Sources */,
-				D3399A701F4EC771009DACD0 /* UserInfo.swift in Sources */,
 				D3399A721F4EC771009DACD0 /* LoginTableViewCell.swift in Sources */,
 				D3399A861F4EC771009DACD0 /* CustomTextField.m in Sources */,
 				D33999E31F4EC771009DACD0 /* SecondHandDVC.swift in Sources */,
@@ -1398,21 +1394,22 @@
 				D31917FF1F4FD5AB002423C7 /* CityWideVC.swift in Sources */,
 				D3399A4C1F4EC771009DACD0 /* ChoseCityVC.swift in Sources */,
 				D3399A4B1F4EC771009DACD0 /* CateModel.swift in Sources */,
+				B6480CE81F58F9C100E4ABB3 /* UserInfo.swift in Sources */,
 				D3399A401F4EC771009DACD0 /* LunTanListWithLocationCell.swift in Sources */,
 				D3399A281F4EC771009DACD0 /* NomenclatureSpecification.md in Sources */,
 				D33999DA1F4EC771009DACD0 /* CarSaleVC.swift in Sources */,
 				D3399A471F4EC771009DACD0 /* HouseRentTabView.swift in Sources */,
 				D33999F61F4EC771009DACD0 /* ConnactOptions.swift in Sources */,
-				D3399A681F4EC771009DACD0 /* LoginViewController.swift in Sources */,
 				D3399A2A1F4EC771009DACD0 /* CategoryDetialVC.swift in Sources */,
 				D3399A801F4EC771009DACD0 /* AntTextfield.swift in Sources */,
 				D3399A521F4EC771009DACD0 /* NewsDetailModel.swift in Sources */,
 				D3399A901F4EC771009DACD0 /* LoopView.swift in Sources */,
+				B6480CF61F58FA1E00E4ABB3 /* LoginViewController.swift in Sources */,
 				D3399A8E1F4EC771009DACD0 /* NetWorkTool.swift in Sources */,
 				D3399A271F4EC771009DACD0 /* LunTanViewController.swift in Sources */,
-				D3399A6E1F4EC771009DACD0 /* Register.swift in Sources */,
 				D33999FE1F4EC771009DACD0 /* Menu.swift in Sources */,
 				D33999F31F4EC771009DACD0 /* CityWideDetial.swift in Sources */,
+				B6480CFB1F58FA3400E4ABB3 /* ProfileViewController.swift in Sources */,
 				D3399A151F4EC771009DACD0 /* BriefIntroduction.swift in Sources */,
 				D3399A3E1F4EC771009DACD0 /* LunTanListWithAvatarCell.swift in Sources */,
 				D33999EF1F4EC771009DACD0 /* CarServiceDetial.swift in Sources */,
@@ -1424,7 +1421,6 @@
 				D3399A621F4EC771009DACD0 /* NewsUserInfoModel.swift in Sources */,
 				D3399A061F4EC771009DACD0 /* RecruitDetial.swift in Sources */,
 				D3399A871F4EC771009DACD0 /* ImageScrollview.swift in Sources */,
-				D3399A6C1F4EC771009DACD0 /* ProfileTableViewCell.swift in Sources */,
 				D3399A591F4EC771009DACD0 /* NewsListModel.swift in Sources */,
 				D3399A241F4EC771009DACD0 /* lunTanModel.swift in Sources */,
 				D3399A1E1F4EC771009DACD0 /* InviteJobVC.swift in Sources */,

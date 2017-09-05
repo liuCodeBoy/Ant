@@ -10,7 +10,7 @@ import UIKit
 import MJRefresh
 class HouseNeedRentVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
     let houseNeedRentCellID = "LunTanListWithAvatarCell"
-       let topPlistName = ["job_recruit_type","job_recruit_visa","job_recruit_nature"]
+       let topPlistName = ["job_recruit_type","job_recruit_visa","house_rent_create_time","job_recruit_nature"]
     var category : CategoryVC?
     var categoryDetial : CategoryDetialVC?
     
@@ -27,7 +27,7 @@ class HouseNeedRentVC: UIViewController,UITableViewDelegate,UITableViewDataSourc
     var page  = 1
     //定义当前的page总页数
     var  pages  = 1
-    fileprivate lazy var modelInfo: [HouseRentStatus] = [HouseRentStatus]()
+    fileprivate lazy var modelInfo: [LunTanDetialModel] = [LunTanDetialModel]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,7 +40,6 @@ class HouseNeedRentVC: UIViewController,UITableViewDelegate,UITableViewDataSourc
 
        //注册cell
         tableView?.register(UINib.init(nibName: "LunTanListWithAvatarCell", bundle: nil), forCellReuseIdentifier: houseNeedRentCellID)
-        
         tableView?.rowHeight = UITableViewAutomaticDimension
         tableView?.estimatedRowHeight = 100
        
@@ -56,7 +55,6 @@ class HouseNeedRentVC: UIViewController,UITableViewDelegate,UITableViewDataSourc
         self.tableView?.dataSource = self
         self.tableView?.sectionIndexColor = UIColor.init(red: 252/255.0, green: 74/255.0, blue: 132/255.0, alpha: 1.0)
         self.tableView?.showsVerticalScrollIndicator = false
-
         self.view.addSubview(self.tableView!)
         //设置回调
         //默认下拉刷新
@@ -109,15 +107,12 @@ class HouseNeedRentVC: UIViewController,UITableViewDelegate,UITableViewDataSourc
     }
     // tableView点击触发事件
     func  tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let  model = self.modelInfo[indexPath.row]
         let rentNeedVC =  RentNeedDVC()
+        rentNeedVC.rentNeedID = Int(model.id!)
+        rentNeedVC.modelInfo = model
         self.navigationController?.pushViewController(rentNeedVC, animated: true)
-//        //取出模型
-//        let  model = self.modelInfo[indexPath.row]
-//        let rentOutDVC = RentOutDVC()
-//        rentOutDVC.houseRentId = Int(model.id!)
-//        rentOutDVC.urls = model.picture!
-//        // rentOutDVC.modelInfo = model
-//        self.navigationController?.pushViewController(rentOutDVC, animated: true)
+
     }    
   
 
@@ -178,7 +173,7 @@ extension HouseNeedRentVC {
     
     fileprivate func loadListView() {
         self.topView = UIView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 40))
-        let  topListArray = ["区域" ,"类型","发布时间"]
+        let  topListArray = ["区域" ,"类型","排序时间","租金"]
         addTopButton(topListArrays: topListArray as NSArray ,topPlistName : topPlistName as NSArray)
         self.view.addSubview(self.topView!)
     }
@@ -337,7 +332,7 @@ extension HouseNeedRentVC {
         let group = DispatchGroup()
         //将当前的下载操作添加到组中
         group.enter()
-        NetWorkTool.shareInstance.infoList(VCType: .seek, p: page) { [weak self](result, error)  in
+        NetWorkTool.shareInstance.infoList(VCType: .seek, cate_2 : "", cate_3 : "", cate_4 : "", p: page) { [weak self](result, error)  in
             //在这里异步加载任务
             
             if error != nil {
@@ -354,24 +349,21 @@ extension HouseNeedRentVC {
             }
             guard let pages  = resultDict["pages"]   as? Int else {
                 return
-                
             }
             self?.pages = pages
             for i in 0..<resultList.count {
                 let dict = resultList[i]
-                let basic = HouseRentStatus.mj_object(withKeyValues: dict)
-                self?.modelInfo.append(basic!)
+                let basic = LunTanDetialModel.init(dict: dict as! [String : AnyObject])
+          
+                self?.modelInfo.append(basic)
             }
             if   self?.page == self?.pages {
                 self?.tableView?.mj_footer.endRefreshingWithNoMoreData()
             }else {
                 self?.tableView?.mj_footer.endRefreshing()
             }
-
             //离开当前组
             group.leave()
-            
-            
         }
         group.notify(queue: DispatchQueue.main) {
             //在这里告诉调用者,下完完毕,执行下一步操作

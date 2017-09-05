@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import MJRefresh
 class JobSearchVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
 
     let recruitCellID = "LunTanListWithAvatarCell"
@@ -22,14 +22,17 @@ class JobSearchVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
     var nowButton = UIButton()
     //定义全局plist名
     var plistName : String?
-
+    //定义当前页数
+   fileprivate var page  = 1
+    //定义当前的page总页数
+   fileprivate var  pages  = 1
     var tableView : UITableView?
     
-    fileprivate lazy var modelInfo: [JobSearchStatus] = [JobSearchStatus]()
+    fileprivate lazy var modelInfo: [LunTanDetialModel] = [LunTanDetialModel]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadCellData()
+        loadCellData(page: self.page)
         //定义发布按钮
         creatRightBtn()
         //初始化tableview
@@ -64,11 +67,34 @@ class JobSearchVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
         self.tableView?.showsVerticalScrollIndicator = false
         self.tableView?.sectionIndexColor = UIColor.init(red: 252/255.0, green: 74/255.0, blue: 132/255.0, alpha: 1.0)
         self.view.addSubview(self.tableView!)
+        //设置回调
+        //默认下拉刷新
+        tableView?.mj_header = MJRefreshNormalHeader(refreshingTarget: self, refreshingAction:#selector(InviteJobVC.refresh))
+        // 马上进入刷新状态
+        self.tableView?.mj_header.beginRefreshing()
+        //上拉刷新
+        tableView?.mj_footer = MJRefreshBackNormalFooter(refreshingTarget: self, refreshingAction: #selector(InviteJobVC.loadMore))
     }
     
+    
+    //MARK: -  refresh
+    func  loadMore() {
+        self.loadCellData(page: self.page)
+    }
+    
+    
+    func  refresh() {
+        weak var  weakself = self
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.8, execute: {
+            //结束刷新
+            weakself?.tableView?.mj_header.endRefreshing()
+            //重新调用数据接口
+            weakself?.tableView?.reloadData()
+        })
+    }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return modelInfo.count
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -79,12 +105,23 @@ class JobSearchVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
         
         let cell = tableView.dequeueReusableCell(withIdentifier: recruitCellID) as! LunTanListWithAvatarCell
-//        cell.viewModel = self.modelInfo[indexPath.row] as
+        //把模型的数据传给cell
+        guard modelInfo.count != 0  else {
+            return cell
+        }
+        
+        let model = modelInfo[indexPath.row]
+        cell.viewModel = model
         return cell
     }
     // tableView点击触发事件
     func  tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let wantJobDVC =  WantJobDVC()
+        //取出模型
+        let  model = self.modelInfo[indexPath.row]
+//        wantJobDVC.wantJobID = Int(model.id!)
+//        wantJobDVC.urls = model.picture!
+
         self.navigationController?.pushViewController(wantJobDVC, animated: true)
     }
     override func viewWillAppear(_ animated: Bool) {
@@ -222,11 +259,14 @@ extension JobSearchVC {
     
     // MARK:- DispatchGroup
     
-    fileprivate func loadCellData() {
+    fileprivate func loadCellData(page : Int) {
+        if   self.page != self.pages {
+            self.page += 1
+        }
         let group = DispatchGroup()
         //将当前的下载操作添加到组中
         group.enter()
-        NetWorkTool.shareInstance.infoList(VCType: .job, p: 1) { [weak self](result, error)  in
+        NetWorkTool.shareInstance.infoList(VCType: .job,cate_2 : "", cate_3 : "", cate_4 : "1", p: 1) { [weak self](result, error)  in
             //在这里异步加载任务
             
             if error != nil {
@@ -241,10 +281,20 @@ extension JobSearchVC {
             guard let resultList  = resultDict["list"] as? NSArray else {
                 return
             }
+            guard let pages  = resultDict["pages"]   as? Int else {
+                return
+                
+            }
+            self?.pages = pages
             for i in 0..<resultList.count {
                 let dict = resultList[i]
-                let basic = JobSearchStatus(dict: dict as! [String : AnyObject])
+                let basic = LunTanDetialModel(dict: dict as! [String : AnyObject])
                 self?.modelInfo.append(basic)
+            }
+            if   self?.page == self?.pages {
+                self?.tableView?.mj_footer.endRefreshingWithNoMoreData()
+            }else {
+                self?.tableView?.mj_footer.endRefreshing()
             }
             //离开当前组
             group.leave()

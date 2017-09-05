@@ -19,16 +19,16 @@
                 <rect key="frame" x="0.0" y="0.0" width="533" height="150"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MZF-yU-yH9">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MZF-yU-yH9">
                         <rect key="frame" x="10" y="55" width="158.5" height="70"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="70" id="N3q-tz-Ro5"/>
                         </constraints>
                     </imageView>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OWS-Lw-rGR">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OWS-Lw-rGR">
                         <rect key="frame" x="183.5" y="55" width="158" height="70"/>
                     </imageView>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gJs-CC-sbf">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gJs-CC-sbf">
                         <rect key="frame" x="356.5" y="55" width="158.5" height="70"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="菲律宾莱特岛附近发生6.6级地震 震源深度10千米菲律宾莱特岛附近发生6.6级地震 震源深度10千米" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ul-Bp-lOM">
@@ -73,7 +73,7 @@
                 <outlet property="newsTitle" destination="1ul-Bp-lOM" id="CRt-uM-mRc"/>
                 <outlet property="scourceText" destination="lI4-az-V4D" id="VoL-eP-kR9"/>
             </connections>
-            <point key="canvasLocation" x="-564.5" y="-155"/>
+            <point key="canvasLocation" x="-874" y="-211"/>
         </tableViewCell>
     </objects>
 </document>

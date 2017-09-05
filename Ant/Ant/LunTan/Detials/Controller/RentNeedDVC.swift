@@ -14,6 +14,8 @@ class RentNeedDVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
     
     var modelInfo: LunTanDetialModel?
     
+    //定义接受id
+    var rentNeedID : Int?
     override func viewDidLoad() {
         super.viewDidLoad()
         loadCellData(index: 1)
@@ -31,12 +33,10 @@ class RentNeedDVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
         let frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height - 60)
         
         self.tableView = UITableView(frame: frame, style: .grouped)
-        
         self.tableView?.delegate = self
         self.tableView?.dataSource = self
-        
         self.tableView?.backgroundColor = UIColor.init(white: 0.9, alpha: 1)
-        
+        self.tableView?.showsVerticalScrollIndicator = false 
         self.tableView?.separatorStyle = .singleLine
         
         tableView?.register(UINib(nibName: "RentNeedDetial", bundle: nil), forCellReuseIdentifier: "rentNeedDetial")
@@ -209,7 +209,7 @@ extension RentNeedDVC {
         let group = DispatchGroup()
         //将当前的下载操作添加到组中
         group.enter()
-        NetWorkTool.shareInstance.infoDetial(VCType: .house, id: index + 1) { [weak self](result, error)  in
+        NetWorkTool.shareInstance.infoDetial(VCType: .seek, id: rentNeedID!) { [weak self](result, error)  in
             //在这里异步加载任务
             
             if error != nil {

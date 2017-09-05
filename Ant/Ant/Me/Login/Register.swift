@@ -70,6 +70,10 @@ class Register: UIViewController {
                         weak var weakSelf = self
                         NetWorkTool.shareInstance.UserRegister((weakSelf?.phoneNumber.text!)!, password: (weakSelf?.password.text!)!, finished: { (userInfo, error) in
                             if error == nil {
+                                
+                            let loginStaus =  userInfo?["code"] as? String
+                            if  loginStaus == "200" {
+
                             //存储手机号码和密码
                             sender.saveUserData(phone: self.phoneNumber.text!, password: self.password.text!, token: "")
                             //存储数据到服务器
@@ -81,6 +85,9 @@ class Register: UIViewController {
                             alert.addAction(ok)
                             weakSelf?.present(alert, animated: true, completion: nil)
 
+                            }else{
+                                SVProgressHUD.showError(withStatus: userInfo?["msg"]! as! String)
+                                }
                             }
                         })
                     }

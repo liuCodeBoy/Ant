@@ -15,9 +15,9 @@ class CityWideBasicInfo: UITableViewCell {
     @IBOutlet weak var academic: UILabel!
     @IBOutlet weak var hobby: UILabel!
     @IBOutlet weak var constellation: UILabel!
-
     @IBOutlet weak var city: UILabel!
     @IBOutlet weak var creatAt: UILabel!
+     var  cityWideHeight  = 20
     override func awakeFromNib() {
         super.awakeFromNib()
 
@@ -32,6 +32,7 @@ class CityWideBasicInfo: UITableViewCell {
             
             if let title = viewModel?.title {
                 self.titleIntro.text = title
+                self.cityWideHeight = Int(self.titleIntro.getLabHeight(labelStr: title, font:UIFont.systemFont(ofSize: 18.0), width: screenWidth - 20))
             }
             if let academic = viewModel?.education {
                 self.academic.setTitleWithSpace(academic)

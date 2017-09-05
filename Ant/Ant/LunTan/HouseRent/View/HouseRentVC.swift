@@ -47,7 +47,10 @@ class HouseRentVC: UIViewController {
     }
     //发布信息
     func sendOutInformation() -> () {
-        
+        let   token = UserInfoModel.shareInstance.account?.token!
+        if token == nil {
+            self.presentHintMessage(target: self, hintMessgae: "您尚未登陆")
+        }else{
         let  giveVC = GiveOutVC()
         giveVC.title = "房屋出租"
         let listTableview = HouseRentTabView.init(frame: CGRect.init(x: 0, y: 0, width: screenWidth, height: screenHeight), style: .grouped)
@@ -78,7 +81,7 @@ class HouseRentVC: UIViewController {
             self?.navigationController?.pushViewController(choseVC, animated: true)
         }
         self.navigationController?.pushViewController(giveVC, animated: true)
-        
+        }
     }
     
     //设置导航栏

@@ -14,6 +14,9 @@ class WantJobDVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var tableView: UITableView?
     
+    var wantJobID  = 0
+    lazy var urls = [String]()
+
     var modelInfo: LunTanDetialModel?
     
     override func viewDidLoad() {
@@ -33,7 +36,7 @@ class WantJobDVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         let frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height - 60)
         
         self.tableView = UITableView(frame: frame, style: .grouped)
-        
+        self.tableView?.showsVerticalScrollIndicator = false
         self.tableView?.delegate = self
         self.tableView?.dataSource = self
         
@@ -140,7 +143,9 @@ class WantJobDVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         case 2:
             
             let connactoptions = tableView.dequeueReusableCell(withIdentifier: "connactOptions") as! ConnactOptions
-            
+            guard modelInfo?.connactDict.count != 0 else {
+                return connactoptions
+            }
             if let key = modelInfo?.connactDict[indexPath.row].first?.key {
                 connactoptions.con_Ways.text = key
             }
@@ -206,7 +211,7 @@ extension WantJobDVC {
         let group = DispatchGroup()
         //将当前的下载操作添加到组中
         group.enter()
-        NetWorkTool.shareInstance.infoDetial(VCType: .job, id: index + 1) { [weak self](result, error)  in
+        NetWorkTool.shareInstance.infoDetial(VCType: .job, id: wantJobID) { [weak self](result, error)  in
             //在这里异步加载任务
             
             if error != nil {

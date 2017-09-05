@@ -14,6 +14,10 @@ class RecruitDVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var modelInfo: LunTanDetialModel?
     
+    var RecruitID  = 0
+    
+    lazy var urls = [String]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         loadDetialTableView()
@@ -33,7 +37,7 @@ class RecruitDVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
         self.tableView?.delegate = self
         self.tableView?.dataSource = self
-        
+        self.tableView?.showsVerticalScrollIndicator = false
         self.tableView?.backgroundColor = UIColor.init(white: 0.9, alpha: 1)
         
         self.tableView?.separatorStyle = .singleLine
@@ -71,15 +75,6 @@ class RecruitDVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         switch section {
         case 0:
             let frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.width * 0.6)
-            
-            let urls = [
-                "http://img3.cache.netease.com/photo/0009/2016-05-27/BO1HVHOV0AI20009.jpg",
-                "http://img3.cache.netease.com/photo/0009/2016-05-27/BO1HVIJ30AI20009.png",
-                "http://img5.cache.netease.com/photo/0009/2016-05-27/BO1HVLIM0AI20009.jpg",
-                "http://img6.cache.netease.com/photo/0009/2016-05-27/BO1HVJCD0AI20009.jpg",
-                "http://img2.cache.netease.com/photo/0009/2016-05-27/BO1HVPUT0AI20009.png"
-            ]
-            
             var urlArray: [URL] = [URL]()
             for str in urls {
                 let url = URL(string: str)
