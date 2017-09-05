@@ -541,7 +541,13 @@ extension  NewsDetailVCViewController {
             if   self.commentModelArr.count != 0{
                 let  commmandCell = tableView.dequeueReusableCell(withIdentifier: hotCommandCell, for: indexPath) as? NewsHotCommondCell
                 if  let commentModel = self.commentModelArr[indexPath.row] as? NewsComment {
-                    commmandCell?.userPicImage.sd_setImage(with: URL.init(string: (commentModel.user_info?.head_portrait)!), placeholderImage: UIImage.init(named: "img_headportrait"))
+                    
+                    if let picture = commentModel.user_info?.head_portrait{
+                        if  let imageURL = URL.init(string: picture) {
+                            commmandCell?.userPicImage.sd_setImage(with:  imageURL as URL, placeholderImage: #imageLiteral(resourceName: "img_headportrait"))
+                        }
+                    }
+            
                     commmandCell?.areaLabel.text = commentModel.user_info?.area
                     commmandCell?.nameLabel.text = commentModel.user_info?.name
                     commmandCell?.timeLabel.text = commentModel.time
