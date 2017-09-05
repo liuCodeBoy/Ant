@@ -9,7 +9,6 @@
 import UIKit
 import MJRefresh
 class HouseRentListVC: UIViewController {
-    
     let houseRentCell = "HouseRentViewCell"
     let topPlistName = ["job_recruit_type","job_recruit_visa","job_recruit_nature"]
     var category : CategoryVC?
@@ -19,7 +18,6 @@ class HouseRentListVC: UIViewController {
     //定义当前的page总页数
     var  pages  = 1
     fileprivate lazy var modelInfo: [HouseRentStatus] = [HouseRentStatus]()
-    
     //定义顶部列表栏
     fileprivate var topView: UIView?
     //导航分类箭头image
@@ -28,7 +26,6 @@ class HouseRentListVC: UIViewController {
     //定义全局plist名
     var plistName : String?
     var tableView : UITableView?
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,10 +39,7 @@ class HouseRentListVC: UIViewController {
         tableView?.register(UINib.init(nibName: "HouseRentViewCell", bundle: nil), forCellReuseIdentifier: self.houseRentCell)
         tableView?.rowHeight = UITableViewAutomaticDimension
         tableView?.estimatedRowHeight = 150
-        
-        
     }
-    
 }
 
 // MARK:- TableViewAttributes
@@ -166,15 +160,7 @@ extension HouseRentListVC {
             weakself?.tableView?.reloadData()
         })
     }
-    
-    
 }
-
-
-
-
-
-
 
 //MARK: - TopListChoose
 extension HouseRentListVC {

@@ -114,6 +114,10 @@ extension ProfileViewController: UITableViewDelegate, UITableViewDataSource {
                 switch indexPath.row {
                 case 0:
                     print("my issue")
+                    let storyBoard = UIStoryboard(name: "Others", bundle: nil)
+                    let  dest  = storyBoard.instantiateViewController(withIdentifier: "youSentOut") as? OthersIssueVC
+                    self.present(dest!, animated: true, completion: nil)
+                    
                 case 1:
                     print("my favourite")
                 case 2:

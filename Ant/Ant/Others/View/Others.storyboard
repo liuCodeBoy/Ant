@@ -14,7 +14,7 @@
         <!--Title-->
         <scene sceneID="eiB-a1-asE">
             <objects>
-                <viewController storyboardIdentifier="youSentOUt" useStoryboardIdentifierAsRestorationIdentifier="YES" id="IRN-GS-W77" customClass="OthersIssueVC" customModule="Ant" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="youSentOut" useStoryboardIdentifierAsRestorationIdentifier="YES" id="IRN-GS-W77" customClass="OthersIssueVC" customModule="Ant" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="myj-mB-6IJ"/>
                         <viewControllerLayoutGuide type="bottom" id="aC9-Jy-aVJ"/>
@@ -139,7 +139,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rbw-Jr-bO7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2568.8000000000002" y="287.40629685157421"/>
+            <point key="canvasLocation" x="2260" y="331"/>
         </scene>
         <!--Others JoinVC-->
         <scene sceneID="5QF-cV-UaL">

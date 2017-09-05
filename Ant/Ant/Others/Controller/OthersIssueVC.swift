@@ -19,11 +19,15 @@ class OthersIssueVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         issueTableView.delegate = self
         issueTableView.dataSource = self
 
     }
+}
+
+
+   func loadSelfData() -> () {
+    
 }
 
 extension OthersIssueVC: UITableViewDataSource, UITableViewDelegate {
