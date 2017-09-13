@@ -11,7 +11,6 @@
 		B6480CE81F58F9C100E4ABB3 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6480CE61F58F9C100E4ABB3 /* UserInfo.swift */; };
 		B6480CE91F58F9C100E4ABB3 /* UserInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6480CE71F58F9C100E4ABB3 /* UserInfoModel.swift */; };
 		B6480CEC1F58F9CD00E4ABB3 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6480CEA1F58F9CD00E4ABB3 /* Register.swift */; };
-		B6480CED1F58F9CD00E4ABB3 /* Register.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6480CEB1F58F9CD00E4ABB3 /* Register.xib */; };
 		B6480CF01F58F9E000E4ABB3 /* LoginWithPwd.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6480CEE1F58F9E000E4ABB3 /* LoginWithPwd.swift */; };
 		B6480CF11F58F9E000E4ABB3 /* LoginWithPwd.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6480CEF1F58F9E000E4ABB3 /* LoginWithPwd.xib */; };
 		B6480CF61F58FA1E00E4ABB3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6480CF41F58FA1E00E4ABB3 /* LoginViewController.swift */; };
@@ -41,15 +40,12 @@
 		D33999E91F4EC771009DACD0 /* CarBusinessBasicInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33998FF1F4EC770009DACD0 /* CarBusinessBasicInfo.swift */; };
 		D33999EA1F4EC771009DACD0 /* CarBusinessBasicInfo.xib in Resources */ = {isa = PBXBuildFile; fileRef = D33999001F4EC770009DACD0 /* CarBusinessBasicInfo.xib */; };
 		D33999EB1F4EC771009DACD0 /* CarBusinessDetial.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33999011F4EC770009DACD0 /* CarBusinessDetial.swift */; };
-		D33999EC1F4EC771009DACD0 /* CarBusinessDetial.xib in Resources */ = {isa = PBXBuildFile; fileRef = D33999021F4EC770009DACD0 /* CarBusinessDetial.xib */; };
 		D33999ED1F4EC771009DACD0 /* CarServiceBasicInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33999041F4EC770009DACD0 /* CarServiceBasicInfo.swift */; };
 		D33999EE1F4EC771009DACD0 /* CarServiceBasicInfo.xib in Resources */ = {isa = PBXBuildFile; fileRef = D33999051F4EC771009DACD0 /* CarServiceBasicInfo.xib */; };
 		D33999EF1F4EC771009DACD0 /* CarServiceDetial.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33999061F4EC771009DACD0 /* CarServiceDetial.swift */; };
-		D33999F01F4EC771009DACD0 /* CarServiceDetial.xib in Resources */ = {isa = PBXBuildFile; fileRef = D33999071F4EC771009DACD0 /* CarServiceDetial.xib */; };
 		D33999F11F4EC771009DACD0 /* CityWideBasicInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33999091F4EC771009DACD0 /* CityWideBasicInfo.swift */; };
 		D33999F21F4EC771009DACD0 /* CityWideBasicInfo.xib in Resources */ = {isa = PBXBuildFile; fileRef = D339990A1F4EC771009DACD0 /* CityWideBasicInfo.xib */; };
 		D33999F31F4EC771009DACD0 /* CityWideDetial.swift in Sources */ = {isa = PBXBuildFile; fileRef = D339990B1F4EC771009DACD0 /* CityWideDetial.swift */; };
-		D33999F41F4EC771009DACD0 /* CityWideDetial.xib in Resources */ = {isa = PBXBuildFile; fileRef = D339990C1F4EC771009DACD0 /* CityWideDetial.xib */; };
 		D33999F51F4EC771009DACD0 /* CityWideLoop.swift in Sources */ = {isa = PBXBuildFile; fileRef = D339990D1F4EC771009DACD0 /* CityWideLoop.swift */; };
 		D33999F61F4EC771009DACD0 /* ConnactOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D339990E1F4EC771009DACD0 /* ConnactOptions.swift */; };
 		D33999F71F4EC771009DACD0 /* ConnactOptions.xib in Resources */ = {isa = PBXBuildFile; fileRef = D339990F1F4EC771009DACD0 /* ConnactOptions.xib */; };
@@ -60,35 +56,26 @@
 		D33999FC1F4EC771009DACD0 /* LocationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33999141F4EC771009DACD0 /* LocationInfo.swift */; };
 		D33999FD1F4EC771009DACD0 /* LocationInfo.xib in Resources */ = {isa = PBXBuildFile; fileRef = D33999151F4EC771009DACD0 /* LocationInfo.xib */; };
 		D33999FE1F4EC771009DACD0 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33999161F4EC771009DACD0 /* Menu.swift */; };
-		D33999FF1F4EC771009DACD0 /* Menu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D33999171F4EC771009DACD0 /* Menu.xib */; };
 		D3399A001F4EC771009DACD0 /* MessageHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33999181F4EC771009DACD0 /* MessageHeader.swift */; };
-		D3399A011F4EC771009DACD0 /* MessageHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = D33999191F4EC771009DACD0 /* MessageHeader.xib */; };
 		D3399A021F4EC771009DACD0 /* MessagesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D339991A1F4EC771009DACD0 /* MessagesCell.swift */; };
 		D3399A031F4EC771009DACD0 /* MessagesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D339991B1F4EC771009DACD0 /* MessagesCell.xib */; };
 		D3399A041F4EC771009DACD0 /* RecruitBasicInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D339991D1F4EC771009DACD0 /* RecruitBasicInfo.swift */; };
 		D3399A051F4EC771009DACD0 /* RecruitBasicInfo.xib in Resources */ = {isa = PBXBuildFile; fileRef = D339991E1F4EC771009DACD0 /* RecruitBasicInfo.xib */; };
 		D3399A061F4EC771009DACD0 /* RecruitDetial.swift in Sources */ = {isa = PBXBuildFile; fileRef = D339991F1F4EC771009DACD0 /* RecruitDetial.swift */; };
-		D3399A071F4EC771009DACD0 /* RecruitDetial.xib in Resources */ = {isa = PBXBuildFile; fileRef = D33999201F4EC771009DACD0 /* RecruitDetial.xib */; };
 		D3399A081F4EC771009DACD0 /* RentNeedDetial.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33999221F4EC771009DACD0 /* RentNeedDetial.swift */; };
-		D3399A091F4EC771009DACD0 /* RentNeedDetial.xib in Resources */ = {isa = PBXBuildFile; fileRef = D33999231F4EC771009DACD0 /* RentNeedDetial.xib */; };
 		D3399A0A1F4EC771009DACD0 /* RentOutBasicInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33999251F4EC771009DACD0 /* RentOutBasicInfo.swift */; };
 		D3399A0B1F4EC771009DACD0 /* RentOutBasicInfo.xib in Resources */ = {isa = PBXBuildFile; fileRef = D33999261F4EC771009DACD0 /* RentOutBasicInfo.xib */; };
 		D3399A0C1F4EC771009DACD0 /* RentOutDetial.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33999271F4EC771009DACD0 /* RentOutDetial.swift */; };
-		D3399A0D1F4EC771009DACD0 /* RentOutDetial.xib in Resources */ = {isa = PBXBuildFile; fileRef = D33999281F4EC771009DACD0 /* RentOutDetial.xib */; };
 		D3399A0E1F4EC771009DACD0 /* SecondHandBasicInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D339992A1F4EC771009DACD0 /* SecondHandBasicInfo.swift */; };
 		D3399A0F1F4EC771009DACD0 /* SecondHandBasicInfo.xib in Resources */ = {isa = PBXBuildFile; fileRef = D339992B1F4EC771009DACD0 /* SecondHandBasicInfo.xib */; };
 		D3399A101F4EC771009DACD0 /* SecondHandDetial.swift in Sources */ = {isa = PBXBuildFile; fileRef = D339992C1F4EC771009DACD0 /* SecondHandDetial.swift */; };
-		D3399A111F4EC771009DACD0 /* SecondHandDetial.xib in Resources */ = {isa = PBXBuildFile; fileRef = D339992D1F4EC771009DACD0 /* SecondHandDetial.xib */; };
 		D3399A141F4EC771009DACD0 /* avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = D33999311F4EC771009DACD0 /* avatar.png */; };
 		D3399A151F4EC771009DACD0 /* BriefIntroduction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33999321F4EC771009DACD0 /* BriefIntroduction.swift */; };
-		D3399A161F4EC771009DACD0 /* BriefIntroduction.xib in Resources */ = {isa = PBXBuildFile; fileRef = D33999331F4EC771009DACD0 /* BriefIntroduction.xib */; };
 		D3399A171F4EC771009DACD0 /* HouseNeedRentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33999361F4EC771009DACD0 /* HouseNeedRentVC.swift */; };
 		D3399A181F4EC771009DACD0 /* HouseRentListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33999391F4EC771009DACD0 /* HouseRentListVC.swift */; };
 		D3399A191F4EC771009DACD0 /* HouseRentStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = D339993B1F4EC771009DACD0 /* HouseRentStatus.swift */; };
 		D3399A1A1F4EC771009DACD0 /* HouseRentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D339993D1F4EC771009DACD0 /* HouseRentVC.swift */; };
-		D3399A1B1F4EC771009DACD0 /* HouseRentVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D339993E1F4EC771009DACD0 /* HouseRentVC.xib */; };
 		D3399A1C1F4EC771009DACD0 /* HouseRentViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D339993F1F4EC771009DACD0 /* HouseRentViewCell.swift */; };
-		D3399A1D1F4EC771009DACD0 /* HouseRentViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D33999401F4EC771009DACD0 /* HouseRentViewCell.xib */; };
 		D3399A1E1F4EC771009DACD0 /* InviteJobVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33999431F4EC771009DACD0 /* InviteJobVC.swift */; };
 		D3399A1F1F4EC771009DACD0 /* JobOrEnigeerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33999441F4EC771009DACD0 /* JobOrEnigeerVC.swift */; };
 		D3399A201F4EC771009DACD0 /* JobSearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33999451F4EC771009DACD0 /* JobSearchVC.swift */; };
@@ -97,7 +84,6 @@
 		D3399A231F4EC771009DACD0 /* JobSearchInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D339994A1F4EC771009DACD0 /* JobSearchInfoView.swift */; };
 		D3399A241F4EC771009DACD0 /* lunTanModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D339994B1F4EC771009DACD0 /* lunTanModel.swift */; };
 		D3399A251F4EC771009DACD0 /* LunTanTopViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D339994C1F4EC771009DACD0 /* LunTanTopViewCell.swift */; };
-		D3399A261F4EC771009DACD0 /* LunTanTopViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D339994D1F4EC771009DACD0 /* LunTanTopViewCell.xib */; };
 		D3399A271F4EC771009DACD0 /* LunTanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D339994E1F4EC771009DACD0 /* LunTanViewController.swift */; };
 		D3399A281F4EC771009DACD0 /* NomenclatureSpecification.md in Sources */ = {isa = PBXBuildFile; fileRef = D339994F1F4EC771009DACD0 /* NomenclatureSpecification.md */; };
 		D3399A291F4EC771009DACD0 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33999521F4EC771009DACD0 /* Category.swift */; };
@@ -128,7 +114,6 @@
 		D3399A421F4EC771009DACD0 /* SecondHandCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D339996F1F4EC771009DACD0 /* SecondHandCategory.swift */; };
 		D3399A431F4EC771009DACD0 /* SecondHandIssueVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33999701F4EC771009DACD0 /* SecondHandIssueVC.swift */; };
 		D3399A441F4EC771009DACD0 /* SecondHandListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33999711F4EC771009DACD0 /* SecondHandListVC.swift */; };
-		D3399A451F4EC771009DACD0 /* SecondHand.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D33999731F4EC771009DACD0 /* SecondHand.storyboard */; };
 		D3399A461F4EC771009DACD0 /* GiveOutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33999751F4EC771009DACD0 /* GiveOutVC.swift */; };
 		D3399A471F4EC771009DACD0 /* HouseRentTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33999761F4EC771009DACD0 /* HouseRentTabView.swift */; };
 		D3399A481F4EC771009DACD0 /* PicPicKerCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33999781F4EC771009DACD0 /* PicPicKerCollectionView.swift */; };
@@ -164,16 +149,13 @@
 		D3399A661F4EC771009DACD0 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33999971F4EC771009DACD0 /* WeatherModel.swift */; };
 		D3399A671F4EC771009DACD0 /* Extension-CustomAttrs.swift in Sources */ = {isa = PBXBuildFile; fileRef = D339999A1F4EC771009DACD0 /* Extension-CustomAttrs.swift */; };
 		D3399A721F4EC771009DACD0 /* LoginTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33999A51F4EC771009DACD0 /* LoginTableViewCell.swift */; };
-		D3399A731F4EC771009DACD0 /* LoginTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D33999A61F4EC771009DACD0 /* LoginTableViewCell.xib */; };
 		D3399A761F4EC771009DACD0 /* SelfProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33999AB1F4EC771009DACD0 /* SelfProfile.swift */; };
-		D3399A771F4EC771009DACD0 /* SelfProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D33999AE1F4EC771009DACD0 /* SelfProfile.storyboard */; };
 		D3399A781F4EC771009DACD0 /* MessageViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33999B01F4EC771009DACD0 /* MessageViewCell.swift */; };
 		D3399A791F4EC771009DACD0 /* MessageViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D33999B11F4EC771009DACD0 /* MessageViewCell.xib */; };
 		D3399A7A1F4EC771009DACD0 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33999B21F4EC771009DACD0 /* MessageViewController.swift */; };
 		D3399A7B1F4EC771009DACD0 /* OthersIssueVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33999B51F4EC771009DACD0 /* OthersIssueVC.swift */; };
 		D3399A7C1F4EC771009DACD0 /* OthersJoinVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33999B61F4EC771009DACD0 /* OthersJoinVC.swift */; };
 		D3399A7D1F4EC771009DACD0 /* OthersProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33999B71F4EC771009DACD0 /* OthersProfileVC.swift */; };
-		D3399A7E1F4EC771009DACD0 /* Others.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D33999BA1F4EC771009DACD0 /* Others.storyboard */; };
 		D3399A7F1F4EC771009DACD0 /* AntCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33999BC1F4EC771009DACD0 /* AntCityViewController.swift */; };
 		D3399A801F4EC771009DACD0 /* AntTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33999BD1F4EC771009DACD0 /* AntTextfield.swift */; };
 		D3399A811F4EC771009DACD0 /* BtnScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33999BE1F4EC771009DACD0 /* BtnScrollView.swift */; };
@@ -184,11 +166,33 @@
 		D3399A8E1F4EC771009DACD0 /* NetWorkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33999CD1F4EC771009DACD0 /* NetWorkTool.swift */; };
 		D3399A901F4EC771009DACD0 /* LoopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33999D01F4EC771009DACD0 /* LoopView.swift */; };
 		D3399A911F4EC771009DACD0 /* Share.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33999D11F4EC771009DACD0 /* Share.swift */; };
-		D3399A921F4EC771009DACD0 /* Share.xib in Resources */ = {isa = PBXBuildFile; fileRef = D33999D21F4EC771009DACD0 /* Share.xib */; };
 		D3399A961F4EC771009DACD0 /* ThemeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33999D61F4EC771009DACD0 /* ThemeColor.swift */; };
 		D3399A971F4EC771009DACD0 /* TopScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33999D71F4EC771009DACD0 /* TopScrollView.swift */; };
 		D3399A9B1F4EC9C8009DACD0 /* BaseTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3399A9A1F4EC9C8009DACD0 /* BaseTabBarVC.swift */; };
 		D39AA8EA1F53EDE600FBB060 /* SelfDetialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39AA8E91F53EDE600FBB060 /* SelfDetialViewController.swift */; };
+		D3C849441F5EDEA2008AC12E /* AppJump-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C849431F5EDEA2008AC12E /* AppJump-Extension.swift */; };
+		D3CA22FD1F680C0000403C45 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D3CA22FF1F680C0000403C45 /* InfoPlist.strings */; };
+		D3CA230D1F680F0F00403C45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3CA230B1F680F0F00403C45 /* LaunchScreen.storyboard */; };
+		D3CA23281F68164800403C45 /* SelfProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3CA232A1F68164800403C45 /* SelfProfile.storyboard */; };
+		D3CA23381F69445200403C45 /* LoginTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3CA233A1F69445200403C45 /* LoginTableViewCell.xib */; };
+		D3CA233F1F6944AC00403C45 /* Register.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3CA23411F6944AC00403C45 /* Register.xib */; };
+		D3CA23481F6947DD00403C45 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D3CA234A1F6947DD00403C45 /* Localizable.strings */; };
+		D3CA234D1F694C3F00403C45 /* Share.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3CA234F1F694C3F00403C45 /* Share.xib */; };
+		D3CA23541F694C6B00403C45 /* Others.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3CA23561F694C6B00403C45 /* Others.storyboard */; };
+		D3CA235B1F694D6A00403C45 /* LunTanTopViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3CA235D1F694D6A00403C45 /* LunTanTopViewCell.xib */; };
+		D3CA23621F694DA100403C45 /* SecondHand.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3CA23641F694DA100403C45 /* SecondHand.storyboard */; };
+		D3CA23691F694E9100403C45 /* HouseRentVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3CA236B1F694E9100403C45 /* HouseRentVC.xib */; };
+		D3CA23701F694F0100403C45 /* HouseRentViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3CA23721F694F0100403C45 /* HouseRentViewCell.xib */; };
+		D3CA23771F694F3D00403C45 /* MessageHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3CA23791F694F3D00403C45 /* MessageHeader.xib */; };
+		D3CA237E1F694F6600403C45 /* Menu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3CA23801F694F6600403C45 /* Menu.xib */; };
+		D3CA23851F694FF600403C45 /* SecondHandDetial.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3CA23871F694FF600403C45 /* SecondHandDetial.xib */; };
+		D3CA238C1F69505E00403C45 /* CityWideDetial.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3CA238E1F69505E00403C45 /* CityWideDetial.xib */; };
+		D3CA23931F69509300403C45 /* CarServiceDetial.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3CA23951F69509300403C45 /* CarServiceDetial.xib */; };
+		D3CA239A1F6950AD00403C45 /* CarBusinessDetial.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3CA239C1F6950AD00403C45 /* CarBusinessDetial.xib */; };
+		D3CA23A11F6950F900403C45 /* RecruitDetial.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3CA23A31F6950F900403C45 /* RecruitDetial.xib */; };
+		D3CA23A81F69515200403C45 /* BriefIntroduction.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3CA23AA1F69515200403C45 /* BriefIntroduction.xib */; };
+		D3CA23AF1F6951A200403C45 /* RentOutDetial.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3CA23B11F6951A200403C45 /* RentOutDetial.xib */; };
+		D3CA23B61F6951D100403C45 /* RentNeedDetial.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3CA23B81F6951D100403C45 /* RentNeedDetial.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -198,7 +202,6 @@
 		B6480CE61F58F9C100E4ABB3 /* UserInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserInfo.swift; path = Ant/Me/Login/UserInfo.swift; sourceTree = SOURCE_ROOT; };
 		B6480CE71F58F9C100E4ABB3 /* UserInfoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserInfoModel.swift; path = Ant/Me/Login/UserInfoModel.swift; sourceTree = SOURCE_ROOT; };
 		B6480CEA1F58F9CD00E4ABB3 /* Register.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Register.swift; path = Ant/Me/Login/Register.swift; sourceTree = SOURCE_ROOT; };
-		B6480CEB1F58F9CD00E4ABB3 /* Register.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Register.xib; path = Ant/Me/Login/Register.xib; sourceTree = SOURCE_ROOT; };
 		B6480CEE1F58F9E000E4ABB3 /* LoginWithPwd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginWithPwd.swift; path = Ant/Me/Login/LoginWithPwd.swift; sourceTree = SOURCE_ROOT; };
 		B6480CEF1F58F9E000E4ABB3 /* LoginWithPwd.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LoginWithPwd.xib; path = Ant/Me/Login/LoginWithPwd.xib; sourceTree = SOURCE_ROOT; };
 		B6480CF41F58FA1E00E4ABB3 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Ant/Me/Login/LoginViewController.swift; sourceTree = SOURCE_ROOT; };
@@ -231,15 +234,12 @@
 		D33998FF1F4EC770009DACD0 /* CarBusinessBasicInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarBusinessBasicInfo.swift; sourceTree = "<group>"; };
 		D33999001F4EC770009DACD0 /* CarBusinessBasicInfo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CarBusinessBasicInfo.xib; sourceTree = "<group>"; };
 		D33999011F4EC770009DACD0 /* CarBusinessDetial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarBusinessDetial.swift; sourceTree = "<group>"; };
-		D33999021F4EC770009DACD0 /* CarBusinessDetial.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CarBusinessDetial.xib; sourceTree = "<group>"; };
 		D33999041F4EC770009DACD0 /* CarServiceBasicInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarServiceBasicInfo.swift; sourceTree = "<group>"; };
 		D33999051F4EC771009DACD0 /* CarServiceBasicInfo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CarServiceBasicInfo.xib; sourceTree = "<group>"; };
 		D33999061F4EC771009DACD0 /* CarServiceDetial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarServiceDetial.swift; sourceTree = "<group>"; };
-		D33999071F4EC771009DACD0 /* CarServiceDetial.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CarServiceDetial.xib; sourceTree = "<group>"; };
 		D33999091F4EC771009DACD0 /* CityWideBasicInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityWideBasicInfo.swift; sourceTree = "<group>"; };
 		D339990A1F4EC771009DACD0 /* CityWideBasicInfo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CityWideBasicInfo.xib; sourceTree = "<group>"; };
 		D339990B1F4EC771009DACD0 /* CityWideDetial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityWideDetial.swift; sourceTree = "<group>"; };
-		D339990C1F4EC771009DACD0 /* CityWideDetial.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CityWideDetial.xib; sourceTree = "<group>"; };
 		D339990D1F4EC771009DACD0 /* CityWideLoop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityWideLoop.swift; sourceTree = "<group>"; };
 		D339990E1F4EC771009DACD0 /* ConnactOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnactOptions.swift; sourceTree = "<group>"; };
 		D339990F1F4EC771009DACD0 /* ConnactOptions.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConnactOptions.xib; sourceTree = "<group>"; };
@@ -250,35 +250,26 @@
 		D33999141F4EC771009DACD0 /* LocationInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationInfo.swift; sourceTree = "<group>"; };
 		D33999151F4EC771009DACD0 /* LocationInfo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocationInfo.xib; sourceTree = "<group>"; };
 		D33999161F4EC771009DACD0 /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
-		D33999171F4EC771009DACD0 /* Menu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Menu.xib; sourceTree = "<group>"; };
 		D33999181F4EC771009DACD0 /* MessageHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageHeader.swift; sourceTree = "<group>"; };
-		D33999191F4EC771009DACD0 /* MessageHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageHeader.xib; sourceTree = "<group>"; };
 		D339991A1F4EC771009DACD0 /* MessagesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesCell.swift; sourceTree = "<group>"; };
 		D339991B1F4EC771009DACD0 /* MessagesCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessagesCell.xib; sourceTree = "<group>"; };
 		D339991D1F4EC771009DACD0 /* RecruitBasicInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecruitBasicInfo.swift; sourceTree = "<group>"; };
 		D339991E1F4EC771009DACD0 /* RecruitBasicInfo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecruitBasicInfo.xib; sourceTree = "<group>"; };
 		D339991F1F4EC771009DACD0 /* RecruitDetial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecruitDetial.swift; sourceTree = "<group>"; };
-		D33999201F4EC771009DACD0 /* RecruitDetial.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecruitDetial.xib; sourceTree = "<group>"; };
 		D33999221F4EC771009DACD0 /* RentNeedDetial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RentNeedDetial.swift; sourceTree = "<group>"; };
-		D33999231F4EC771009DACD0 /* RentNeedDetial.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RentNeedDetial.xib; sourceTree = "<group>"; };
 		D33999251F4EC771009DACD0 /* RentOutBasicInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RentOutBasicInfo.swift; sourceTree = "<group>"; };
 		D33999261F4EC771009DACD0 /* RentOutBasicInfo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RentOutBasicInfo.xib; sourceTree = "<group>"; };
 		D33999271F4EC771009DACD0 /* RentOutDetial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RentOutDetial.swift; sourceTree = "<group>"; };
-		D33999281F4EC771009DACD0 /* RentOutDetial.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RentOutDetial.xib; sourceTree = "<group>"; };
 		D339992A1F4EC771009DACD0 /* SecondHandBasicInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondHandBasicInfo.swift; sourceTree = "<group>"; };
 		D339992B1F4EC771009DACD0 /* SecondHandBasicInfo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondHandBasicInfo.xib; sourceTree = "<group>"; };
 		D339992C1F4EC771009DACD0 /* SecondHandDetial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondHandDetial.swift; sourceTree = "<group>"; };
-		D339992D1F4EC771009DACD0 /* SecondHandDetial.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondHandDetial.xib; sourceTree = "<group>"; };
 		D33999311F4EC771009DACD0 /* avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatar.png; sourceTree = "<group>"; };
 		D33999321F4EC771009DACD0 /* BriefIntroduction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BriefIntroduction.swift; sourceTree = "<group>"; };
-		D33999331F4EC771009DACD0 /* BriefIntroduction.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BriefIntroduction.xib; sourceTree = "<group>"; };
 		D33999361F4EC771009DACD0 /* HouseNeedRentVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HouseNeedRentVC.swift; sourceTree = "<group>"; };
 		D33999391F4EC771009DACD0 /* HouseRentListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HouseRentListVC.swift; sourceTree = "<group>"; };
 		D339993B1F4EC771009DACD0 /* HouseRentStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HouseRentStatus.swift; sourceTree = "<group>"; };
 		D339993D1F4EC771009DACD0 /* HouseRentVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HouseRentVC.swift; sourceTree = "<group>"; };
-		D339993E1F4EC771009DACD0 /* HouseRentVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HouseRentVC.xib; sourceTree = "<group>"; };
 		D339993F1F4EC771009DACD0 /* HouseRentViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HouseRentViewCell.swift; sourceTree = "<group>"; };
-		D33999401F4EC771009DACD0 /* HouseRentViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HouseRentViewCell.xib; sourceTree = "<group>"; };
 		D33999431F4EC771009DACD0 /* InviteJobVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InviteJobVC.swift; sourceTree = "<group>"; };
 		D33999441F4EC771009DACD0 /* JobOrEnigeerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobOrEnigeerVC.swift; sourceTree = "<group>"; };
 		D33999451F4EC771009DACD0 /* JobSearchVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobSearchVC.swift; sourceTree = "<group>"; };
@@ -287,7 +278,6 @@
 		D339994A1F4EC771009DACD0 /* JobSearchInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobSearchInfoView.swift; sourceTree = "<group>"; };
 		D339994B1F4EC771009DACD0 /* lunTanModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = lunTanModel.swift; sourceTree = "<group>"; };
 		D339994C1F4EC771009DACD0 /* LunTanTopViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LunTanTopViewCell.swift; sourceTree = "<group>"; };
-		D339994D1F4EC771009DACD0 /* LunTanTopViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LunTanTopViewCell.xib; sourceTree = "<group>"; };
 		D339994E1F4EC771009DACD0 /* LunTanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LunTanViewController.swift; sourceTree = "<group>"; };
 		D339994F1F4EC771009DACD0 /* NomenclatureSpecification.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = NomenclatureSpecification.md; sourceTree = "<group>"; };
 		D33999521F4EC771009DACD0 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
@@ -318,7 +308,6 @@
 		D339996F1F4EC771009DACD0 /* SecondHandCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondHandCategory.swift; sourceTree = "<group>"; };
 		D33999701F4EC771009DACD0 /* SecondHandIssueVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondHandIssueVC.swift; sourceTree = "<group>"; };
 		D33999711F4EC771009DACD0 /* SecondHandListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondHandListVC.swift; sourceTree = "<group>"; };
-		D33999731F4EC771009DACD0 /* SecondHand.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SecondHand.storyboard; sourceTree = "<group>"; };
 		D33999751F4EC771009DACD0 /* GiveOutVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiveOutVC.swift; sourceTree = "<group>"; };
 		D33999761F4EC771009DACD0 /* HouseRentTabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HouseRentTabView.swift; sourceTree = "<group>"; };
 		D33999781F4EC771009DACD0 /* PicPicKerCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PicPicKerCollectionView.swift; sourceTree = "<group>"; };
@@ -354,16 +343,13 @@
 		D33999971F4EC771009DACD0 /* WeatherModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
 		D339999A1F4EC771009DACD0 /* Extension-CustomAttrs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension-CustomAttrs.swift"; sourceTree = "<group>"; };
 		D33999A51F4EC771009DACD0 /* LoginTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginTableViewCell.swift; sourceTree = "<group>"; };
-		D33999A61F4EC771009DACD0 /* LoginTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginTableViewCell.xib; sourceTree = "<group>"; };
 		D33999AB1F4EC771009DACD0 /* SelfProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelfProfile.swift; sourceTree = "<group>"; };
-		D33999AE1F4EC771009DACD0 /* SelfProfile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SelfProfile.storyboard; sourceTree = "<group>"; };
 		D33999B01F4EC771009DACD0 /* MessageViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewCell.swift; sourceTree = "<group>"; };
 		D33999B11F4EC771009DACD0 /* MessageViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageViewCell.xib; sourceTree = "<group>"; };
 		D33999B21F4EC771009DACD0 /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
 		D33999B51F4EC771009DACD0 /* OthersIssueVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OthersIssueVC.swift; sourceTree = "<group>"; };
 		D33999B61F4EC771009DACD0 /* OthersJoinVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OthersJoinVC.swift; sourceTree = "<group>"; };
 		D33999B71F4EC771009DACD0 /* OthersProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OthersProfileVC.swift; sourceTree = "<group>"; };
-		D33999BA1F4EC771009DACD0 /* Others.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Others.storyboard; sourceTree = "<group>"; };
 		D33999BC1F4EC771009DACD0 /* AntCityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AntCityViewController.swift; sourceTree = "<group>"; };
 		D33999BD1F4EC771009DACD0 /* AntTextfield.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AntTextfield.swift; sourceTree = "<group>"; };
 		D33999BE1F4EC771009DACD0 /* BtnScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BtnScrollView.swift; sourceTree = "<group>"; };
@@ -375,11 +361,72 @@
 		D33999CD1F4EC771009DACD0 /* NetWorkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetWorkTool.swift; sourceTree = "<group>"; };
 		D33999D01F4EC771009DACD0 /* LoopView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoopView.swift; sourceTree = "<group>"; };
 		D33999D11F4EC771009DACD0 /* Share.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Share.swift; sourceTree = "<group>"; };
-		D33999D21F4EC771009DACD0 /* Share.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Share.xib; sourceTree = "<group>"; };
 		D33999D61F4EC771009DACD0 /* ThemeColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeColor.swift; sourceTree = "<group>"; };
 		D33999D71F4EC771009DACD0 /* TopScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopScrollView.swift; sourceTree = "<group>"; };
 		D3399A9A1F4EC9C8009DACD0 /* BaseTabBarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTabBarVC.swift; sourceTree = "<group>"; };
 		D39AA8E91F53EDE600FBB060 /* SelfDetialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelfDetialViewController.swift; sourceTree = "<group>"; };
+		D3C849431F5EDEA2008AC12E /* AppJump-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppJump-Extension.swift"; sourceTree = "<group>"; };
+		D3CA23001F680C0200403C45 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D3CA23011F680C0200403C45 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		D3CA23231F6814F500403C45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D3CA23251F68150600403C45 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		D3CA23271F68150700403C45 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		D3CA23291F68164800403C45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SelfProfile.storyboard; sourceTree = "<group>"; };
+		D3CA232C1F68164A00403C45 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/SelfProfile.strings; sourceTree = "<group>"; };
+		D3CA232E1F68164B00403C45 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/SelfProfile.strings"; sourceTree = "<group>"; };
+		D3CA23391F69445200403C45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LoginTableViewCell.xib; sourceTree = "<group>"; };
+		D3CA233C1F69445500403C45 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LoginTableViewCell.strings; sourceTree = "<group>"; };
+		D3CA233E1F69445700403C45 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LoginTableViewCell.strings"; sourceTree = "<group>"; };
+		D3CA23401F6944AC00403C45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Register.xib; sourceTree = "<group>"; };
+		D3CA23431F6944AF00403C45 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Register.strings; sourceTree = "<group>"; };
+		D3CA23451F6944B000403C45 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Register.strings"; sourceTree = "<group>"; };
+		D3CA23491F6947DD00403C45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D3CA234B1F6947E000403C45 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D3CA234C1F6947E200403C45 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		D3CA234E1F694C3F00403C45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Share.xib; sourceTree = "<group>"; };
+		D3CA23511F694C4400403C45 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Share.strings; sourceTree = "<group>"; };
+		D3CA23531F694C4400403C45 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Share.strings"; sourceTree = "<group>"; };
+		D3CA23551F694C6B00403C45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Others.storyboard; sourceTree = "<group>"; };
+		D3CA23581F694C6E00403C45 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Others.strings; sourceTree = "<group>"; };
+		D3CA235A1F694C6F00403C45 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Others.strings"; sourceTree = "<group>"; };
+		D3CA235C1F694D6A00403C45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LunTanTopViewCell.xib; sourceTree = "<group>"; };
+		D3CA235F1F694D6D00403C45 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LunTanTopViewCell.strings; sourceTree = "<group>"; };
+		D3CA23611F694D6E00403C45 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LunTanTopViewCell.strings"; sourceTree = "<group>"; };
+		D3CA23631F694DA100403C45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SecondHand.storyboard; sourceTree = "<group>"; };
+		D3CA23661F694DA500403C45 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/SecondHand.strings; sourceTree = "<group>"; };
+		D3CA23681F694DA800403C45 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/SecondHand.strings"; sourceTree = "<group>"; };
+		D3CA236A1F694E9100403C45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/HouseRentVC.xib; sourceTree = "<group>"; };
+		D3CA236D1F694E9300403C45 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/HouseRentVC.strings; sourceTree = "<group>"; };
+		D3CA236F1F694E9400403C45 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/HouseRentVC.strings"; sourceTree = "<group>"; };
+		D3CA23711F694F0100403C45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/HouseRentViewCell.xib; sourceTree = "<group>"; };
+		D3CA23741F694F0400403C45 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/HouseRentViewCell.strings; sourceTree = "<group>"; };
+		D3CA23761F694F0500403C45 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/HouseRentViewCell.strings"; sourceTree = "<group>"; };
+		D3CA23781F694F3D00403C45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MessageHeader.xib; sourceTree = "<group>"; };
+		D3CA237B1F694F4000403C45 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MessageHeader.strings; sourceTree = "<group>"; };
+		D3CA237D1F694F4100403C45 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/MessageHeader.strings"; sourceTree = "<group>"; };
+		D3CA237F1F694F6600403C45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Menu.xib; sourceTree = "<group>"; };
+		D3CA23821F694F6800403C45 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Menu.strings; sourceTree = "<group>"; };
+		D3CA23841F694F6A00403C45 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Menu.strings"; sourceTree = "<group>"; };
+		D3CA23861F694FF600403C45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SecondHandDetial.xib; sourceTree = "<group>"; };
+		D3CA23891F694FF900403C45 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/SecondHandDetial.strings; sourceTree = "<group>"; };
+		D3CA238B1F694FFA00403C45 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/SecondHandDetial.strings"; sourceTree = "<group>"; };
+		D3CA238D1F69505E00403C45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/CityWideDetial.xib; sourceTree = "<group>"; };
+		D3CA23901F69505F00403C45 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/CityWideDetial.strings; sourceTree = "<group>"; };
+		D3CA23921F69506200403C45 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/CityWideDetial.strings"; sourceTree = "<group>"; };
+		D3CA23941F69509300403C45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/CarServiceDetial.xib; sourceTree = "<group>"; };
+		D3CA23971F69509400403C45 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/CarServiceDetial.strings; sourceTree = "<group>"; };
+		D3CA23991F69509500403C45 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/CarServiceDetial.strings"; sourceTree = "<group>"; };
+		D3CA239B1F6950AD00403C45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/CarBusinessDetial.xib; sourceTree = "<group>"; };
+		D3CA239E1F6950AF00403C45 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/CarBusinessDetial.strings; sourceTree = "<group>"; };
+		D3CA23A01F6950B000403C45 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/CarBusinessDetial.strings"; sourceTree = "<group>"; };
+		D3CA23A21F6950F900403C45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/RecruitDetial.xib; sourceTree = "<group>"; };
+		D3CA23A51F6950FB00403C45 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/RecruitDetial.strings; sourceTree = "<group>"; };
+		D3CA23A71F6950FC00403C45 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/RecruitDetial.strings"; sourceTree = "<group>"; };
+		D3CA23A91F69515200403C45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/BriefIntroduction.xib; sourceTree = "<group>"; };
+		D3CA23AC1F69515400403C45 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/BriefIntroduction.strings; sourceTree = "<group>"; };
+		D3CA23AE1F69515500403C45 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/BriefIntroduction.strings"; sourceTree = "<group>"; };
+		D3CA23B01F6951A200403C45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/RentOutDetial.xib; sourceTree = "<group>"; };
+		D3CA23B71F6951D100403C45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/RentNeedDetial.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -480,7 +527,10 @@
 				D33998DE1F4EC5CB009DACD0 /* AppDelegate.swift */,
 				D33998D01F4EC007009DACD0 /* Assets.xcassets */,
 				D33998D51F4EC007009DACD0 /* Info.plist */,
+				D3CA22FF1F680C0000403C45 /* InfoPlist.strings */,
+				D3CA234A1F6947DD00403C45 /* Localizable.strings */,
 				D33998E01F4EC5FF009DACD0 /* city.plist */,
+				D3CA230B1F680F0F00403C45 /* LaunchScreen.storyboard */,
 				D3399A9A1F4EC9C8009DACD0 /* BaseTabBarVC.swift */,
 				D33998E21F4EC60B009DACD0 /* Static.swift */,
 				D33998E41F4EC610009DACD0 /* ViewController+Extension.swift */,
@@ -506,7 +556,7 @@
 				D33998EB1F4EC770009DACD0 /* ContactModel.swift */,
 				D339994B1F4EC771009DACD0 /* lunTanModel.swift */,
 				D339994C1F4EC771009DACD0 /* LunTanTopViewCell.swift */,
-				D339994D1F4EC771009DACD0 /* LunTanTopViewCell.xib */,
+				D3CA235D1F694D6A00403C45 /* LunTanTopViewCell.xib */,
 				D339994E1F4EC771009DACD0 /* LunTanViewController.swift */,
 			);
 			path = LunTan;
@@ -568,6 +618,7 @@
 				D33998FA1F4EC770009DACD0 /* CustomStyle-Extension.swift */,
 				D33998FB1F4EC770009DACD0 /* Date-Extension.swift */,
 				D33998FC1F4EC770009DACD0 /* ShareSDK-Extension.swift */,
+				D3C849431F5EDEA2008AC12E /* AppJump-Extension.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -592,9 +643,9 @@
 				D33999141F4EC771009DACD0 /* LocationInfo.swift */,
 				D33999151F4EC771009DACD0 /* LocationInfo.xib */,
 				D33999161F4EC771009DACD0 /* Menu.swift */,
-				D33999171F4EC771009DACD0 /* Menu.xib */,
+				D3CA23801F694F6600403C45 /* Menu.xib */,
 				D33999181F4EC771009DACD0 /* MessageHeader.swift */,
-				D33999191F4EC771009DACD0 /* MessageHeader.xib */,
+				D3CA23791F694F3D00403C45 /* MessageHeader.xib */,
 				D339991A1F4EC771009DACD0 /* MessagesCell.swift */,
 				D339991B1F4EC771009DACD0 /* MessagesCell.xib */,
 			);
@@ -607,7 +658,7 @@
 				D33998FF1F4EC770009DACD0 /* CarBusinessBasicInfo.swift */,
 				D33999001F4EC770009DACD0 /* CarBusinessBasicInfo.xib */,
 				D33999011F4EC770009DACD0 /* CarBusinessDetial.swift */,
-				D33999021F4EC770009DACD0 /* CarBusinessDetial.xib */,
+				D3CA239C1F6950AD00403C45 /* CarBusinessDetial.xib */,
 			);
 			path = CarBusiness;
 			sourceTree = "<group>";
@@ -618,7 +669,7 @@
 				D33999041F4EC770009DACD0 /* CarServiceBasicInfo.swift */,
 				D33999051F4EC771009DACD0 /* CarServiceBasicInfo.xib */,
 				D33999061F4EC771009DACD0 /* CarServiceDetial.swift */,
-				D33999071F4EC771009DACD0 /* CarServiceDetial.xib */,
+				D3CA23951F69509300403C45 /* CarServiceDetial.xib */,
 			);
 			path = CarService;
 			sourceTree = "<group>";
@@ -629,7 +680,7 @@
 				D33999091F4EC771009DACD0 /* CityWideBasicInfo.swift */,
 				D339990A1F4EC771009DACD0 /* CityWideBasicInfo.xib */,
 				D339990B1F4EC771009DACD0 /* CityWideDetial.swift */,
-				D339990C1F4EC771009DACD0 /* CityWideDetial.xib */,
+				D3CA238E1F69505E00403C45 /* CityWideDetial.xib */,
 				D339990D1F4EC771009DACD0 /* CityWideLoop.swift */,
 			);
 			path = CityWide;
@@ -641,7 +692,7 @@
 				D339991D1F4EC771009DACD0 /* RecruitBasicInfo.swift */,
 				D339991E1F4EC771009DACD0 /* RecruitBasicInfo.xib */,
 				D339991F1F4EC771009DACD0 /* RecruitDetial.swift */,
-				D33999201F4EC771009DACD0 /* RecruitDetial.xib */,
+				D3CA23A31F6950F900403C45 /* RecruitDetial.xib */,
 			);
 			path = Recruit;
 			sourceTree = "<group>";
@@ -650,7 +701,7 @@
 			isa = PBXGroup;
 			children = (
 				D33999221F4EC771009DACD0 /* RentNeedDetial.swift */,
-				D33999231F4EC771009DACD0 /* RentNeedDetial.xib */,
+				D3CA23B81F6951D100403C45 /* RentNeedDetial.xib */,
 			);
 			path = RentNeed;
 			sourceTree = "<group>";
@@ -661,7 +712,7 @@
 				D33999251F4EC771009DACD0 /* RentOutBasicInfo.swift */,
 				D33999261F4EC771009DACD0 /* RentOutBasicInfo.xib */,
 				D33999271F4EC771009DACD0 /* RentOutDetial.swift */,
-				D33999281F4EC771009DACD0 /* RentOutDetial.xib */,
+				D3CA23B11F6951A200403C45 /* RentOutDetial.xib */,
 			);
 			path = RentOut;
 			sourceTree = "<group>";
@@ -672,7 +723,7 @@
 				D339992A1F4EC771009DACD0 /* SecondHandBasicInfo.swift */,
 				D339992B1F4EC771009DACD0 /* SecondHandBasicInfo.xib */,
 				D339992C1F4EC771009DACD0 /* SecondHandDetial.swift */,
-				D339992D1F4EC771009DACD0 /* SecondHandDetial.xib */,
+				D3CA23871F694FF600403C45 /* SecondHandDetial.xib */,
 			);
 			path = SecondHand;
 			sourceTree = "<group>";
@@ -682,7 +733,7 @@
 			children = (
 				D33999311F4EC771009DACD0 /* avatar.png */,
 				D33999321F4EC771009DACD0 /* BriefIntroduction.swift */,
-				D33999331F4EC771009DACD0 /* BriefIntroduction.xib */,
+				D3CA23AA1F69515200403C45 /* BriefIntroduction.xib */,
 			);
 			path = WantJob;
 			sourceTree = "<group>";
@@ -733,9 +784,9 @@
 			isa = PBXGroup;
 			children = (
 				D339993D1F4EC771009DACD0 /* HouseRentVC.swift */,
-				D339993E1F4EC771009DACD0 /* HouseRentVC.xib */,
+				D3CA236B1F694E9100403C45 /* HouseRentVC.xib */,
 				D339993F1F4EC771009DACD0 /* HouseRentViewCell.swift */,
-				D33999401F4EC771009DACD0 /* HouseRentViewCell.xib */,
+				D3CA23721F694F0100403C45 /* HouseRentViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -856,7 +907,7 @@
 		D33999721F4EC771009DACD0 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				D33999731F4EC771009DACD0 /* SecondHand.storyboard */,
+				D3CA23641F694DA100403C45 /* SecondHand.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -897,7 +948,7 @@
 				D33999991F4EC771009DACD0 /* Login */,
 				D33999A71F4EC771009DACD0 /* Profile */,
 				D33999A51F4EC771009DACD0 /* LoginTableViewCell.swift */,
-				D33999A61F4EC771009DACD0 /* LoginTableViewCell.xib */,
+				D3CA233A1F69445200403C45 /* LoginTableViewCell.xib */,
 			);
 			path = Me;
 			sourceTree = "<group>";
@@ -942,7 +993,7 @@
 		D33999AD1F4EC771009DACD0 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				D33999AE1F4EC771009DACD0 /* SelfProfile.storyboard */,
+				D3CA232A1F68164800403C45 /* SelfProfile.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -987,7 +1038,7 @@
 		D33999B91F4EC771009DACD0 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				D33999BA1F4EC771009DACD0 /* Others.storyboard */,
+				D3CA23561F694C6B00403C45 /* Others.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1016,7 +1067,7 @@
 			children = (
 				D33999D01F4EC771009DACD0 /* LoopView.swift */,
 				D33999D11F4EC771009DACD0 /* Share.swift */,
-				D33999D21F4EC771009DACD0 /* Share.xib */,
+				D3CA234F1F694C3F00403C45 /* Share.xib */,
 			);
 			path = PublicView;
 			sourceTree = "<group>";
@@ -1092,7 +1143,7 @@
 			isa = PBXGroup;
 			children = (
 				B6480CEA1F58F9CD00E4ABB3 /* Register.swift */,
-				B6480CEB1F58F9CD00E4ABB3 /* Register.xib */,
+				D3CA23411F6944AC00403C45 /* Register.xib */,
 				B6480CEE1F58F9E000E4ABB3 /* LoginWithPwd.swift */,
 				B6480CEF1F58F9E000E4ABB3 /* LoginWithPwd.xib */,
 				B6480CF91F58FA3400E4ABB3 /* ProfileViewController.swift */,
@@ -1147,6 +1198,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				"zh-Hans",
 				Base,
 			);
 			mainGroup = D33998BD1F4EC007009DACD0;
@@ -1164,7 +1216,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D33999F41F4EC771009DACD0 /* CityWideDetial.xib in Resources */,
+				D3CA238C1F69505E00403C45 /* CityWideDetial.xib in Resources */,
 				D3399A0B1F4EC771009DACD0 /* RentOutBasicInfo.xib in Resources */,
 				D3399A391F4EC771009DACD0 /* job_recruit_visa.plist in Resources */,
 				D3399A5F1F4EC771009DACD0 /* NewsTopTitleCell.xib in Resources */,
@@ -1173,11 +1225,12 @@
 				D3399A0F1F4EC771009DACD0 /* SecondHandBasicInfo.xib in Resources */,
 				D33999FB1F4EC771009DACD0 /* DetialHeaderView.xib in Resources */,
 				D3399A311F4EC771009DACD0 /* city_wide_marriage_status.plist in Resources */,
-				B6480CED1F58F9CD00E4ABB3 /* Register.xib in Resources */,
+				D3CA233F1F6944AC00403C45 /* Register.xib in Resources */,
 				D33998E11F4EC5FF009DACD0 /* city.plist in Resources */,
 				D33998D11F4EC007009DACD0 /* Assets.xcassets in Resources */,
-				D3399A1B1F4EC771009DACD0 /* HouseRentVC.xib in Resources */,
-				D3399A111F4EC771009DACD0 /* SecondHandDetial.xib in Resources */,
+				D3CA23691F694E9100403C45 /* HouseRentVC.xib in Resources */,
+				D3CA23481F6947DD00403C45 /* Localizable.strings in Resources */,
+				D3CA23851F694FF600403C45 /* SecondHandDetial.xib in Resources */,
 				D3399A571F4EC771009DACD0 /* NewsHotCommondCell.xib in Resources */,
 				D3399A361F4EC771009DACD0 /* job_recruit_industry.plist in Resources */,
 				D3399A411F4EC771009DACD0 /* LunTanListWithLocationCell.xib in Resources */,
@@ -1186,47 +1239,49 @@
 				B6480CF11F58F9E000E4ABB3 /* LoginWithPwd.xib in Resources */,
 				D3399A341F4EC771009DACD0 /* house_rent_create_time.plist in Resources */,
 				D3399A301F4EC771009DACD0 /* city_wide_age.plist in Resources */,
-				D3399A261F4EC771009DACD0 /* LunTanTopViewCell.xib in Resources */,
-				D3399A451F4EC771009DACD0 /* SecondHand.storyboard in Resources */,
+				D3CA235B1F694D6A00403C45 /* LunTanTopViewCell.xib in Resources */,
+				D3CA23621F694DA100403C45 /* SecondHand.storyboard in Resources */,
 				D33999F71F4EC771009DACD0 /* ConnactOptions.xib in Resources */,
-				D3399A071F4EC771009DACD0 /* RecruitDetial.xib in Resources */,
+				D3CA23A11F6950F900403C45 /* RecruitDetial.xib in Resources */,
 				B6480CF71F58FA1E00E4ABB3 /* LoginViewController.xib in Resources */,
-				D3399A731F4EC771009DACD0 /* LoginTableViewCell.xib in Resources */,
+				D3CA23381F69445200403C45 /* LoginTableViewCell.xib in Resources */,
 				D33999F91F4EC771009DACD0 /* DetialControduction.xib in Resources */,
-				D3399A1D1F4EC771009DACD0 /* HouseRentViewCell.xib in Resources */,
+				D3CA22FD1F680C0000403C45 /* InfoPlist.strings in Resources */,
+				D3CA23701F694F0100403C45 /* HouseRentViewCell.xib in Resources */,
 				D3399A3F1F4EC771009DACD0 /* LunTanListWithAvatarCell.xib in Resources */,
-				D3399A7E1F4EC771009DACD0 /* Others.storyboard in Resources */,
+				D3CA23541F694C6B00403C45 /* Others.storyboard in Resources */,
+				D3CA230D1F680F0F00403C45 /* LaunchScreen.storyboard in Resources */,
 				D3399A141F4EC771009DACD0 /* avatar.png in Resources */,
 				D33999FD1F4EC771009DACD0 /* LocationInfo.xib in Resources */,
-				D3399A0D1F4EC771009DACD0 /* RentOutDetial.xib in Resources */,
+				D3CA23AF1F6951A200403C45 /* RentOutDetial.xib in Resources */,
 				D3399A4A1F4EC771009DACD0 /* PicPickerViewCell.xib in Resources */,
 				D3399A2E1F4EC771009DACD0 /* car_business_trade_way.plist in Resources */,
 				D33999EE1F4EC771009DACD0 /* CarServiceBasicInfo.xib in Resources */,
 				D3399A331F4EC771009DACD0 /* house_rent_area.plist in Resources */,
 				D33999F21F4EC771009DACD0 /* CityWideBasicInfo.xib in Resources */,
 				D33999EA1F4EC771009DACD0 /* CarBusinessBasicInfo.xib in Resources */,
-				D3399A771F4EC771009DACD0 /* SelfProfile.storyboard in Resources */,
-				D3399A921F4EC771009DACD0 /* Share.xib in Resources */,
+				D3CA23281F68164800403C45 /* SelfProfile.storyboard in Resources */,
+				D3CA234D1F694C3F00403C45 /* Share.xib in Resources */,
 				D3399A4F1F4EC771009DACD0 /* HotNewsCell.xib in Resources */,
 				D3399A641F4EC771009DACD0 /* NoCommandCell.xib in Resources */,
 				D3399A2F1F4EC771009DACD0 /* car_service_type.plist in Resources */,
-				D3399A011F4EC771009DACD0 /* MessageHeader.xib in Resources */,
+				D3CA23771F694F3D00403C45 /* MessageHeader.xib in Resources */,
 				D3399A791F4EC771009DACD0 /* MessageViewCell.xib in Resources */,
 				D3399A321F4EC771009DACD0 /* city_wide_sex.plist in Resources */,
 				D3399A3A1F4EC771009DACD0 /* second_hand_classify.plist in Resources */,
 				D3399A5D1F4EC771009DACD0 /* NewsThreeImageCell.xib in Resources */,
-				D33999EC1F4EC771009DACD0 /* CarBusinessDetial.xib in Resources */,
+				D3CA239A1F6950AD00403C45 /* CarBusinessDetial.xib in Resources */,
 				D3399A371F4EC771009DACD0 /* job_recruit_nature.plist in Resources */,
 				D3399A031F4EC771009DACD0 /* MessagesCell.xib in Resources */,
 				D3399A351F4EC771009DACD0 /* house_rent_type.plist in Resources */,
 				D3399A3B1F4EC771009DACD0 /* second_hand_create_time.plist in Resources */,
 				D3399A3C1F4EC771009DACD0 /* second_hand_trade_type.plist in Resources */,
-				D33999FF1F4EC771009DACD0 /* Menu.xib in Resources */,
-				D33999F01F4EC771009DACD0 /* CarServiceDetial.xib in Resources */,
-				D3399A091F4EC771009DACD0 /* RentNeedDetial.xib in Resources */,
+				D3CA237E1F694F6600403C45 /* Menu.xib in Resources */,
+				D3CA23931F69509300403C45 /* CarServiceDetial.xib in Resources */,
+				D3CA23B61F6951D100403C45 /* RentNeedDetial.xib in Resources */,
 				D3399A541F4EC771009DACD0 /* NewsDetailSharedCell.xib in Resources */,
 				D3399A2C1F4EC771009DACD0 /* car_business_brand.plist in Resources */,
-				D3399A161F4EC771009DACD0 /* BriefIntroduction.xib in Resources */,
+				D3CA23A81F69515200403C45 /* BriefIntroduction.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1327,6 +1382,7 @@
 				D3399A421F4EC771009DACD0 /* SecondHandCategory.swift in Sources */,
 				B6480CEC1F58F9CD00E4ABB3 /* Register.swift in Sources */,
 				D33999E81F4EC771009DACD0 /* ShareSDK-Extension.swift in Sources */,
+				D3C849441F5EDEA2008AC12E /* AppJump-Extension.swift in Sources */,
 				D3399A191F4EC771009DACD0 /* HouseRentStatus.swift in Sources */,
 				D3399A961F4EC771009DACD0 /* ThemeColor.swift in Sources */,
 				D3399A0E1F4EC771009DACD0 /* SecondHandBasicInfo.swift in Sources */,
@@ -1430,11 +1486,231 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		D3CA22FF1F680C0000403C45 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3CA23001F680C0200403C45 /* en */,
+				D3CA23011F680C0200403C45 /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D3CA230B1F680F0F00403C45 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3CA23231F6814F500403C45 /* Base */,
+				D3CA23251F68150600403C45 /* en */,
+				D3CA23271F68150700403C45 /* zh-Hans */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D3CA232A1F68164800403C45 /* SelfProfile.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3CA23291F68164800403C45 /* Base */,
+				D3CA232C1F68164A00403C45 /* en */,
+				D3CA232E1F68164B00403C45 /* zh-Hans */,
+			);
+			name = SelfProfile.storyboard;
+			sourceTree = "<group>";
+		};
+		D3CA233A1F69445200403C45 /* LoginTableViewCell.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3CA23391F69445200403C45 /* Base */,
+				D3CA233C1F69445500403C45 /* en */,
+				D3CA233E1F69445700403C45 /* zh-Hans */,
+			);
+			name = LoginTableViewCell.xib;
+			sourceTree = "<group>";
+		};
+		D3CA23411F6944AC00403C45 /* Register.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3CA23401F6944AC00403C45 /* Base */,
+				D3CA23431F6944AF00403C45 /* en */,
+				D3CA23451F6944B000403C45 /* zh-Hans */,
+			);
+			name = Register.xib;
+			path = Ant/Me/Login;
+			sourceTree = SOURCE_ROOT;
+		};
+		D3CA234A1F6947DD00403C45 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3CA23491F6947DD00403C45 /* Base */,
+				D3CA234B1F6947E000403C45 /* en */,
+				D3CA234C1F6947E200403C45 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		D3CA234F1F694C3F00403C45 /* Share.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3CA234E1F694C3F00403C45 /* Base */,
+				D3CA23511F694C4400403C45 /* en */,
+				D3CA23531F694C4400403C45 /* zh-Hans */,
+			);
+			name = Share.xib;
+			sourceTree = "<group>";
+		};
+		D3CA23561F694C6B00403C45 /* Others.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3CA23551F694C6B00403C45 /* Base */,
+				D3CA23581F694C6E00403C45 /* en */,
+				D3CA235A1F694C6F00403C45 /* zh-Hans */,
+			);
+			name = Others.storyboard;
+			sourceTree = "<group>";
+		};
+		D3CA235D1F694D6A00403C45 /* LunTanTopViewCell.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3CA235C1F694D6A00403C45 /* Base */,
+				D3CA235F1F694D6D00403C45 /* en */,
+				D3CA23611F694D6E00403C45 /* zh-Hans */,
+			);
+			name = LunTanTopViewCell.xib;
+			sourceTree = "<group>";
+		};
+		D3CA23641F694DA100403C45 /* SecondHand.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3CA23631F694DA100403C45 /* Base */,
+				D3CA23661F694DA500403C45 /* en */,
+				D3CA23681F694DA800403C45 /* zh-Hans */,
+			);
+			name = SecondHand.storyboard;
+			sourceTree = "<group>";
+		};
+		D3CA236B1F694E9100403C45 /* HouseRentVC.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3CA236A1F694E9100403C45 /* Base */,
+				D3CA236D1F694E9300403C45 /* en */,
+				D3CA236F1F694E9400403C45 /* zh-Hans */,
+			);
+			name = HouseRentVC.xib;
+			sourceTree = "<group>";
+		};
+		D3CA23721F694F0100403C45 /* HouseRentViewCell.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3CA23711F694F0100403C45 /* Base */,
+				D3CA23741F694F0400403C45 /* en */,
+				D3CA23761F694F0500403C45 /* zh-Hans */,
+			);
+			name = HouseRentViewCell.xib;
+			sourceTree = "<group>";
+		};
+		D3CA23791F694F3D00403C45 /* MessageHeader.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3CA23781F694F3D00403C45 /* Base */,
+				D3CA237B1F694F4000403C45 /* en */,
+				D3CA237D1F694F4100403C45 /* zh-Hans */,
+			);
+			name = MessageHeader.xib;
+			sourceTree = "<group>";
+		};
+		D3CA23801F694F6600403C45 /* Menu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3CA237F1F694F6600403C45 /* Base */,
+				D3CA23821F694F6800403C45 /* en */,
+				D3CA23841F694F6A00403C45 /* zh-Hans */,
+			);
+			name = Menu.xib;
+			sourceTree = "<group>";
+		};
+		D3CA23871F694FF600403C45 /* SecondHandDetial.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3CA23861F694FF600403C45 /* Base */,
+				D3CA23891F694FF900403C45 /* en */,
+				D3CA238B1F694FFA00403C45 /* zh-Hans */,
+			);
+			name = SecondHandDetial.xib;
+			sourceTree = "<group>";
+		};
+		D3CA238E1F69505E00403C45 /* CityWideDetial.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3CA238D1F69505E00403C45 /* Base */,
+				D3CA23901F69505F00403C45 /* en */,
+				D3CA23921F69506200403C45 /* zh-Hans */,
+			);
+			name = CityWideDetial.xib;
+			sourceTree = "<group>";
+		};
+		D3CA23951F69509300403C45 /* CarServiceDetial.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3CA23941F69509300403C45 /* Base */,
+				D3CA23971F69509400403C45 /* en */,
+				D3CA23991F69509500403C45 /* zh-Hans */,
+			);
+			name = CarServiceDetial.xib;
+			sourceTree = "<group>";
+		};
+		D3CA239C1F6950AD00403C45 /* CarBusinessDetial.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3CA239B1F6950AD00403C45 /* Base */,
+				D3CA239E1F6950AF00403C45 /* en */,
+				D3CA23A01F6950B000403C45 /* zh-Hans */,
+			);
+			name = CarBusinessDetial.xib;
+			sourceTree = "<group>";
+		};
+		D3CA23A31F6950F900403C45 /* RecruitDetial.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3CA23A21F6950F900403C45 /* Base */,
+				D3CA23A51F6950FB00403C45 /* en */,
+				D3CA23A71F6950FC00403C45 /* zh-Hans */,
+			);
+			name = RecruitDetial.xib;
+			sourceTree = "<group>";
+		};
+		D3CA23AA1F69515200403C45 /* BriefIntroduction.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3CA23A91F69515200403C45 /* Base */,
+				D3CA23AC1F69515400403C45 /* en */,
+				D3CA23AE1F69515500403C45 /* zh-Hans */,
+			);
+			name = BriefIntroduction.xib;
+			sourceTree = "<group>";
+		};
+		D3CA23B11F6951A200403C45 /* RentOutDetial.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3CA23B01F6951A200403C45 /* Base */,
+			);
+			name = RentOutDetial.xib;
+			sourceTree = "<group>";
+		};
+		D3CA23B81F6951D100403C45 /* RentNeedDetial.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3CA23B71F6951D100403C45 /* Base */,
+			);
+			name = RentNeedDetial.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		D33998D61F4EC007009DACD0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -1485,6 +1761,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -1529,7 +1806,6 @@
 			baseConfigurationReference = 7BA4638AF15569E824CB6399 /* Pods-Ant.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 4UXX38SJ8T;
 				INFOPLIST_FILE = Ant/Info.plist;
@@ -1547,7 +1823,6 @@
 			baseConfigurationReference = 3AB7A0C894F7CEC6FD3D65C2 /* Pods-Ant.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 4UXX38SJ8T;
 				INFOPLIST_FILE = Ant/Info.plist;
@@ -1569,7 +1844,7 @@
 				D33998D71F4EC007009DACD0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		D33998D81F4EC007009DACD0 /* Build configuration list for PBXNativeTarget "Ant" */ = {
 			isa = XCConfigurationList;
@@ -1578,7 +1853,7 @@
 				D33998DA1F4EC007009DACD0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  Ant
+
+  Created by Weslie on 2017/9/12.
+  Copyright © 2017年 Weslie. All rights reserved.
+*/
+
+CFBundleDisplayName = "小蚂蚁";

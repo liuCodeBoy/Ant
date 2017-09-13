@@ -1,0 +1,39 @@
+
+/* Class = "UILabel"; text = "发布时间"; ObjectID = "0kS-8t-Oc9"; */
+"0kS-8t-Oc9.text" = "Issue Time";
+
+/* Class = "UIButton"; normalTitle = "不限"; ObjectID = "5pC-2U-VmE"; */
+"5pC-2U-VmE.normalTitle" = "不限";
+
+/* Class = "UIButton"; normalTitle = "不限"; ObjectID = "GaV-FA-GbJ"; */
+"GaV-FA-GbJ.normalTitle" = "不限";
+
+/* Class = "UIButton"; normalTitle = "搜索"; ObjectID = "HMU-BK-ITE"; */
+"HMU-BK-ITE.normalTitle" = "搜索";
+
+/* Class = "UIButton"; normalTitle = "不限"; ObjectID = "Hdw-A7-YRb"; */
+"Hdw-A7-YRb.normalTitle" = "不限";
+
+/* Class = "UILabel"; text = "户型"; ObjectID = "KL7-yX-uNL"; */
+"KL7-yX-uNL.text" = "House Type";
+
+/* Class = "UILabel"; text = "适合你的房子"; ObjectID = "Pmj-Wc-p4A"; */
+"Pmj-Wc-p4A.text" = "Fit you";
+
+/* Class = "UILabel"; text = "方式"; ObjectID = "V5S-ZD-fqN"; */
+"V5S-ZD-fqN.text" = "Ways";
+
+/* Class = "UILabel"; text = "区域"; ObjectID = "Wwo-gt-Q2c"; */
+"Wwo-gt-Q2c.text" = "Areas";
+
+/* Class = "UISearchBar"; placeholder = "请输入关键词"; ObjectID = "cGN-67-tPx"; */
+"cGN-67-tPx.placeholder" = "Input key words";
+
+/* Class = "UIButton"; normalTitle = "不限"; ObjectID = "cmy-RZ-uqS"; */
+"cmy-RZ-uqS.normalTitle" = "不限";
+
+/* Class = "UILabel"; text = "来源"; ObjectID = "h9R-8P-lSc"; */
+"h9R-8P-lSc.text" = "Sources";
+
+/* Class = "UIButton"; normalTitle = "不限"; ObjectID = "pda-9H-QsW"; */
+"pda-9H-QsW.normalTitle" = "不限";

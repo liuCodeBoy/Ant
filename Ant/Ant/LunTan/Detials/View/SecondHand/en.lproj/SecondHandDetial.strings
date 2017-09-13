@@ -1,0 +1,27 @@
+
+/* Class = "UILabel"; text = "产品分类："; ObjectID = "8OD-Q3-yer"; */
+"8OD-Q3-yer.text" = "Categories：";
+
+/* Class = "UILabel"; text = "否"; ObjectID = "AlL-5p-kYk"; */
+"AlL-5p-kYk.text" = "否";
+
+/* Class = "UILabel"; text = "35分钟前更新"; ObjectID = "CeH-Fk-41A"; */
+"CeH-Fk-41A.text" = "35分钟前更新";
+
+/* Class = "UILabel"; text = "所在区域："; ObjectID = "EAR-7Q-Yaf"; */
+"EAR-7Q-Yaf.text" = "Location：";
+
+/* Class = "UILabel"; text = "悉尼"; ObjectID = "RV7-bK-k4A"; */
+"RV7-bK-k4A.text" = "Sydney";
+
+/* Class = "UILabel"; text = "电脑.配件"; ObjectID = "c91-nq-PvZ"; */
+"c91-nq-PvZ.text" = "电脑.配件";
+
+/* Class = "UILabel"; text = "类型："; ObjectID = "eUH-pv-iCp"; */
+"eUH-pv-iCp.text" = "Type：";
+
+/* Class = "UILabel"; text = "是否送货："; ObjectID = "h4D-fM-Ybr"; */
+"h4D-fM-Ybr.text" = "Delivery：";
+
+/* Class = "UILabel"; text = "出售"; ObjectID = "pPm-RM-dA8"; */
+"pPm-RM-dA8.text" = "Sale";

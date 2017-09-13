@@ -1,0 +1,39 @@
+
+/* Class = "UILabel"; text = "车型："; ObjectID = "8OD-Q3-yer"; */
+"8OD-Q3-yer.text" = "车型：";
+
+/* Class = "UILabel"; text = "自动"; ObjectID = "AlL-5p-kYk"; */
+"AlL-5p-kYk.text" = "自动";
+
+/* Class = "UILabel"; text = "35分钟前更新"; ObjectID = "CeH-Fk-41A"; */
+"CeH-Fk-41A.text" = "35分钟前更新";
+
+/* Class = "UILabel"; text = "所在区域："; ObjectID = "EAR-7Q-Yaf"; */
+"EAR-7Q-Yaf.text" = "所在区域：";
+
+/* Class = "UILabel"; text = "悉尼"; ObjectID = "RV7-bK-k4A"; */
+"RV7-bK-k4A.text" = "悉尼";
+
+/* Class = "UILabel"; text = "2011年"; ObjectID = "X8x-zb-Aea"; */
+"X8x-zb-Aea.text" = "2011年";
+
+/* Class = "UILabel"; text = "讴歌 SUV-X"; ObjectID = "c91-nq-PvZ"; */
+"c91-nq-PvZ.text" = "讴歌 SUV-X";
+
+/* Class = "UILabel"; text = "22000"; ObjectID = "eGd-cX-lDP"; */
+"eGd-cX-lDP.text" = "22000";
+
+/* Class = "UILabel"; text = "品牌："; ObjectID = "eUH-pv-iCp"; */
+"eUH-pv-iCp.text" = "品牌：";
+
+/* Class = "UILabel"; text = "变速箱："; ObjectID = "h4D-fM-Ybr"; */
+"h4D-fM-Ybr.text" = "变速箱：";
+
+/* Class = "UILabel"; text = "里程："; ObjectID = "nbR-mL-rHA"; */
+"nbR-mL-rHA.text" = "里程：";
+
+/* Class = "UILabel"; text = "Honda"; ObjectID = "pPm-RM-dA8"; */
+"pPm-RM-dA8.text" = "Honda";
+
+/* Class = "UILabel"; text = "年份："; ObjectID = "rSI-Gh-MLg"; */
+"rSI-Gh-MLg.text" = "年份：";

@@ -1,0 +1,48 @@
+
+/* Class = "UILabel"; text = "女"; ObjectID = "7x7-NF-ZkG"; */
+"7x7-NF-ZkG.text" = "女";
+
+/* Class = "UILabel"; text = "学历："; ObjectID = "HUP-NM-TOc"; */
+"HUP-NM-TOc.text" = "Academy：";
+
+/* Class = "UILabel"; text = "身高："; ObjectID = "Ha6-zQ-cNT"; */
+"Ha6-zQ-cNT.text" = "Height：";
+
+/* Class = "UILabel"; text = "江苏"; ObjectID = "KoS-1C-HG6"; */
+"KoS-1C-HG6.text" = "江苏";
+
+/* Class = "UILabel"; text = "性别："; ObjectID = "Ney-DF-RJF"; */
+"Ney-DF-RJF.text" = "Sex：";
+
+/* Class = "UILabel"; text = "学生"; ObjectID = "RxN-xa-BG7"; */
+"RxN-xa-BG7.text" = "Student";
+
+/* Class = "UILabel"; text = "体重："; ObjectID = "WtH-6D-Ocv"; */
+"WtH-6D-Ocv.text" = "Weight：";
+
+/* Class = "UILabel"; text = "墨尔本"; ObjectID = "cv3-Dr-Mla"; */
+"cv3-Dr-Mla.text" = "墨尔本";
+
+/* Class = "UILabel"; text = "165cm"; ObjectID = "ij2-d2-oxl"; */
+"ij2-d2-oxl.text" = "165cm";
+
+/* Class = "UILabel"; text = "24"; ObjectID = "jq6-XT-9cY"; */
+"jq6-XT-9cY.text" = "24";
+
+/* Class = "UILabel"; text = "本科"; ObjectID = "kkL-61-p5w"; */
+"kkL-61-p5w.text" = "本科";
+
+/* Class = "UILabel"; text = "45kg"; ObjectID = "lV6-ao-lCm"; */
+"lV6-ao-lCm.text" = "45kg";
+
+/* Class = "UILabel"; text = "所在地："; ObjectID = "mqk-SY-GMt"; */
+"mqk-SY-GMt.text" = "Location：";
+
+/* Class = "UILabel"; text = "职业："; ObjectID = "n4Z-CL-KmJ"; */
+"n4Z-CL-KmJ.text" = "Jod：";
+
+/* Class = "UILabel"; text = "年龄："; ObjectID = "ty4-Mr-xFO"; */
+"ty4-Mr-xFO.text" = "Age：";
+
+/* Class = "UILabel"; text = "家乡："; ObjectID = "zGj-8b-8Pw"; */
+"zGj-8b-8Pw.text" = "Hometown：";

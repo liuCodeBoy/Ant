@@ -12,16 +12,25 @@ class Menu: UIView {
 
     var view:UIView?
     
+//    var wechatID: String = ""
+    var phoneURL: String = ""
+    var emailURL: String = ""
+    var qqURL: String = ""
+    
     @IBAction func favourite(_ sender: UIButton) {
     }
     
     @IBAction func wechat(_ sender: UIButton) {
+        
+
+        jumpToApp(URLString: "wechat://")
     }
     
     @IBAction func talk(_ sender: UIButton) {
     }
     
     @IBAction func phoneCall(_ sender: UIButton) {
+        jumpToApp(URLString: "tel://\(phoneURL)")
     }
     
     @IBOutlet weak var name: UILabel!

@@ -1,0 +1,21 @@
+
+/* Class = "UIButton"; normalTitle = "发送验证码"; ObjectID = "E5O-zX-C4F"; */
+"E5O-zX-C4F.normalTitle" = "Send";
+
+/* Class = "UITextField"; placeholder = "请输入密码"; ObjectID = "EF0-rP-oe9"; */
+"EF0-rP-oe9.placeholder" = "Password";
+
+/* Class = "UIButton"; normalTitle = "注册"; ObjectID = "GxM-qZ-wpz"; */
+"GxM-qZ-wpz.normalTitle" = "Register";
+
+/* Class = "UITextField"; placeholder = "请输入你的手机号码"; ObjectID = "L8k-BW-hjt"; */
+"L8k-BW-hjt.placeholder" = "Phone Number";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "Y3N-AF-G4r"; */
+"Y3N-AF-G4r.title" = "Item";
+
+/* Class = "UITextField"; placeholder = "请输入验证码"; ObjectID = "kN1-H8-cBw"; */
+"kN1-H8-cBw.placeholder" = "Identification Number";
+
+/* Class = "UINavigationItem"; title = "用户注册"; ObjectID = "l6L-1s-fAL"; */
+"l6L-1s-fAL.title" = "Register";

@@ -1,0 +1,36 @@
+
+/* Class = "UILabel"; text = "性   别："; ObjectID = "35G-gC-0Vg"; */
+"35G-gC-0Vg.text" = "性   别：";
+
+/* Class = "UILabel"; text = "昵   称："; ObjectID = "Ca8-dK-F1l"; */
+"Ca8-dK-F1l.text" = "昵   称：";
+
+/* Class = "UILabel"; text = "男"; ObjectID = "EPk-C8-hEj"; */
+"EPk-C8-hEj.text" = "男";
+
+/* Class = "UILabel"; text = "Jack"; ObjectID = "GFB-Nc-Slr"; */
+"GFB-Nc-Slr.text" = "Jack";
+
+/* Class = "UILabel"; text = "生   日："; ObjectID = "KCy-Yz-YHh"; */
+"KCy-Yz-YHh.text" = "生   日：";
+
+/* Class = "UILabel"; text = "手机号码："; ObjectID = "LkK-Ul-19d"; */
+"LkK-Ul-19d.text" = "手机号码：";
+
+/* Class = "UILabel"; text = "1836xxx1010"; ObjectID = "Nnb-Gx-JZS"; */
+"Nnb-Gx-JZS.text" = "1836xxx1010";
+
+/* Class = "UIButton"; normalTitle = "退出登录"; ObjectID = "Zdx-yi-14N"; */
+"Zdx-yi-14N.normalTitle" = "退出登录";
+
+/* Class = "UILabel"; text = "1996-11-14"; ObjectID = "fSm-iK-kkD"; */
+"fSm-iK-kkD.text" = "1996-11-14";
+
+/* Class = "UILabel"; text = "头   像："; ObjectID = "gT9-NP-r40"; */
+"gT9-NP-r40.text" = "头   像：";
+
+/* Class = "UIButton"; normalTitle = "确认修改"; ObjectID = "lMc-Zk-gsY"; */
+"lMc-Zk-gsY.normalTitle" = "确认修改";
+
+/* Class = "UINavigationItem"; title = "个人资料"; ObjectID = "osm-Vv-e1c"; */
+"osm-Vv-e1c.title" = "个人资料";

@@ -1,0 +1,15 @@
+
+/* Class = "UILabel"; text = "朋友圈"; ObjectID = "96M-to-ooX"; */
+"96M-to-ooX.text" = "Moments";
+
+/* Class = "UILabel"; text = "新浪微博"; ObjectID = "BZz-GB-nol"; */
+"BZz-GB-nol.text" = "SinaWeibo";
+
+/* Class = "UILabel"; text = "微信好友"; ObjectID = "MLg-v1-AYG"; */
+"MLg-v1-AYG.text" = "Friends";
+
+/* Class = "UILabel"; text = "分享"; ObjectID = "fXy-1L-RkU"; */
+"fXy-1L-RkU.text" = "Share";
+
+/* Class = "UILabel"; text = "更多"; ObjectID = "oMC-Mw-ik0"; */
+"oMC-Mw-ik0.text" = "More";

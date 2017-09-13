@@ -1,0 +1,102 @@
+
+/* Class = "UINavigationItem"; title = "二手市场"; ObjectID = "49N-LC-hGN"; */
+"49N-LC-hGN.title" = "Second hand";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "58A-Cl-uGd"; */
+"58A-Cl-uGd.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "6ie-Ub-0OI"; */
+"6ie-Ub-0OI.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "查看全部商品"; ObjectID = "AJP-10-WDX"; */
+"AJP-10-WDX.normalTitle" = "All commodities";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "DM6-dK-n3h"; */
+"DM6-dK-n3h.normalTitle" = "Button";
+
+/* Class = "UIBarButtonItem"; title = "发布"; ObjectID = "Det-9w-7V5"; */
+"Det-9w-7V5.title" = "Issue";
+
+/* Class = "UILabel"; text = "文体户外"; ObjectID = "Far-Bc-3NH"; */
+"Far-Bc-3NH.text" = "Outdoor";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Ibk-tC-6hR"; */
+"Ibk-tC-6hR.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "美容保健"; ObjectID = "MHh-Y2-RhD"; */
+"MHh-Y2-RhD.text" = "Health care";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "NFh-vE-uyE"; */
+"NFh-vE-uyE.normalTitle" = "Button";
+
+/* Class = "UIBarButtonItem"; title = "发布"; ObjectID = "Qgf-mH-j0v"; */
+"Qgf-mH-j0v.title" = "Issue";
+
+/* Class = "UISearchBar"; placeholder = "请输入关键词"; ObjectID = "Qu4-UZ-C4b"; */
+"Qu4-UZ-C4b.placeholder" = "Input key words";
+
+/* Class = "UISearchBar"; Qu4-UZ-C4b.scopeButtonTitles[0] = "Title"; ObjectID = "Qu4-UZ-C4b"; */
+"Qu4-UZ-C4b.scopeButtonTitles[0]" = "Title";
+
+/* Class = "UISearchBar"; Qu4-UZ-C4b.scopeButtonTitles[1] = "Title"; ObjectID = "Qu4-UZ-C4b"; */
+"Qu4-UZ-C4b.scopeButtonTitles[1]" = "Title";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Qx9-ur-QMX"; */
+"Qx9-ur-QMX.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "服饰"; ObjectID = "THr-gW-zEN"; */
+"THr-gW-zEN.text" = "Clothes";
+
+/* Class = "UILabel"; text = "母婴儿童"; ObjectID = "Ubl-Sr-xDn"; */
+"Ubl-Sr-xDn.text" = "Babies";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "VI3-6B-dtk"; */
+"VI3-6B-dtk.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "家具用品"; ObjectID = "X17-gY-8z3"; */
+"X17-gY-8z3.text" = "Furniture";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "X47-Eg-3Fh"; */
+"X47-Eg-3Fh.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "家电"; ObjectID = "ZzW-rE-LVG"; */
+"ZzW-rE-LVG.text" = "Home";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "fsB-cx-zyq"; */
+"fsB-cx-zyq.text" = "Label";
+
+/* Class = "UILabel"; text = "热门分类"; ObjectID = "knN-EK-6eh"; */
+"knN-EK-6eh.text" = "Hot";
+
+/* Class = "UILabel"; text = "汽车.配件"; ObjectID = "lCd-Fe-8ll"; */
+"lCd-Fe-8ll.text" = "Car Accessories";
+
+/* Class = "UILabel"; text = "手机.配件"; ObjectID = "liN-8t-RLv"; */
+"liN-8t-RLv.text" = "Phone Accessories";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "nod-Me-PSO"; */
+"nod-Me-PSO.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "oIi-V6-e41"; */
+"oIi-V6-e41.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "其他二手"; ObjectID = "oaH-L8-h9O"; */
+"oaH-L8-h9O.text" = "Other";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "s6S-0Q-cCi"; */
+"s6S-0Q-cCi.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "食品饮料"; ObjectID = "sbw-9r-pj8"; */
+"sbw-9r-pj8.text" = "Food & Drink";
+
+/* Class = "UIBarButtonItem"; title = "发布"; ObjectID = "tvB-GI-WcJ"; */
+"tvB-GI-WcJ.title" = "Issue";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "uEt-mH-dXX"; */
+"uEt-mH-dXX.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "电脑.配件"; ObjectID = "xTS-FK-NhU"; */
+"xTS-FK-NhU.text" = "Computer Accessories";
+
+/* Class = "UILabel"; text = "成人用品"; ObjectID = "yXK-Rp-yV3"; */
+"yXK-Rp-yV3.text" = "Adults";
