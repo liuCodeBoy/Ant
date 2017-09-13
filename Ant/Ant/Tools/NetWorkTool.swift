@@ -306,7 +306,13 @@ extension NetWorkTool {
         let urlString = "http://106.15.199.8/jraz/api/user/userRelated"
         self.requestSerializer.setValue(token, forHTTPHeaderField: "token")
         //2.获取请求参数
-        let parameters = ["uid" : uid, "cate": cate , "p" : p] as [String : AnyObject]
+        var parameters = ["cate": cate , "p" : p] as [String : AnyObject]
+        if uid < 0 {
+            parameters.updateValue(uid as AnyObject, forKey: "uid")
+
+        }
+       
+      
         //3.发送请求参数
         request(.POST, urlString: urlString, parameters: parameters as [String : AnyObject]) { (result, error) -> () in
             //获取字典数据
