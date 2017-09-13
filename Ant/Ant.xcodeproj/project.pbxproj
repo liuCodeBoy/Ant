@@ -175,7 +175,6 @@
 		D3399A7B1F4EC771009DACD0 /* OthersIssueVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33999B51F4EC771009DACD0 /* OthersIssueVC.swift */; };
 		D3399A7C1F4EC771009DACD0 /* OthersJoinVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33999B61F4EC771009DACD0 /* OthersJoinVC.swift */; };
 		D3399A7D1F4EC771009DACD0 /* OthersProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33999B71F4EC771009DACD0 /* OthersProfileVC.swift */; };
-		D3399A7E1F4EC771009DACD0 /* Others.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D33999BA1F4EC771009DACD0 /* Others.storyboard */; };
 		D3399A7F1F4EC771009DACD0 /* AntCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33999BC1F4EC771009DACD0 /* AntCityViewController.swift */; };
 		D3399A801F4EC771009DACD0 /* AntTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33999BD1F4EC771009DACD0 /* AntTextfield.swift */; };
 		D3399A811F4EC771009DACD0 /* BtnScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33999BE1F4EC771009DACD0 /* BtnScrollView.swift */; };
@@ -367,7 +366,6 @@
 		D33999B51F4EC771009DACD0 /* OthersIssueVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OthersIssueVC.swift; sourceTree = "<group>"; };
 		D33999B61F4EC771009DACD0 /* OthersJoinVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OthersJoinVC.swift; sourceTree = "<group>"; };
 		D33999B71F4EC771009DACD0 /* OthersProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OthersProfileVC.swift; sourceTree = "<group>"; };
-		D33999BA1F4EC771009DACD0 /* Others.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Others.storyboard; sourceTree = "<group>"; };
 		D33999BC1F4EC771009DACD0 /* AntCityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AntCityViewController.swift; sourceTree = "<group>"; };
 		D33999BD1F4EC771009DACD0 /* AntTextfield.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AntTextfield.swift; sourceTree = "<group>"; };
 		D33999BE1F4EC771009DACD0 /* BtnScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BtnScrollView.swift; sourceTree = "<group>"; };
@@ -992,7 +990,6 @@
 		D33999B91F4EC771009DACD0 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				D33999BA1F4EC771009DACD0 /* Others.storyboard */,
 				B6AA56C91F6182910040E271 /* PushProfileCell.swift */,
 			);
 			path = View;
@@ -1201,7 +1198,6 @@
 				D33999F91F4EC771009DACD0 /* DetialControduction.xib in Resources */,
 				D3399A1D1F4EC771009DACD0 /* HouseRentViewCell.xib in Resources */,
 				D3399A3F1F4EC771009DACD0 /* LunTanListWithAvatarCell.xib in Resources */,
-				D3399A7E1F4EC771009DACD0 /* Others.storyboard in Resources */,
 				D3399A141F4EC771009DACD0 /* avatar.png in Resources */,
 				D33999FD1F4EC771009DACD0 /* LocationInfo.xib in Resources */,
 				D3399A0D1F4EC771009DACD0 /* RentOutDetial.xib in Resources */,
