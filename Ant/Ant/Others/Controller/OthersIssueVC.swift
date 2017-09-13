@@ -10,6 +10,9 @@ import UIKit
 
 class OthersIssueVC: UIViewController {
     
+    //定义模型数组
+    var pushModelArr  = [UserPushModel]()
+    
     @IBAction func backBtn(_ sender: UIBarButtonItem) {
         
         self.dismiss(animated: true, completion: nil)
@@ -21,14 +24,34 @@ class OthersIssueVC: UIViewController {
         super.viewDidLoad()
         issueTableView.delegate = self
         issueTableView.dataSource = self
-
+        loadSelfData()
     }
-}
-
-
-   func loadSelfData() -> () {
     
+    func loadSelfData() -> () {
+        //加载数据
+        let   token = UserInfoModel.shareInstance.account?.token!
+        if token != nil {
+            NetWorkTool.shareInstance.userRelated(token: token!, uid: -1, cate: "publish", p: 1, finished: { [weak self] (userInfo, error) in
+                if error == nil {
+                    let code  = userInfo?["code"] as? Int
+                    if code == 200 {
+                        let result  = userInfo?["result"]
+                        let resultList = result?["list"] as? [NSDictionary]
+                        for dict in  resultList!{
+                            let model = UserPushModel.mj_object(withKeyValues: dict)
+                            self?.pushModelArr.append(model!)
+                        }
+                    }
+                }else{
+                    print("服务器错误")
+                }
+            })
+        }
+        
+    }
+
 }
+
 
 extension OthersIssueVC: UITableViewDataSource, UITableViewDelegate {
     

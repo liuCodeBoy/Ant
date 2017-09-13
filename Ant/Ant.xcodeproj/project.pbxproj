@@ -16,6 +16,8 @@
 		B6480CF61F58FA1E00E4ABB3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6480CF41F58FA1E00E4ABB3 /* LoginViewController.swift */; };
 		B6480CF71F58FA1E00E4ABB3 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6480CF51F58FA1E00E4ABB3 /* LoginViewController.xib */; };
 		B6480CFB1F58FA3400E4ABB3 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6480CF91F58FA3400E4ABB3 /* ProfileViewController.swift */; };
+		B6AA56C81F61630E0040E271 /* UserPushModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AA56C71F61630E0040E271 /* UserPushModel.swift */; };
+		B6AA56CA1F6182910040E271 /* PushProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AA56C91F6182910040E271 /* PushProfileCell.swift */; };
 		D31917FF1F4FD5AB002423C7 /* CityWideVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31917FE1F4FD5AB002423C7 /* CityWideVC.swift */; };
 		D33998D11F4EC007009DACD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D33998D01F4EC007009DACD0 /* Assets.xcassets */; };
 		D33998DF1F4EC5CB009DACD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33998DE1F4EC5CB009DACD0 /* AppDelegate.swift */; };
@@ -206,6 +208,8 @@
 		B6480CF41F58FA1E00E4ABB3 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Ant/Me/Login/LoginViewController.swift; sourceTree = SOURCE_ROOT; };
 		B6480CF51F58FA1E00E4ABB3 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LoginViewController.xib; path = Ant/Me/Login/LoginViewController.xib; sourceTree = SOURCE_ROOT; };
 		B6480CF91F58FA3400E4ABB3 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = Ant/Me/Login/ProfileViewController.swift; sourceTree = SOURCE_ROOT; };
+		B6AA56C71F61630E0040E271 /* UserPushModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPushModel.swift; sourceTree = "<group>"; };
+		B6AA56C91F6182910040E271 /* PushProfileCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushProfileCell.swift; sourceTree = "<group>"; };
 		D31917FE1F4FD5AB002423C7 /* CityWideVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityWideVC.swift; sourceTree = "<group>"; };
 		D33998C61F4EC007009DACD0 /* Ant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D33998D01F4EC007009DACD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -452,6 +456,14 @@
 				0DD636BD2B55585CF3CFD8D6 /* Pods_Ant.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B6AA56C61F6162FB0040E271 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B6AA56C71F61630E0040E271 /* UserPushModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		D31917F91F4FD238002423C7 /* CityWide */ = {
@@ -1007,7 +1019,7 @@
 		D33999B31F4EC771009DACD0 /* Others */ = {
 			isa = PBXGroup;
 			children = (
-				D33999B81F4EC771009DACD0 /* Model */,
+				B6AA56C61F6162FB0040E271 /* Model */,
 				D33999B91F4EC771009DACD0 /* View */,
 				D33999B41F4EC771009DACD0 /* Controller */,
 			);
@@ -1024,16 +1036,10 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		D33999B81F4EC771009DACD0 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		D33999B91F4EC771009DACD0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B6AA56C91F6182910040E271 /* PushProfileCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1357,6 +1363,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3399A441F4EC771009DACD0 /* SecondHandListVC.swift in Sources */,
+				B6AA56CA1F6182910040E271 /* PushProfileCell.swift in Sources */,
 				D33998E51F4EC610009DACD0 /* ViewController+Extension.swift in Sources */,
 				D3399A9B1F4EC9C8009DACD0 /* BaseTabBarVC.swift in Sources */,
 				D3399A211F4EC771009DACD0 /* JobSearchStatus.swift in Sources */,
@@ -1392,6 +1399,7 @@
 				D3399A601F4EC771009DACD0 /* NewsTypeTableCell.swift in Sources */,
 				D3399A481F4EC771009DACD0 /* PicPicKerCollectionView.swift in Sources */,
 				D3399A231F4EC771009DACD0 /* JobSearchInfoView.swift in Sources */,
+				B6AA56C81F61630E0040E271 /* UserPushModel.swift in Sources */,
 				D3399A171F4EC771009DACD0 /* HouseNeedRentVC.swift in Sources */,
 				D3399A581F4EC771009DACD0 /* NewsHotModel.swift in Sources */,
 				D3399A501F4EC771009DACD0 /* MainViewController.swift in Sources */,
