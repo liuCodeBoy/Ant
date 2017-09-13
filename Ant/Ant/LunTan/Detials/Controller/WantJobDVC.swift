@@ -8,26 +8,24 @@
 
 import UIKit
 
-import UIKit
-
 class WantJobDVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var tableView: UITableView?
     
+    var modelInfo: LunTanDetialModel?
+    
     var wantJobID  = 0
     lazy var urls = [String]()
 
-    var modelInfo: LunTanDetialModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         loadCellData(index: 2)
         loadDetialTableView()
-        
-        let view = Menu()
+        let menuView = Menu()
         self.tabBarController?.tabBar.isHidden = true
         view.frame = CGRect(x: 0, y: screenHeight - 124, width: screenWidth, height: 60)
-        self.view.addSubview(view)
+        self.view.addSubview(menuView)
     }
     
     
@@ -148,9 +146,11 @@ class WantJobDVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             }
             if let key = modelInfo?.connactDict[indexPath.row].first?.key {
                 connactoptions.con_Ways.text = key
+                
             }
             if let value = modelInfo?.connactDict[indexPath.row].first?.value {
                 connactoptions.con_Detial.text = value
+                
             }
             
             switch modelInfo?.connactDict[indexPath.row].first?.key {

@@ -1,0 +1,33 @@
+
+/* Class = "UILabel"; text = "房屋类型："; ObjectID = "M4k-t5-FSh"; */
+"M4k-t5-FSh.text" = "房屋类型：";
+
+/* Class = "UILabel"; text = "公寓"; ObjectID = "M7I-MV-Yfh"; */
+"M7I-MV-Yfh.text" = "公寓";
+
+/* Class = "UILabel"; text = "标签："; ObjectID = "Pxo-i2-V6f"; */
+"Pxo-i2-V6f.text" = "标签：";
+
+/* Class = "UILabel"; text = "lable1"; ObjectID = "RZ6-tY-DIB"; */
+"RZ6-tY-DIB.text" = "lable1";
+
+/* Class = "UILabel"; text = "合租"; ObjectID = "b7f-xQ-d9n"; */
+"b7f-xQ-d9n.text" = "合租";
+
+/* Class = "UILabel"; text = "即可入住"; ObjectID = "bti-V1-urq"; */
+"bti-V1-urq.text" = "即可入住";
+
+/* Class = "UILabel"; text = "最短租期："; ObjectID = "egI-HC-VAH"; */
+"egI-HC-VAH.text" = "最短租期：";
+
+/* Class = "UILabel"; text = "30周"; ObjectID = "lt4-WQ-eH3"; */
+"lt4-WQ-eH3.text" = "30周";
+
+/* Class = "UILabel"; text = "入住时间："; ObjectID = "nJH-JD-Xwt"; */
+"nJH-JD-Xwt.text" = "入住时间：";
+
+/* Class = "UILabel"; text = "出租方式："; ObjectID = "wGO-41-wbs"; */
+"wGO-41-wbs.text" = "出租方式：";
+
+/* Class = "UILabel"; text = "lable2"; ObjectID = "x2C-0r-9TS"; */
+"x2C-0r-9TS.text" = "lable2";

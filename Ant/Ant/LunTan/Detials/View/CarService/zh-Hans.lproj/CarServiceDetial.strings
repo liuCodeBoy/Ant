@@ -1,0 +1,18 @@
+
+/* Class = "UILabel"; text = "网址："; ObjectID = "4vZ-dH-shw"; */
+"4vZ-dH-shw.text" = "网址：";
+
+/* Class = "UILabel"; text = "远大汽车维修"; ObjectID = "DMu-9n-aDQ"; */
+"DMu-9n-aDQ.text" = "远大汽车维修";
+
+/* Class = "UILabel"; text = "公司名称："; ObjectID = "Gkb-vF-6im"; */
+"Gkb-vF-6im.text" = "公司名称：";
+
+/* Class = "UILabel"; text = "地址："; ObjectID = "Wdo-ZS-bqq"; */
+"Wdo-ZS-bqq.text" = "地址：";
+
+/* Class = "UILabel"; text = "Annandale 310 wattle Street South"; ObjectID = "aSG-kR-f5E"; */
+"aSG-kR-f5E.text" = "Annandale 310 wattle Street South";
+
+/* Class = "UIButton"; normalTitle = "http://"; ObjectID = "tzB-dB-AMc"; */
+"tzB-dB-AMc.normalTitle" = "http://";

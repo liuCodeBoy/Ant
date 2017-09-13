@@ -1,0 +1,54 @@
+
+/* Class = "UILabel"; text = "个人简介"; ObjectID = "1uj-7m-Y4X"; */
+"1uj-7m-Y4X.text" = "个人简介";
+
+/* Class = "UILabel"; text = "经验"; ObjectID = "2Fw-1d-8qm"; */
+"2Fw-1d-8qm.text" = "经验";
+
+/* Class = "UILabel"; text = "全职"; ObjectID = "3J4-UD-WXs"; */
+"3J4-UD-WXs.text" = "全职";
+
+/* Class = "UILabel"; text = "销售市场"; ObjectID = "59E-t4-weF"; */
+"59E-t4-weF.text" = "销售市场";
+
+/* Class = "UILabel"; text = "学历水平"; ObjectID = "AYH-go-VXk"; */
+"AYH-go-VXk.text" = "学历水平";
+
+/* Class = "UILabel"; text = "澳洲国籍"; ObjectID = "BbR-OD-8ls"; */
+"BbR-OD-8ls.text" = "澳洲国籍";
+
+/* Class = "UILabel"; text = "3年"; ObjectID = "Faz-vu-yhP"; */
+"Faz-vu-yhP.text" = "3年";
+
+/* Class = "UILabel"; text = "location"; ObjectID = "IBS-3E-Xsu"; */
+"IBS-3E-Xsu.text" = "location";
+
+/* Class = "UILabel"; text = "35分钟前更新"; ObjectID = "Oit-5W-DIv"; */
+"Oit-5W-DIv.text" = "35分钟前更新";
+
+/* Class = "UILabel"; text = "全职"; ObjectID = "Q1m-6W-cgC"; */
+"Q1m-6W-cgC.text" = "全职";
+
+/* Class = "UILabel"; text = "工作性质"; ObjectID = "aM0-cB-d2s"; */
+"aM0-cB-d2s.text" = "工作性质";
+
+/* Class = "UILabel"; text = "所在区域"; ObjectID = "akC-YM-kFi"; */
+"akC-YM-kFi.text" = "所在区域";
+
+/* Class = "UILabel"; text = "Jackson 男"; ObjectID = "dWa-JK-qMr"; */
+"dWa-JK-qMr.text" = "Jackson 男";
+
+/* Class = "UILabel"; text = "行业"; ObjectID = "eRV-dB-77k"; */
+"eRV-dB-77k.text" = "行业";
+
+/* Class = "UILabel"; text = "签证"; ObjectID = "gpv-nL-gdC"; */
+"gpv-nL-gdC.text" = "签证";
+
+/* Class = "UILabel"; text = "期望工资"; ObjectID = "lkk-xI-KrH"; */
+"lkk-xI-KrH.text" = "期望工资";
+
+/* Class = "UILabel"; text = "本科"; ObjectID = "p6p-TU-wrb"; */
+"p6p-TU-wrb.text" = "本科";
+
+/* Class = "UILabel"; text = "7000以上"; ObjectID = "xzd-7z-Hek"; */
+"xzd-7z-Hek.text" = "7000以上";

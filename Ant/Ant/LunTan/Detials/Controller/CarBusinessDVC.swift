@@ -13,16 +13,17 @@ class CarBusinessDVC: UIViewController, UITableViewDelegate, UITableViewDataSour
     var tableView: UITableView?
     
     var modelInfo: LunTanDetialModel?
+    
+    var menuView = Menu()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         loadCellData(index: 1)
         loadDetialTableView()
         
-        let view = Menu()
         self.tabBarController?.tabBar.isHidden = true
-        view.frame = CGRect(x: 0, y: screenHeight - 124, width: screenWidth, height: 60)
-        self.view.addSubview(view)
+        menuView.frame = CGRect(x: 0, y: screenHeight - 124, width: screenWidth, height: 60)
+        self.view.addSubview(menuView)
        
     }
     
@@ -157,9 +158,46 @@ class CarBusinessDVC: UIViewController, UITableViewDelegate, UITableViewDataSour
             
         case 1: cell = tableView.dequeueReusableCell(withIdentifier: "detialControduction")
             
-        case 2: cell = tableView.dequeueReusableCell(withIdentifier: "connactOptions")
-        if (cell?.responds(to: #selector(setter: UITableViewCell.separatorInset)))! {
-            cell?.separatorInset = UIEdgeInsets(top: 0, left: 50, bottom: 0, right: 0)
+        case 2:
+            let connactoptions = tableView.dequeueReusableCell(withIdentifier: "connactOptions") as! ConnactOptions
+            
+            //            guard modelInfo.con else {
+            //                <#statements#>
+            //            }
+            
+            if let contact = modelInfo?.connactDict[indexPath.row] {
+                if  let key = contact.first?.key{
+                    connactoptions.con_Ways.text = key
+                    
+                }
+            }
+            if let value = modelInfo?.connactDict[indexPath.row].first?.value {
+                connactoptions.con_Detial.text = value
+                
+            }
+            
+            switch modelInfo?.connactDict[indexPath.row].first?.key {
+            case "联系人"?:
+                connactoptions.con_Image.image = #imageLiteral(resourceName: "luntan_detial_icon_connact_profile")
+            case "电话"?:
+                connactoptions.con_Image.image = #imageLiteral(resourceName: "luntan_detial_icon_connact_phone")
+                menuView.phoneURL = (modelInfo?.connactDict[indexPath.row].first?.value)!
+            case "微信"?:
+                connactoptions.con_Image.image = #imageLiteral(resourceName: "luntan_detial_icon_connact_wechat")
+               UIPasteboard.general.string = (modelInfo?.connactDict[indexPath.row].first?.value)!
+                
+            case "QQ"?:
+                connactoptions.con_Image.image = #imageLiteral(resourceName: "luntan_detial_icon_connact_qq")
+            case "邮箱"?:
+                connactoptions.con_Image.image = #imageLiteral(resourceName: "luntan_detial_icon_connact_email")
+            default:
+                break
+            }
+            
+            cell = connactoptions
+            
+            if (cell?.responds(to: #selector(setter: UITableViewCell.separatorInset)))! {
+                cell?.separatorInset = UIEdgeInsets(top: 0, left: 50, bottom: 0, right: 0)
             }
         case 3: cell = tableView.dequeueReusableCell(withIdentifier: "messageHeader")
             
