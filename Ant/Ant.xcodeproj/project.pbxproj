@@ -178,7 +178,6 @@
 		D3CA233F1F6944AC00403C45 /* Register.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3CA23411F6944AC00403C45 /* Register.xib */; };
 		D3CA23481F6947DD00403C45 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D3CA234A1F6947DD00403C45 /* Localizable.strings */; };
 		D3CA234D1F694C3F00403C45 /* Share.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3CA234F1F694C3F00403C45 /* Share.xib */; };
-		D3CA23541F694C6B00403C45 /* Others.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3CA23561F694C6B00403C45 /* Others.storyboard */; };
 		D3CA235B1F694D6A00403C45 /* LunTanTopViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3CA235D1F694D6A00403C45 /* LunTanTopViewCell.xib */; };
 		D3CA23621F694DA100403C45 /* SecondHand.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3CA23641F694DA100403C45 /* SecondHand.storyboard */; };
 		D3CA23691F694E9100403C45 /* HouseRentVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3CA236B1F694E9100403C45 /* HouseRentVC.xib */; };
@@ -386,9 +385,6 @@
 		D3CA234E1F694C3F00403C45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Share.xib; sourceTree = "<group>"; };
 		D3CA23511F694C4400403C45 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Share.strings; sourceTree = "<group>"; };
 		D3CA23531F694C4400403C45 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Share.strings"; sourceTree = "<group>"; };
-		D3CA23551F694C6B00403C45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Others.storyboard; sourceTree = "<group>"; };
-		D3CA23581F694C6E00403C45 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Others.strings; sourceTree = "<group>"; };
-		D3CA235A1F694C6F00403C45 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Others.strings"; sourceTree = "<group>"; };
 		D3CA235C1F694D6A00403C45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LunTanTopViewCell.xib; sourceTree = "<group>"; };
 		D3CA235F1F694D6D00403C45 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LunTanTopViewCell.strings; sourceTree = "<group>"; };
 		D3CA23611F694D6E00403C45 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LunTanTopViewCell.strings"; sourceTree = "<group>"; };
@@ -1038,7 +1034,6 @@
 		D33999B91F4EC771009DACD0 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				D3CA23561F694C6B00403C45 /* Others.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1249,7 +1244,6 @@
 				D3CA22FD1F680C0000403C45 /* InfoPlist.strings in Resources */,
 				D3CA23701F694F0100403C45 /* HouseRentViewCell.xib in Resources */,
 				D3399A3F1F4EC771009DACD0 /* LunTanListWithAvatarCell.xib in Resources */,
-				D3CA23541F694C6B00403C45 /* Others.storyboard in Resources */,
 				D3CA230D1F680F0F00403C45 /* LaunchScreen.storyboard in Resources */,
 				D3399A141F4EC771009DACD0 /* avatar.png in Resources */,
 				D33999FD1F4EC771009DACD0 /* LocationInfo.xib in Resources */,
@@ -1555,16 +1549,6 @@
 				D3CA23531F694C4400403C45 /* zh-Hans */,
 			);
 			name = Share.xib;
-			sourceTree = "<group>";
-		};
-		D3CA23561F694C6B00403C45 /* Others.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D3CA23551F694C6B00403C45 /* Base */,
-				D3CA23581F694C6E00403C45 /* en */,
-				D3CA235A1F694C6F00403C45 /* zh-Hans */,
-			);
-			name = Others.storyboard;
 			sourceTree = "<group>";
 		};
 		D3CA235D1F694D6A00403C45 /* LunTanTopViewCell.xib */ = {
