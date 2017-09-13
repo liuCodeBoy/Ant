@@ -194,6 +194,7 @@
 		D3CA23A81F69515200403C45 /* BriefIntroduction.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3CA23AA1F69515200403C45 /* BriefIntroduction.xib */; };
 		D3CA23AF1F6951A200403C45 /* RentOutDetial.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3CA23B11F6951A200403C45 /* RentOutDetial.xib */; };
 		D3CA23B61F6951D100403C45 /* RentNeedDetial.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3CA23B81F6951D100403C45 /* RentNeedDetial.xib */; };
+		D3CA23C81F6961B900403C45 /* Others.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3CA23CA1F6961B900403C45 /* Others.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -427,6 +428,9 @@
 		D3CA23AE1F69515500403C45 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/BriefIntroduction.strings"; sourceTree = "<group>"; };
 		D3CA23B01F6951A200403C45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/RentOutDetial.xib; sourceTree = "<group>"; };
 		D3CA23B71F6951D100403C45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/RentNeedDetial.xib; sourceTree = "<group>"; };
+		D3CA23C91F6961B900403C45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Others.storyboard; sourceTree = "<group>"; };
+		D3CA23CC1F6961BD00403C45 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Others.strings; sourceTree = "<group>"; };
+		D3CA23CE1F6961BF00403C45 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Others.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1039,6 +1043,7 @@
 		D33999B91F4EC771009DACD0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D3CA23CA1F6961B900403C45 /* Others.storyboard */,
 				B6AA56C91F6182910040E271 /* PushProfileCell.swift */,
 			);
 			path = View;
@@ -1224,6 +1229,7 @@
 				D3399A051F4EC771009DACD0 /* RecruitBasicInfo.xib in Resources */,
 				D3399A611F4EC771009DACD0 /* NewsTypeTableCell.xib in Resources */,
 				D3399A0F1F4EC771009DACD0 /* SecondHandBasicInfo.xib in Resources */,
+				D3CA23C81F6961B900403C45 /* Others.storyboard in Resources */,
 				D33999FB1F4EC771009DACD0 /* DetialHeaderView.xib in Resources */,
 				D3399A311F4EC771009DACD0 /* city_wide_marriage_status.plist in Resources */,
 				D3CA233F1F6944AC00403C45 /* Register.xib in Resources */,
@@ -1693,6 +1699,16 @@
 				D3CA23B71F6951D100403C45 /* Base */,
 			);
 			name = RentNeedDetial.xib;
+			sourceTree = "<group>";
+		};
+		D3CA23CA1F6961B900403C45 /* Others.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3CA23C91F6961B900403C45 /* Base */,
+				D3CA23CC1F6961BD00403C45 /* en */,
+				D3CA23CE1F6961BF00403C45 /* zh-Hans */,
+			);
+			name = Others.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
